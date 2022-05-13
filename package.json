@@ -82,5 +82,8 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "dependencies": {
+    "react-native-linear-gradient": "^2.5.6"
   }
 }
