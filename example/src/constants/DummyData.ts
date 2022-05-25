@@ -80,6 +80,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Media Button',
     screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
   },
+  {
+    id: 8,
+    name: 'Typing Indicator',
+    screen: () => navigation.navigate(NavigationStrings.TYPING_INDICATOR),
+  },
 ];
 
 export const FOLLOWING = [

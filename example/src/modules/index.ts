@@ -5,6 +5,7 @@ import HomeScreen from './Home/HomeScreen';
 import ParallaxHeaderScreen from './ParallaxHeader/ParallaxHeaderScreen';
 import ParallaxHeaderTabScreen from './ParallaxHeader/ParallaxHeaderTabScreen';
 import MediaButtonScreen from './MediaButton/MediaButtonScreen';
+import TypingIndicatorScreen from './TypingIndicator/TypingIndicatorScreen';
 
 export {
   HomeScreen,
@@ -14,4 +15,5 @@ export {
   ParallaxHeaderScreen,
   ParallaxHeaderTabScreen,
   MediaButtonScreen,
+  TypingIndicatorScreen,
 };

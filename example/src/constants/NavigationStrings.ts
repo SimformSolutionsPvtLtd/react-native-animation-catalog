@@ -6,4 +6,5 @@ export default {
   PARALLAX_HEADER: 'Parallax Header Component',
   PARALLAX_HEADER_WITH_TABS: 'With Tabs Component',
   MEDIA_BUTTON: 'Media Button',
+  TYPING_INDICATOR: 'Typing Indicator',
 };

@@ -41,6 +41,9 @@ This custom animated component library provides multiple custom animated compone
 ---
 ### V. [Media Button](./src/components/MediaButton)
 [More about Media Button component](./src/components/MediaButton/README.md)
+---
+### V. [Typing Indicator](./src/components/TypingIndicator)
+[More about Typing Indicator component](./src/components/TypingIndicator/README.md)
 
 ---
 

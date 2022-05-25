@@ -10,6 +10,7 @@ import {
   MediaButtonScreen,
   ParallaxHeaderScreen,
   ParallaxHeaderTabScreen,
+  TypingIndicatorScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -51,6 +52,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.MEDIA_BUTTON}
           component={MediaButtonScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.TYPING_INDICATOR}
+          component={TypingIndicatorScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
