@@ -30,6 +30,8 @@ const Colors = {
   secondPrimary7: 'rgb(187, 216, 200)',
   secondPrimary8: 'rgb(152, 197, 190)',
   secondPrimary9: 'rgb(100, 173, 186)',
+
+  transparentBlackColor: 'rgba(0,0,0,0.5)',
 };
 
 export default Colors;
