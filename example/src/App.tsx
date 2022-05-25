@@ -5,6 +5,7 @@ import {
   CounterButton,
   GradientProgress,
   ColorSet,
+  TypingIndicator
 } from 'react-native-animation-catalog';
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
         />
       </View>
       <CounterButton label={'Press Here'} />
+     <View style={{marginBottom:400}}>
+      <TypingIndicator  type='sine'/>
+     </View>
     </>
   );
 };
