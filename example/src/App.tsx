@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import {
-  CardSwipeable, ColorSet, CounterButton, GradientProgress,
+  CardSwipeable, ColorSet, GradientProgress,
   SwipeCallBackProps
 } from 'react-native-animation-catalog';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Images from './assets';
-import { imageData } from './constants/DummyData';
+import { imageData } from './constants';
 import applicationStyle from './theme/ApplicationStyle';
 
 const App = () => {
@@ -40,7 +40,6 @@ const App = () => {
           return (
             <CardSwipeable.SwipeableCard
               key={item.id}
-              index={index}
               style={applicationStyle.cardStyle}>
               <Image source={item.image} style={applicationStyle.imageStyle} />
             </CardSwipeable.SwipeableCard>
@@ -89,7 +88,6 @@ const App = () => {
             />
           );
         })}
-        <CounterButton label={'Press Here'} />
       </View>
     </GestureHandlerRootView>
   );

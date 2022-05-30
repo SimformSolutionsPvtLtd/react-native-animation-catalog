@@ -4,35 +4,35 @@
  *
  * @format
  */
-
 const path = require('path');
-const exclusionList = require('metro-config/src/defaults/exclusionList');
-
+const rootPackage = require('../package.json');
+const blacklist = require('metro-config/src/defaults/exclusionList');
+const rootModules = Object.keys({
+  ...rootPackage.peerDependencies,
+});
 const moduleRoot = path.resolve(__dirname, '..');
-
+/**
+ * Only load one version for peerDependencies and alias them to the versions in example's node_modules"
+ */
 module.exports = {
   watchFolders: [moduleRoot],
   resolver: {
-    extraNodeModules: {
-      react: path.resolve(__dirname, 'node_modules/react'),
-      'react-native': path.resolve(__dirname, 'node_modules/react-native'),
-      // 'react-native-linear-gradient': path.resolve(__dirname, 'node_modules/react-native-linear-gradient'),
-      'react-native-reanimated': path.resolve(
-        __dirname,
-        'node_modules/react-native-reanimated',
+    blacklistRE: blacklist([
+      ...rootModules.map(
+        m =>
+          new RegExp(
+            `^${escape(path.join(moduleRoot, 'node_modules', m))}\\/.*$`,
+          ),
       ),
-      'react-native-gesture-handler': path.resolve(
-        __dirname,
-        'node_modules/react-native-gesture-handler',
-      ),
-    },
-    blockList: exclusionList([
-      new RegExp(`${moduleRoot}/node_modules/react/.*`),
-      new RegExp(`${moduleRoot}/node_modules/react-native/.*`),
-      new RegExp(`${moduleRoot}/node_modules/react-native-reanimated/.*`),
-      new RegExp(`${moduleRoot}/node_modules/react-native-gesture-handler/.*`),
-      // new RegExp(`${moduleRoot}/node_modules/react-native-linear-gradient/.*`),
+      /^((?!example).)+[\/\\]node_modules[/\\]react[/\\].*/,
+      /^((?!example).)+[\/\\]node_modules[/\\]react-native[/\\].*/,
     ]),
+    extraNodeModules: {
+      ...rootModules.reduce((acc, name) => {
+        acc[name] = path.join(__dirname, 'node_modules', name);
+        return acc;
+      }, {}),
+    },
   },
   transformer: {
     getTransformOptions: async () => ({

@@ -1,6 +1,11 @@
 import type { ReactNode } from 'react';
 import type { StyleProp, ViewStyle } from 'react-native';
 
+export interface SwipeCallEndProps {
+  onLeftSwipeEnd: () => void;
+  onRightSwipeEnd: () => void;
+}
+
 export interface SwipeCallBackProps {
   onLeftSwipe: () => void;
   onRightSwipe: () => void;
@@ -18,5 +23,5 @@ export interface SimpleCardProps {
 
 export interface SwipeableCardProps {
   children: ReactNode;
-  style?: StyleProp<ViewStyle>;
+  style: StyleProp<ViewStyle>;
 }

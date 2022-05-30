@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   },
   containerStyle: {
     ...StyleSheet.absoluteFillObject,
+    height: verticalScale(200),
     justifyContent: 'center',
     alignItems: 'center',
     margin: moderateScale(20),
@@ -20,11 +21,11 @@ const styles = StyleSheet.create({
     }),
   },
   card: {
-    backgroundColor: 'white',
+    backgroundColor: Colors.deepOrange300,
     borderRadius: moderateScale(10),
     height: '100%',
     width: '100%',
-    shadowColor: '#000',
+    shadowColor: Colors.black,
     shadowOffset: {
       width: 0,
       height: verticalScale(2),

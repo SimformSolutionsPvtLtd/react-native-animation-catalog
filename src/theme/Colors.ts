@@ -32,6 +32,7 @@ const Colors = {
   secondPrimary9: 'rgb(100, 173, 186)',
 
   transparentBlackColor: 'rgba(0,0,0,0.5)',
+  black: '#000',
 };
 
 export default Colors;
