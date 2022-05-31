@@ -1,3 +1,3 @@
-import {imageData} from './DummyData';
+import {imageData, sampleData} from './DummyData';
 
-export {imageData};
+export {imageData, sampleData};

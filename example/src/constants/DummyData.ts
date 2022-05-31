@@ -22,3 +22,26 @@ export let imageData = [
     image: Images.nature5,
   },
 ];
+
+export const sampleData = [
+  {
+    id: 1,
+    title: 'Rabbit',
+    image: Images.rabbit,
+  },
+  {
+    id: 2,
+    title: 'Cat',
+    image: Images.cat,
+  },
+  {
+    id: 3,
+    title: 'Fox',
+    image: Images.fox,
+  },
+  {
+    id: 4,
+    title: 'Squirrel',
+    image: Images.squirrel,
+  },
+];
