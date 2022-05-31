@@ -5,7 +5,7 @@ import { ColorSet } from '../../utils';
 import styles from './styles';
 import type { GradientProgressProps, NativeLinearGradientProps } from './types';
 
-class LinearGradient extends Component {
+class LinearGradient extends Component<GradientProgressProps> {
   render() {
     const {
       colorFirst,

@@ -24,9 +24,9 @@ export interface GradientProgressProps {
 }
 
 export interface NativeLinearGradientProps {
-  colorFirst?: string | undefined;
-  colorSecond?: string | undefined;
-  children?: object | undefined | ReactNode;
+  colorFirst?: string;
+  colorSecond?: string;
+  children?: ReactNode;
   start?: StartEndCoordinateProps;
   end?: StartEndCoordinateProps;
   style?: StyleProp<ViewStyle>;
