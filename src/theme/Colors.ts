@@ -33,6 +33,7 @@ const Colors = {
 
   transparentBlackColor: 'rgba(0,0,0,0.5)',
   black: '#000',
+  white: '#fff',
 };
 
 export default Colors;

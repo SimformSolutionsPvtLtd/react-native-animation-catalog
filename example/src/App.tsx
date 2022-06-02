@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ImageBackground, Text, TouchableOpacity, View } from 'react-native';
 import {
-  CardSwipeable, ColorSet, GradientProgress,
-  SwipeCallBackProps
+  AnimatedList, CardSwipeable, ColorSet, GradientProgress, SwipeCallBackProps
 } from 'react-native-animation-catalog';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Images from './assets';
-import { imageData } from './constants';
+import {imageData, sampleData} from './constants';
 import applicationStyle from './theme/ApplicationStyle';
+
+interface SimpleDataProps {
+  item: {
+    id: number;
+    title: string;
+    image: number;
+  };
+}
 
 const App = () => {
   const addItem = (prev = 0, next = 1) => imageData.slice(prev, next);
@@ -20,6 +27,7 @@ const App = () => {
       setCardData(addItem(id, id + 1));
     }
   }
+
   return (
     <GestureHandlerRootView style={applicationStyle.screen}>
       <GradientProgress style={applicationStyle.simpleGradientStyle} />
@@ -32,6 +40,7 @@ const App = () => {
           style={applicationStyle.gradientStyle}
         />
       </View>
+
       <View style={applicationStyle.swipeableCardView}>
         <Text style={applicationStyle.cardTextStyle}>
           SwipeableCard Example
@@ -46,6 +55,7 @@ const App = () => {
           );
         })}
       </View>
+
       <View style={applicationStyle.simpleCardView}>
         <Text style={applicationStyle.cardTextStyle}>SimpleCard Example</Text>
         {cardData.map((item, index) => {
@@ -89,6 +99,53 @@ const App = () => {
           );
         })}
       </View>
+
+      <AnimatedList
+        data={sampleData}
+        style={applicationStyle.animatedListStyle}
+        animationType={'fade-up'}
+        animationDelay={600}
+        animationDuration={1200}
+        renderItem={({item}: SimpleDataProps) => {
+          return (
+            <>
+              <View style={applicationStyle.backgroundImageView}>
+                <ImageBackground
+                  source={item.image}
+                  style={applicationStyle.backgroundImageStyle}
+                  resizeMode={'stretch'}
+                />
+                <Text style={applicationStyle.textStyle}>{item.title}</Text>
+              </View>
+
+              <View style={applicationStyle.likeCommentSectionStyle}>
+                <View style={applicationStyle.imageViewStyle}>
+                  <Image
+                    source={Images.fav}
+                    style={applicationStyle.imageIconStyle}
+                  />
+                </View>
+                <View style={applicationStyle.imageViewStyle}>
+                  <Image
+                    source={Images.comment}
+                    style={applicationStyle.imageIconStyle}
+                  />
+                </View>
+                <View style={applicationStyle.imageViewStyle}>
+                  <Image
+                    source={Images.bookmark}
+                    style={applicationStyle.imageIconStyle}
+                  />
+                </View>
+              </View>
+            </>
+          );
+        }}
+        ItemSeparatorComponent={() => (
+          <View style={applicationStyle.separatorStyle} />
+        )}
+      />
+
     </GestureHandlerRootView>
   );
 };
