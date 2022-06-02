@@ -4,6 +4,8 @@ import { StyleProp, ViewStyle } from "react-native";
 //Navigation Type
 interface NavProps {
   navigate: (args: string) => void;
+  goBack: () => void;
+  pop: () => void;
 }
 
 //CustomCard Type
@@ -16,6 +18,8 @@ interface CustomCardProps {
 //CustomHeader Type
 interface CustomHeaderProps {
   title: string;
+  isBack: boolean;
+  onBackPress?: () => void;
 }
 
 export { NavProps, CustomCardProps, CustomHeaderProps };

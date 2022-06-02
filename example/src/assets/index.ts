@@ -13,4 +13,5 @@ export default {
   bookmark: require('./bookmark.png'),
   comment: require('./comment.png'),
   fav: require('./fav.png'),
+  arrow_back: require('./arrow_back.png'),
 };

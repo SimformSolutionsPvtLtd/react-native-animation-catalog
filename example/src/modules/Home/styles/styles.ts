@@ -6,7 +6,6 @@ const {verticalScale, moderateScale} = Metrics;
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: Colors.blue50,
   },
   animatedListStyle: {
     marginTop: verticalScale(10),
