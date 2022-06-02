@@ -22,5 +22,14 @@ interface CustomHeaderProps {
   onBackPress?: () => void;
 }
 
-export { NavProps, CustomCardProps, CustomHeaderProps };
+//AnimatedList SampleData
+interface SampleDataProps {
+  item: {
+    id: number;
+    title: string;
+    image: number;
+  };
+}
+
+export { NavProps, CustomCardProps, CustomHeaderProps, SampleDataProps };
 

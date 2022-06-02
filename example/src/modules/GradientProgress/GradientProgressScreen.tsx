@@ -1,13 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Text, View } from 'react-native';
-import {
-  ColorSet,
-  GradientProgress
-} from 'react-native-animation-catalog';
+import { Text, TouchableOpacity, View } from 'react-native';
+import { GradientProgress } from 'react-native-animation-catalog';
 import { CustomHeader } from '../../components';
 import { Strings } from '../../constants';
 import { NavProps } from '../../services/Types';
+import { Colors } from '../../theme';
 import styles from './styles/styles';
 
 const GradientProgressScreen = () => {
@@ -20,37 +18,79 @@ const GradientProgressScreen = () => {
         isBack={true}
         onBackPress={() => navigation.goBack()}
       />
+      <View style={styles.simpleGradientContainerStyle}>
+        <Text style={styles.textStyle}>
+          {Strings.SIMPLE_GRADIENT_PROGRESS_BAR}
+        </Text>
+        <View style={styles.simpleGradientsStyle}>
+          <GradientProgress style={styles.simpleGradientProgressBarStyle} />
 
-      <Text style={styles.textStyle}>
-        {Strings.SIMPLE_GRADIENT_PROGRESS_BAR}
-      </Text>
-      <GradientProgress style={styles.simpleGradientStyle} />
-
-      <Text style={styles.textStyle}>
-        {Strings.GRADIENT_PROGRESS_BAR_WITH_PROPS_AND_STYLING}
-      </Text>
-      <View style={styles.containerView}>
-        <GradientProgress
-          colors={ColorSet.Primary}
-          speed={200}
-          start={{x: 0, y: 0.2}}
-          end={{x: 0, y: 0.2}}
-          style={styles.gradientStyle}
-        />
+          <GradientProgress
+            style={styles.simpleGradientProgressBarStyle}
+            colors={Colors.colorSet2}
+            speed={250}
+          />
+          <GradientProgress
+            style={styles.simpleGradientProgressBarStyle}
+            colors={Colors.colorSet3}
+            speed={250}
+          />
+        </View>
       </View>
 
-      <Text style={styles.textStyle}>
-        {Strings.GRADIENT_PROGRESS_BAR_WITH_CHILD_COMPONENT}
-      </Text>
-      <View style={styles.containerView}>
-        <GradientProgress
-          colors={ColorSet.AccentPrimary}
-          speed={500}
-          start={{x: 0, y: 0.2}}
-          end={{x: 0, y: 0.2}}
-          style={styles.gradientChildStyle}>
-          <Text style={styles.textStyle}>{Strings.CHILD_COMPONENT}</Text>
-        </GradientProgress>
+      <View style={styles.customGradientContainerStyle}>
+        <Text style={styles.textStyle}>{Strings.CUSTOM_GRADIENT_PROGRESS}</Text>
+        <View style={styles.customGradientsStyle}>
+          <GradientProgress
+            colors={Colors.colorSet6}
+            speed={500}
+            start={{x: 0, y: 0.2}}
+            end={{x: 1, y: 0.2}}
+            style={styles.customGradientProgressBarStyle}
+          />
+          <View style={styles.customGradientProgressBarViewStyle}>
+            <GradientProgress
+              colors={Colors.colorSet5}
+              speed={600}
+              start={{x: 1, y: 0.2}}
+              end={{x: 0, y: 0.2}}
+              style={styles.customGradientStyle}
+            />
+            <GradientProgress
+              colors={Colors.colorSet4}
+              speed={600}
+              start={{x: 0, y: 1}}
+              end={{x: 1, y: 0}}
+              style={styles.customGradientProgressStyle}
+            />
+            <GradientProgress
+              colors={Colors.colorSet4}
+              speed={600}
+              start={{x: 1, y: 0}}
+              end={{x: 0, y: 1}}
+              style={styles.customGradientProgressStyle}
+            />
+          </View>
+        </View>
+      </View>
+
+      <View style={styles.gradientChildContainerStyle}>
+        <Text style={styles.textStyle}>
+          {Strings.GRADIENT_PROGRESS_BAR_WITH_CHILD_COMPONENT}
+        </Text>
+        <View style={styles.gradientChildViewStyle}>
+          <GradientProgress
+            colors={Colors.colorSet9}
+            speed={1000}
+            start={{x: 0.3, y: 0}}
+            end={{x: 1, y: 1}}
+            style={styles.gradientChildStyle}>
+            <Text style={styles.textChildStyle}>{Strings.CHILD_COMPONENT}</Text>
+            <TouchableOpacity style={styles.clickButtonStyle}>
+              <Text style={styles.clickTextStyle}>Click Here!!!</Text>
+            </TouchableOpacity>
+          </GradientProgress>
+        </View>
       </View>
     </View>
   );

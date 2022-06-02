@@ -6,5 +6,33 @@ export default {
   transparent: 'transparent',
   blue50: '#E3F2FD',
   blue700: '#0288D1',
-};
+  cyan: '#00838F',
 
+  //-------------------- ColorSets for Gradient --------------------
+  colorSet2: [
+    '#5E35B1',
+    '#673AB7',
+    '#7E57C2',
+    '#9575CD',
+    '#7986CB',
+    '#5C6BC0',
+    '#3F51B5',
+    '#3949AB',
+  ],
+  colorSet3: [
+    '#7CB342',
+    '#8BC34A',
+    '#9CCC65',
+    '#AED581',
+    '#E6EE9C',
+    '#DCE775',
+    '#D4E157',
+    '#CDDC39',
+  ],
+  colorSet4: ['#355070', '#6D587A', '#B56576', '#E56B6F', '#EAAC8B'],
+  colorSet5: ['#0A0908', '#22333B', '#EAE0D5', '#C6AC8F', '#5E503F'],
+  colorSet6: ['#E63946', '#F1FAEE', '#A8DADC', '#457B9D', '#1D3557'],
+  colorSet7: ['#8E9AAF', '#CBC0D3', '#EFD3D7', '#FEEAFA', '#DEE2FF'],
+  colorSet8: ['#2B2D42', '#8D99AE', '#EDF2F4', '#EF233C', '#D90429'],
+  colorSet9: ['#FFBE0B', '#FB5607', '#FF006E', '#8338EC', '#3A86FF'],
+};
