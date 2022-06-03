@@ -5,7 +5,7 @@
   "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog/blob/main/README.md",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "author": "Mukesh Jangid <mukesh.j@simformsolutions.com>",
+  "author": "Simform Solutions",
   "license": "MIT",
   "files": [
     "lib"
