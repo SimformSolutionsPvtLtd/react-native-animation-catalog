@@ -10,10 +10,15 @@ const Routes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName={NavigationStrings.HOME}>
-        <Stack.Screen name={NavigationStrings.HOME} component={HomeScreen} options={{headerShown: false}} />
+        <Stack.Screen
+          name={NavigationStrings.HOME}
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name={NavigationStrings.GRADIENT}
           component={GradientProgressScreen}
+          options={{headerShown: false}}
         />
       </Stack.Navigator>
     </NavigationContainer>

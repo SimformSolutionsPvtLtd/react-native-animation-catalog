@@ -5,18 +5,17 @@ import {
   AnimatedList, ColorSet, GradientProgress
 } from 'react-native-animation-catalog';
 import { CustomCard, CustomHeader } from '../../components';
+import { Strings } from '../../constants';
 import { AnimationComponentData } from '../../constants/DummyData';
 import { NavProps } from '../../services/Types';
 import styles from './styles/styles';
 
 const HomeScreen = () => {
   const navigation = useNavigation<NavProps>();
-  const changeColor = (id: number) =>
-    id % 2 === 0 ? ColorSet.Primary : ColorSet.AccentPrimary;
 
   return (
     <View style={styles.screen}>
-      <CustomHeader title="Animation Components" />
+      <CustomHeader title={Strings.animationComponent} isBack={false}/>
       <AnimatedList
         animationType={'left'}
         style={styles.animatedListStyle}
@@ -30,8 +29,8 @@ const HomeScreen = () => {
           return (
             <CustomCard style={styles.cardStyle} onPress={item.screen}>
               <GradientProgress
-                speed={800}
-                colors={changeColor(item.id)}
+                speed={350}
+                colors={ColorSet.AccentPrimary}
                 style={styles.gradientProgressStyle}>
                 <View>
                   <Text style={styles.componentNameTextStyle}>{item.name}</Text>
