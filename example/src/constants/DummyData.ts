@@ -51,17 +51,17 @@ export const sampleData = [
 export const AnimationComponentData = (navigation: NavProps) => [
   {
     id: 1,
-    name: 'Gradient Progress',
-    screen: () => navigation.navigate(NavigationStrings.GRADIENT),
+    name: 'Card Swipeable',
+    screen: () => navigation.navigate(NavigationStrings.CARD_SWIPEABLE),
   },
   {
     id: 2,
-    name: 'Card Swipeable',
-    screen: () => navigation.navigate(NavigationStrings.GRADIENT),
+    name: 'Animated List',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_LIST),
   },
   {
     id: 3,
-    name: 'Animated List',
+    name: 'Gradient Progress',
     screen: () => navigation.navigate(NavigationStrings.GRADIENT),
   },
 ];
