@@ -1,4 +1,4 @@
-# radial-slider demo app
+# react-native-animation-catalog demo app
 ## How to Run ?
 
 _Steps to run the demo app in ios and andorid_
