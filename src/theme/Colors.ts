@@ -34,6 +34,7 @@ const Colors = {
   transparentBlackColor: 'rgba(0,0,0,0.5)',
   black: '#000',
   white: '#fff',
+  redVelvet: '#FF5252',
 };
 
 export default Colors;
