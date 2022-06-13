@@ -1,3 +1,6 @@
+import Images from '../../../assets';
+import Strings from './Strings';
+
 export const FOLLOWING = [
   {
     name: 'Arrow Macwan',
@@ -67,5 +70,29 @@ export const FOLLOWERS = [
   {
     name: 'Wrons Wyen',
     photo: 'https://avatars.dicebear.com/api/initials/:wrons_wyen.png',
+  },
+];
+
+export const data = [
+  {
+    id: 1,
+    name: 'John Millar',
+    photo: 'https://avatars.dicebear.com/api/initials/:john_millar.png',
+    image: undefined,
+    description: Strings.LOREM,
+  },
+  {
+    id: 2,
+    name: 'Addy Brock',
+    photo: 'https://avatars.dicebear.com/api/initials/:addy_brock.png',
+    image: Images.reactNative,
+    description: Strings.LOREM,
+  },
+  {
+    id: 3,
+    name: 'Nemi Crispor',
+    photo: 'https://avatars.dicebear.com/api/initials/:nemi_crispor.png',
+    image: undefined,
+    description: Strings.LOREM,
   },
 ];

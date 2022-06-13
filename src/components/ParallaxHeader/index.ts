@@ -1,16 +1,18 @@
+import ParallaxHeaderWithOutTab from './ParallaxHeaderWithOutTab';
 import ParallaxHeaderWithTab from './ParallaxHeaderWithTab';
 
-const ParallaxHeader = Object.assign(ParallaxHeaderWithTab, {
+const ParallaxHeader = Object.assign(ParallaxHeaderWithOutTab, {
   WithTab: ParallaxHeaderWithTab,
 });
 
 export type {
-  StickyHeaderProps,
+  AnimatedFlatListProps,
   HeaderProps,
-  TabBarProps,
+  ParallaxHeaderProps,
   ParallaxHeaderWithTabProps,
   RenderDefaultProps,
-  AnimatedFlatListProps,
   ActiveTabIndex,
+  StickyHeaderProps,
+  TabBarProps,
 } from './types';
 export { ParallaxHeader };
