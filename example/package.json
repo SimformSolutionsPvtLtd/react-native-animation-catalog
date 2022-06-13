@@ -11,6 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-navigation/material-top-tabs": "^6.2.1",
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "@types/lodash": "^4.14.182",
@@ -19,9 +20,11 @@
     "react-native": "^0.66.3",
     "react-native-gesture-handler": "^2.4.1",
     "react-native-linear-gradient": "^2.5.6",
+    "react-native-pager-view": "^5.4.24",
     "react-native-reanimated": "^2.5.0",
     "react-native-safe-area-context": "^4.2.5",
-    "react-native-screens": "^3.13.1"
+    "react-native-screens": "^3.13.1",
+    "react-native-tab-view": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
