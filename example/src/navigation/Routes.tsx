@@ -3,8 +3,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { NavigationStrings } from '../constants';
 import {
-  AnimatedListScreen, CardSwipeableScreen, GradientProgressScreen,
-  HomeScreen
+  AnimatedListScreen,
+  CardSwipeableScreen,
+  GradientProgressScreen,
+  HomeScreen,
+  ParallaxHeaderScreen,
+  ParallaxHeaderTabScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -31,6 +35,16 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_LIST}
           component={AnimatedListScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.PARALLAX_HEADER}
+          component={ParallaxHeaderScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.PARALLAX_HEADER_WITH_TABS}
+          component={ParallaxHeaderTabScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

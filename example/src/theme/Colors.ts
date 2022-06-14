@@ -7,6 +7,7 @@ export default {
   blue50: '#E3F2FD',
   blue700: '#0288D1',
   cyan: '#00838F',
+  redVelvet: '#FF5252',
 
   //-------------------- ColorSets for Gradient --------------------
   colorSet2: [

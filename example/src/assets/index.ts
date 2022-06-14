@@ -14,4 +14,5 @@ export default {
   comment: require('./comment.png'),
   fav: require('./fav.png'),
   arrow_back: require('./arrow_back.png'),
+  avatar: require('./man.png'),
 };
