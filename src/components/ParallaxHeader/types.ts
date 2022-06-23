@@ -1,6 +1,6 @@
+import type { MaterialTopTabNavigationOptions } from '@react-navigation/material-top-tabs';
 import type { ReactNode, RefObject } from 'react';
-import type { StyleProp, ViewStyle } from 'react-native';
-import type { FlatList } from 'react-native';
+import type { FlatList, StyleProp, ViewProps, ViewStyle } from 'react-native';
 import type Animated from 'react-native-reanimated';
 
 export interface StickyHeaderProps {
@@ -31,4 +31,49 @@ export interface ScrollPair {
 export interface HeaderConfig {
   heightExpanded: number;
   heightCollapsed: number;
+}
+
+//for ActiveTabIndex
+export interface ActiveTabIndex {
+  tabIndex: number;
+}
+
+//for ParallaxHeaderWithTabs
+export interface ParallaxHeaderWithTabProps {
+  renderHeader: () => React.ReactElement;
+  renderStickyHeader: () => React.ReactElement;
+  tabs: {
+    title: string;
+    data: any[];
+    renderTabContent: ({ item }: any) => React.ReactElement;
+    tabOptions?: MaterialTopTabNavigationOptions;
+    renderFlatListProps?: any;
+  }[];
+  backBehavior: 'firstRoute' | 'initialRoute' | 'order' | 'history' | 'none';
+  tabBarPosition: 'top' | 'bottom';
+  initialRouteName: string;
+  onTabChange: ({ tabIndex }: ActiveTabIndex) => void;
+  screenOptions: MaterialTopTabNavigationOptions;
+}
+
+//for DefaultRender Item
+export interface RenderDefaultProps {
+  item: {
+    name: string;
+    photo: string;
+  };
+}
+
+//for DefaultItem Props
+export type DefaultItemProps = Pick<ViewProps, 'style'> & {
+  items: {
+    name: string;
+    photo: string;
+  };
+};
+
+//for AnimatedFlatList Props
+export interface AnimatedFlatListProps {
+  data: any[];
+  renderTabContent: ({ item }: any) => React.ReactElement;
 }
