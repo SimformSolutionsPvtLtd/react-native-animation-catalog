@@ -1,17 +1,17 @@
 import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import Images from '../assets';
-import { CustomHeaderProps } from '../services/Types';
+import { CustomHeaderProps } from './types';
 import styles from './styles/CustomHeaderStyles';
 
 const CustomHeader = ({
   title = '',
-  isBack = false,
+  isBackEnabled = false,
   onBackPress,
 }: CustomHeaderProps) => {
   return (
     <View style={styles.container}>
-      {isBack ? (
+      {isBackEnabled ? (
         <TouchableOpacity onPress={onBackPress}>
           <Image style={styles.backImageStyle} source={Images.arrow_back} />
         </TouchableOpacity>

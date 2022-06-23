@@ -2,7 +2,7 @@ import { NavigationStrings } from '../constants';
 import Images from '../assets';
 import {NavProps} from '../services/Types';
 
-export let imageData = [
+export const imageData = [
   {
     id: 1,
     image: Images.nature,
