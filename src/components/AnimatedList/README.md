@@ -1,18 +1,19 @@
 # AnimatedList
 
-```AnimatedList``` component is basically used to show items using some animation such as,
+```AnimatedList``` component can be used to render list items with custom animations. 
+
+Supported custom animations are:
 * ```left ```
 * ```right```
 * ```bottom```
 * ```fade-up```
 * ```fade-down```
 
-#### Demo
+#### 🎬 Preview
 ----
-AnimatedList Example One              |  AnimatedList Example Two
+AnimatedList (Left-Animation)            |  AnimatedList (Fade-up-Animation)
 :-------------------------:|:-------------------------:
-![alt tag](/src/assets/leftAnimatedList.gif)|![alt tag](/src/assets/animatedFadeUpDown.gif)
-
+![alt tag](/assets/leftAnimatedList.gif)|![alt tag](/assets/animatedFadeUpDown.gif)
 
 #### Usage
 ---
@@ -26,7 +27,7 @@ interface AnimalDataProp {
     name: string;
 }
 
-const AnimationList = () =>{
+const AnimationList = () => {
     const animalData = [
         {
             id: 1,
@@ -54,11 +55,11 @@ const AnimationList = () =>{
             cardStyle={styles.cardStyle}
             animationDuration={1200}
             renderItem={({item}: AnimalDataProp) => {
-            return (
-                <View style={styles.itemStyle}>
-                    <Text>{item.name}</Text>
-                </View>
-            );
+                return (
+                    <View style={styles.itemStyle}>
+                        <Text>{item.name}</Text>
+                    </View>
+                );
             }}
             ItemSeparatorComponent={() => <View style={styles.separatorStyle}} />}
         />
@@ -68,7 +69,7 @@ const AnimationList = () =>{
 const styles = StyleSheet.create({
     cardStyle:{
         height: 50
-    }
+    },
     itemStyle:{
         justifyContent:'center',
         alignItems:'center', 
@@ -87,20 +88,20 @@ export default AnimationList;
 
 Props | Default | Type | Description
 :---- | :----- | :---- | :----- 
-|<p style="color:red;">data (Required)</p> | - | array | It is required prop. ```Data is a plain array.```
-|<p style="color:red;">renderItem (Required)</p> | - | function | Takes an item from ```data``` and renders it into the list.
-animationType | fade-up | string | Different type of animation ```left```, ```right```, ```bottom```, ```fade-up``` and ```fade-down```
-animationDelay | 600 | number | Delay between items display
-animationDuration | 1500 | number | Time duration of display items
-horizontal | false | boolean | If ```true```, show list horizontally. If false show vertically ```(default)```
-ItemSeparatorComponent | - | component | Rendered in between each item, but not at the top or bottom
-style | ```{{ flex: 1 }}``` | ViewStyle | Styling for internal View for ```AnimatedList```
-cardStyle | ```{{ height: 200, width: 350 }}``` | ViewStyle |Styling for internal View for ```Animated Card```
+|<strong style="color:red;">data*</strong> | - | array | ```Data``` is required prop. ```Data is a plain array.```
+|<strong style="color:red;">renderItem*</strong> | - | function | ```renderItem``` takes an item from ```data``` and renders it into the list.
+animationType | fade-up | string | ```AnimationType``` are ```left```, ```right```, ```bottom```, ```fade-up``` and ```fade-down```.
+animationDelay | 600 | number | Animation Delay between items display.
+animationDuration | 1500 | number | Animation Duration of display items
+horizontal | false | boolean | If ```true```, show list horizontally. If false show vertically ```(default)```.
+ItemSeparatorComponent | - | component | ItemSeparatorComponent is used for each item, but not at the top or bottom.
+style | ```{{ flex: 1 }}``` | ViewStyle | ```AnimatedList``` internal view style.
+cardStyle | ```{{ height: 200, width: 350 }}``` | ViewStyle | ```AnimatedList``` internal card view style.
 
-> Note:  For more props of <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a>
+>Check out more <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a> Props
 
-#### Demo Example
+#### 🎬 Preview Example
 ----
-[AnimatedList Example One](/example/src/modules/Home/HomeScreen.tsx)
+[AnimatedList (Left-Animation)](/example/src/modules/Home/HomeScreen.tsx)
 
-[AnimatedList Example Two](/example/src/modules/AnimatedList/AnimatedListScreen.tsx)
+[AnimatedList (Fade-up-Animation)](/example/src/modules/AnimatedList/AnimatedListScreen.tsx)

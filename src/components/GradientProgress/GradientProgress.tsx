@@ -1,7 +1,8 @@
-import React, { Component, useCallback, useEffect, useState } from 'react';
-import { Animated, Easing } from 'react-native';
+import React, { Component } from 'react';
+import { Animated } from 'react-native';
 import NativeLinearGradient from 'react-native-linear-gradient';
 import { ColorSet } from '../../utils';
+import { useGradientProgress } from './hooks';
 import styles from './styles';
 import type { GradientProgressProps, NativeLinearGradientProps } from './types';
 
@@ -39,39 +40,11 @@ const GradientProgress = ({
   style,
   useNativeDriver,
 }: GradientProgressProps) => {
-  const [color0] = useState(new Animated.Value(0));
-  const [color1] = useState(new Animated.Value(0));
-
-  const preferColors: any[] = [];
-
-  const startAnimation = useCallback(() => {
-    [color0, color1].forEach((color) => color.setValue(0));
-    Animated.parallel(
-      [color0, color1].map((animatedColor) => {
-        return Animated.timing(animatedColor, {
-          toValue: colors.length,
-          duration: colors.length * speed,
-          easing: Easing.linear,
-          useNativeDriver: useNativeDriver || false,
-        });
-      })
-    ).start(startAnimation);
-  }, [color0, color1, colors.length, speed, useNativeDriver]);
-
-  while (preferColors.length < 2) {
-    preferColors.push(
-      colors
-        .slice(preferColors.length)
-        .concat(colors.slice(0, preferColors.length + 1))
-    );
-  }
-
-  const interpolatedColors = [color0, color1].map((animatedColor, index) => {
-    return animatedColor.interpolate({
-      inputRange: Array.from({ length: colors.length + 1 }, (_v, k) => k),
-      outputRange: preferColors[index],
-    });
-  });
+  const { interpolatedColors } = useGradientProgress(
+    colors,
+    speed,
+    useNativeDriver
+  );
 
   const AnimatedProps = {
     style: [styles.linearGradient, style],
@@ -80,10 +53,6 @@ const GradientProgress = ({
     colorFirst: interpolatedColors[0],
     colorSecond: interpolatedColors[1],
   };
-
-  useEffect(() => {
-    startAnimation();
-  }, [startAnimation]);
 
   return <AnimatedGradient {...AnimatedProps}>{children}</AnimatedGradient>;
 };

@@ -6,14 +6,18 @@ import { useAnimatedCard } from './hooks';
 import styles from './styles';
 import type { SwipeableCardProps } from './types';
 
-const SwipeableCard = ({ children, style }: Partial<SwipeableCardProps>) => {
+const SwipeableCard = ({
+  children,
+  style,
+  cardStyle,
+}: Partial<SwipeableCardProps>) => {
   const { gesture, animationSwipeableCardStyle } = useAnimatedCard({});
 
   return (
     <View style={[styles.containerStyle, style]} pointerEvents="box-none">
       <GestureDetector gesture={gesture}>
         <Animated.View
-          style={[styles.card, animationSwipeableCardStyle]}
+          style={[styles.card, animationSwipeableCardStyle, cardStyle]}
           layout={Layout.duration(600).delay(200)}
           entering={ZoomIn.duration(600).delay(200)}
         >

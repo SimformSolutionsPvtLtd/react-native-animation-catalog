@@ -19,9 +19,11 @@ export interface SimpleCardProps {
   }: SwipeCallBackProps) => React.ReactElement;
   onLeftSwipeEnd: () => void;
   onRightSwipeEnd: () => void;
+  cardStyle: StyleProp<ViewStyle>;
 }
 
 export interface SwipeableCardProps {
   children: ReactNode;
   style: StyleProp<ViewStyle>;
+  cardStyle: StyleProp<ViewStyle>;
 }

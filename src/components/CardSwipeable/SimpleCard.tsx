@@ -1,15 +1,40 @@
 import React from 'react';
 import { Button, View } from 'react-native';
 import Animated, { Layout, ZoomIn } from 'react-native-reanimated';
+import { Colors } from './../../theme';
 import { useAnimatedCard } from './hooks';
 import styles from './styles';
-import type { SimpleCardProps } from './types';
+import type { SimpleCardProps, SwipeCallBackProps } from './types';
+
+const RenderCard = ({ onLeftSwipe, onRightSwipe }: SwipeCallBackProps) => {
+  return (
+    <View style={styles.renderCardContainerStyle}>
+      <View style={styles.renderCardStyle}>
+        <View style={styles.renderCardButtonViewStyle}>
+          <Button
+            onPress={onLeftSwipe}
+            title={'Swipe Left'}
+            color={Colors.white}
+          />
+        </View>
+        <View style={styles.renderCardButtonViewStyle}>
+          <Button
+            onPress={onRightSwipe}
+            title={'Swipe Right'}
+            color={Colors.white}
+          />
+        </View>
+      </View>
+    </View>
+  );
+};
 
 const SimpleCard = ({
   style,
   renderCard,
   onLeftSwipeEnd,
   onRightSwipeEnd,
+  cardStyle,
 }: Partial<SimpleCardProps>) => {
   const { onLeftSwipe, onRightSwipe, animationSimpleCardStyle } =
     useAnimatedCard({
@@ -20,19 +45,13 @@ const SimpleCard = ({
   return (
     <View style={[styles.containerStyle, style]}>
       <Animated.View
-        style={[styles.card, animationSimpleCardStyle]}
+        style={[styles.card, animationSimpleCardStyle, cardStyle]}
         layout={Layout.duration(600).delay(200)}
         entering={ZoomIn.duration(600).delay(200)}
       >
         {renderCard && renderCard({ onLeftSwipe, onRightSwipe })}
         {!renderCard && (
-          <>
-            <Button onPress={onLeftSwipe} title={'Click here to Swipe Left'} />
-            <Button
-              onPress={onRightSwipe}
-              title={'Click here to Swipe Right'}
-            />
-          </>
+          <RenderCard onLeftSwipe={onLeftSwipe} onRightSwipe={onRightSwipe} />
         )}
       </Animated.View>
     </View>
