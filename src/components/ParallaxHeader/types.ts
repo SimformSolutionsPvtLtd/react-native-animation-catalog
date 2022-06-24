@@ -21,24 +21,24 @@ export interface TabBarProps {
   onIndexChange: (index: number) => void;
 }
 
-//for parallel tab scroll types
+//parallel tab scroll types
 export interface ScrollPair {
   list: RefObject<FlatList>;
   position: Animated.SharedValue<number>;
 }
 
-//for header collapsing types
+//header collapsing types
 export interface HeaderConfig {
   heightExpanded: number;
   heightCollapsed: number;
 }
 
-//for ActiveTabIndex
+//ActiveTabIndex
 export interface ActiveTabIndex {
   tabIndex: number;
 }
 
-//for ParallaxHeaderWithTabs
+//ParallaxHeaderWithTabs
 export interface ParallaxHeaderWithTabProps {
   renderHeader: () => React.ReactElement;
   renderStickyHeader: () => React.ReactElement;
@@ -56,7 +56,7 @@ export interface ParallaxHeaderWithTabProps {
   screenOptions: MaterialTopTabNavigationOptions;
 }
 
-//for DefaultRender Item
+//DefaultRender Item
 export interface RenderDefaultProps {
   item: {
     name: string;
@@ -64,7 +64,7 @@ export interface RenderDefaultProps {
   };
 }
 
-//for DefaultItem Props
+//DefaultItem Props
 export type DefaultItemProps = Pick<ViewProps, 'style'> & {
   items: {
     name: string;
@@ -72,8 +72,27 @@ export type DefaultItemProps = Pick<ViewProps, 'style'> & {
   };
 };
 
-//for AnimatedFlatList Props
+//AnimatedFlatList Props
 export interface AnimatedFlatListProps {
   data: any[];
   renderTabContent: ({ item }: any) => React.ReactElement;
+}
+
+//ParallaxHeader Props
+export interface ParallaxHeaderProps {
+  renderHeader: () => React.ReactElement;
+  renderStickyHeader: () => React.ReactElement;
+  stickyHeadertitle: string;
+  children: ReactNode;
+}
+
+export interface RenderCardsProps {
+  index: number;
+  value: {
+    id: number;
+    name: string;
+    photo: string;
+    image: number;
+    description: string;
+  };
 }
