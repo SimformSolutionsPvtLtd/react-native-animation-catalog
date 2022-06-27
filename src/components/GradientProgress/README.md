@@ -1,14 +1,15 @@
 # Gradient Progress
 
-```Gradient Progress``` component is basically used when app is processing something, so the user can be made aware of app doing some processing and also you can use as gradient background to any component you can wrap your component into ```Gradient Progress```.
+```Gradient Progress``` component can be used to show Gradient Progress Bar with custom gradient animations.
+* ```Gradient Progress``` also use as background gradient.
 
->  <p style="color:red;"> Note:- You need to pass <strong style="color:blue;">four or more than four color </strong> into array to show proper gradient effects.</p>
+>  <p style="color:red;">You should pass <strong style="color:blue;">four or more</strong> in an array to see the proper gradient effect.</p>
 
-#### Demo
+#### 🎬 Preview
 ----
-Gradient Progress Example              |
+Gradient Progress              |
 :-------------------------:|
-![alt tag](/src/assets/GradientProgress.gif)|
+![alt tag](/assets/GradientProgress.gif)|
 
 #### Default Usage
 ---
@@ -91,19 +92,19 @@ export default GradientBackground;
 ```
 
 ##### Custom Usage Preview
-![alt tag](/src/assets/CustomGradientProgress.gif)
+![alt tag](/assets/CustomGradientProgress.gif)
 
 ---
 #### Properties
 Props | Default | Type | Description
 :---- | :----- | :---- | :----- 
-colors | ColorSet.Primary | array | It's colors of array which are displayed in ```Gradient Progress```.
-speed | 200 | number | It's the speed of gradient moving.
-start | ```{ x: 0, y: 0.2 }``` | object | It's ```x``` and ```y``` starting coordinates of gradient.
-end | ```{ x: 1, y: 0.2 }``` | object | It's ```x``` and ```y``` ending coordinates of gradient.
-style | ```{{  width: '100%', height: '0.50%', flexDirection: 'column', alignItems: 'stretch'}}``` | ViewStyle | Styling for internal View for ```Gradient Progress```
-children | - | component | Render components
+colors | ColorSet.Primary | array | ```Colors``` is colors of array which are displayed in ```Gradient Progress```.
+speed | 200 | number | ```Speed``` is the speed of gradient moving.
+start | ```{ x: 0, y: 0.2 }``` | object | ```start``` is ```x``` and ```y``` starting coordinates of gradient.
+end | ```{ x: 1, y: 0.2 }``` | object | ```end``` is ```x``` and ```y``` ending coordinates of gradient.
+style | ```{{  width: '100%', height: '0.50%', flexDirection: 'column', alignItems: 'stretch'}}``` | ViewStyle | ```Gradient Progress``` internal view style.
+children | - | component |```children``` render child component.
 
-#### Demo Example
+#### 🎬 Preview Example
 ----
-[Gradient Progress Example](/example/src/modules/GradientProgress/GradientProgressScreen.tsx)
+[Gradient Progress](/example/src/modules/GradientProgress/GradientProgressScreen.tsx)

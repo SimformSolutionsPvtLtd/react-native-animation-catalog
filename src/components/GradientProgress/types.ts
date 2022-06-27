@@ -15,9 +15,9 @@ export interface GradientProgressProps {
   //Gradient Color shade coordinates (give as object i.e. {x: 0, y: 0.4})
   start?: StartEndCoordinateProps;
   end?: StartEndCoordinateProps;
-  //for component
+  //child component type
   children?: ReactNode;
-  //for styling
+  //component style type
   style?: StyleProp<ViewStyle>;
   //nativeDriver activation
   useNativeDriver?: boolean;

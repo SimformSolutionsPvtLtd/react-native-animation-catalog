@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     }),
   },
   card: {
-    backgroundColor: Colors.deepOrange300,
+    backgroundColor: Colors.red100,
     borderRadius: moderateScale(10),
     height: '100%',
     width: '100%',
@@ -52,6 +52,20 @@ const styles = StyleSheet.create({
   imageStyle: {
     width: horizontalScale(40),
     height: verticalScale(40),
+  },
+  renderCardContainerStyle: {
+    flexDirection: 'column-reverse',
+    flex: 1,
+  },
+  renderCardStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-end',
+    padding: moderateScale(10),
+  },
+  renderCardButtonViewStyle: {
+    backgroundColor: Colors.redVelvet,
+    borderRadius: moderateScale(20),
   },
 });
 

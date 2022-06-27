@@ -1,8 +1,8 @@
 {
   "name": "react-native-animation-catalog",
-  "version": "1.0.0",
-  "description": "React Native component to select a specific value from a range of values",
-  "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog/blob/main/README.md",
+  "version": "0.0.1",
+  "description": "A Collection of animated React Native components",
+  "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog#readme",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Simform Solutions",
@@ -10,15 +10,15 @@
   "files": [
     "lib"
   ],
+  "repository": {"type": "git","url": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog"},
   "keywords": [
     "react",
     "react-native",
     "typescript",
-    "slider",
-    "radial",
-    "radial-slider",
-    "circular-slider",
-    "rn"
+    "rn",
+    "animation",
+    "animated component",
+    "components"
   ],
   "scripts": {
     "build": "rm -rf lib && tsc -p . && cp -R ./src/assets ./lib/",

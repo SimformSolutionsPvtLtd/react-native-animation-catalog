@@ -1,16 +1,16 @@
 # Swipeable Card
 
-```Swipeable Card``` component is basically used to swipe cards based on which direction you swipe.
-* In, Swipeable Card you need to write ```<CardSwipeable />``` as default card render.
-* This component have two different variants: ```<CardSwipeable.SwipeableCard />``` and ```<CardSwipeable.SimpleCard />```.
+```Swipeable Card``` component can be used to swipe items with custom animations.
+* ```Swipeable Card``` component have two different variants: ```<CardSwipeable.SwipeableCard />``` and ```<CardSwipeable.SimpleCard />```.
 
-> <p style="color:red;">Note:-  ⚠️ When you use <strong style="color:blue;">CardSwipeable.SwipeableCard</strong> in you app, you need to Add <a style="text-decoration: underline" href="https://docs.swmansion.com/react-native-gesture-handler/docs/1.10.3/">GestureHandleRootView</a> tag at the top of your root element which is imported from <a style="text-decoration: underline" href="https://www.npmjs.com/package/react-native-gesture-handler">react-native-gesture-handler</a> like given <a style="text-decoration: underline" href="/example/src/App.tsx">example</a> and also make sure not to give them position absolute. ⚠️ </p>
+> <p style="color:red;">⚠️ When you use <strong>CardSwipeable.SwipeableCard</strong> in your app, Make sure to wrap your root component in <a style="text-decoration: underline" href="https://docs.swmansion.com/react-native-gesture-handler/docs/1.10.3/">GestureHandleRootView</a> from <a style="text-decoration: underline" href="https://www.npmjs.com/package/react-native-gesture-handler">react-native-gesture-handler</a> and Don’t give any absolute position to GestureHandleRootView. ⚠️ </p>
 
-#### Demo
+> Check out example [here](/example/src/App.tsx)
+#### 🎬 Preview
 ----
-Swipeable Card Example One              |  Swipeable Card Example Two
+Swipeable Card              |  Simple Card
 :-------------------------:|:-------------------------:
-![alt tag](/src/assets/CardSwipeable.gif)|![alt tag](/src/assets/LeftSide.gif)
+![alt tag](/assets/CardSwipeable.gif)|![alt tag](/assets/LeftSide.gif)
 
 
 #### Default Usage
@@ -104,20 +104,21 @@ export default Card;
 ```
 
 ##### Custom Usage Preview
-![alt tag](/src/assets/CustomSwipeableCard.gif)
+![alt tag](/assets/CustomSwipeableCard.gif)
 
 ---
 #### Properties
 Props | Default | Type | Description
 :---- | :----- | :---- | :----- 
-style | ```{{height: 200, justifyContent: 'center', alignItems: 'center',margin: 20, ...Platform.select({ android: { flex: 1 }, })}}``` | ViewStyle | Styling for internal View for ```Swipeable Card```
-children | - | component | Render components
+style | ```{{height: 200, justifyContent: 'center', alignItems: 'center',margin: 20, ...Platform.select({ android: { flex: 1 }, })}}``` | ViewStyle | ```Swipeable Card``` internal view style.
+children | - | component | ```Swipeable Card``` Render child component.
+cardStyle | - | ViewStyle |```Swipeable Card``` internal card style.
 
 ---
 
 #### 2. SimpleCard
 ---
-In, this variant one Prop ```renderCard``` is type of function that gives callback function ```onLeftSwipe``` and ```onRightSwipe``` which is used as callback.
+Here we have a prop called renderCard which returns callback functions ```onLeftSwipe``` and ```onRightSwipe```.
 
 ##### Default Usage
 ```jsx
@@ -158,12 +159,12 @@ const Card = () => {
     const addItem = (prev = 0, next = 1) => sampleData.slice(prev, next);
     const [cardData, setCardData] = useState(addItem(0, 1));
     const removeItem = (id: number) => {
-            setCardData(cardData.filter(res => res.id !== id));
-            if (imageData.length === id) {
-            setCardData(addItem(0, 1));
-            } else {
-            setCardData(addItem(id, id + 1));
-            }
+        setCardData(cardData.filter(res => res.id !== id));
+        if (imageData.length === id) {
+          setCardData(addItem(0, 1));
+        } else {
+          setCardData(addItem(id, id + 1));
+        }
     };
 
     return (
@@ -215,19 +216,20 @@ export default Card;
 ```
 
 ##### Custom Usage Preview
-![alt tag](/src/assets/CustomSimpleCard.gif)
+![alt tag](/assets/CustomSimpleCard.gif)
 
 ---
 #### Properties
 Props | Default | Type | Description
 :---- | :----- | :---- | :----- 
-style | ```{{height: 200, justifyContent: 'center', alignItems: 'center',margin: 20, ...Platform.select({ android: { flex: 1 }, })}}``` | ViewStyle | Styling for internal View for ```Swipeable Card```
-renderCard | render default view | function({ onLeftSwipe,onRightSwipe }) | Render custom view for ```SimpleCard```. It's return callback functions ```onLeftSwipe``` and ```onRightSwipe```.
-onLeftSwipeEnd | - | function | It's used when Left animation ends, to perform some task.
-onRightSwipeEnd | - | function | It's used when Right animation ends, to perform some task.
+style | ```{{height: 200, justifyContent: 'center', alignItems: 'center',margin: 20, ...Platform.select({ android: { flex: 1 }, })}}``` | ViewStyle | ```Swipeable Card``` internal view style.
+renderCard | render default view | function({ onLeftSwipe,onRightSwipe }) | Renders custom view for ```SimpleCard```. It returns callback functions ```onLeftSwipe``` and ```onRightSwipe```.
+cardStyle | - | ViewStyle |```Swipeable Card``` internal card style.
+onLeftSwipeEnd | - | function | A callback function which can be used to perform tasks when Left animation ends.
+onRightSwipeEnd | - | function | A callback function which can be used to perform tasks when Right animation ends.
 
-#### Demo Example
+#### 🎬 Preview Example
 ----
-[Swipeable Card Example One](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
+[Swipeable Card](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
 
-[Swipeable Card Example Two](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
+[Simple Card](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)

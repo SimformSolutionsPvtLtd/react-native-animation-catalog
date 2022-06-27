@@ -36,6 +36,7 @@ const Colors = {
   white: '#fff',
   redVelvet: '#FF5252',
   offWhite: '#FAFAFA',
+  red100: '#FFCDD2',
 };
 
 export default Colors;
