@@ -1,4 +1,5 @@
 import AnimatedCheckMarkScreen from './AnimatedCheckMark/AnimatedCheckMark';
+import AnimatedFlickerLoaderScreen from './AnimatedFlickerLoader/AnimatedFlickerLoaderScreen';
 import AnimatedListScreen from './AnimatedList/AnimatedListScreen';
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
 import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
@@ -24,4 +25,5 @@ export {
   AnimatedWalletScreen,
   AnimatedSwitchScreen,
   AnimatedNotificationScreen,
+  AnimatedFlickerLoaderScreen,
 };

@@ -105,6 +105,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Notification',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_NOTIFICATION),
   },
+  {
+    id: 13,
+    name: 'Animated Flicker Loader',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
+  }
 ];
 
 export const FOLLOWING = [
