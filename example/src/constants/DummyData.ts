@@ -1,6 +1,6 @@
-import {NavigationStrings} from '../constants';
 import Images from '../assets';
-import {NavProps} from '../navigation/types';
+import { NavigationStrings } from '../constants';
+import { NavProps } from '../navigation/types';
 
 export const imageData = [
   {
@@ -89,6 +89,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     id: 9,
     name: 'Animated Wallet',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_WALLET),
+  },
+  {
+    id: 10,
+    name: 'Animated Scanner',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SCANNER),
   },
 ];
 

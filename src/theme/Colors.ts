@@ -1,6 +1,7 @@
 const Colors = {
   //Gradient shade 1 colors (Material Design Color --> Primary)
   lightBlue900: '#01579B',
+  lightBlue800: '#0277BD',
   lightBlue500: '#03A9F4',
   lightBlue400: '#29B6F6',
   lightBlue300: '#4FC3F7',
