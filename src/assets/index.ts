@@ -6,4 +6,5 @@ export default {
   checkMark: require('./check.png'),
   star: require('./star.png'),
   multipleStar: require('./multipleStar.png'),
+  pdf: require('./pdf.png'),
 };

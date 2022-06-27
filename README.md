@@ -8,7 +8,7 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `AnimatedList`, `AnimatedCard`, `GradientProgress`, `ParallaxHeader`, `MediaButton`.
+This custom animated component library provides multiple custom animated components like `AnimatedList`, `AnimatedCard`, `GradientProgress`, `ParallaxHeader`, `MediaButton`,```AnimatedScanner``` .
 
 - It also provides an example app and a detailed usage overview of every available component
 - All the available components are fully Android and iOS compatible.
@@ -60,7 +60,7 @@ module.exports = {
           'react-native-reanimated/plugin',
       ],
   };
-```
+``` | ![alt tag](./assets/AnimatedScanner.gif)
 
 ## Components
 
@@ -87,6 +87,11 @@ module.exports = {
 ### ⅠV. [Parallax Header](./src/components/ParallaxHeader)
 
 [More about Parallax Header component](./src/components/ParallaxHeader/README.md)
+
+---
+
+### V. [Animated Scanner](./src//components/AnimatedScanner)
+[More about Animated Scanner](./src//components/AnimatedScanner/README.md)
 
 ---
 

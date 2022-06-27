@@ -2,8 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {Text, View} from 'react-native';
 import {
-  AnimatedList,
-  ColorSet,
+  AnimatedList,ColorSet,
   GradientProgress,
 } from 'react-native-animation-catalog';
 import {CustomCard, CustomHeader} from '../../components';
