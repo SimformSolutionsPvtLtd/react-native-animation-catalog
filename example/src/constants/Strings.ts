@@ -4,6 +4,13 @@ export default {
   cardSwipeableExample: 'Card Swipeable Examples',
   animatedListHorizontalExample: 'AnimatedList Horizontal Examples',
   animatedListVerticalExample: 'AnimatedList Vertical Examples',
+  parallaxHeaderWithTabs: 'Parallax Header with Tabs',
+  openParallaxHeaderWithTabs: 'Open ParallaxHeader With Tab Example',
+  parallaxHeader: 'Parallax Header',
+  letsStart: "Let's Start",
+  follow: 'follow',
+  followers: 'Followers',
+  following: 'Following',
   SIMPLE_GRADIENT_PROGRESS_BAR: 'Simple Gradient Progress',
   CUSTOM_GRADIENT_PROGRESS: 'Custom Gradient Progress',
   GRADIENT_PROGRESS_BAR_WITH_CHILD_COMPONENT:
