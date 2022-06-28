@@ -1,4 +1,4 @@
-import type { NavProps } from '../../services/Types';
+import type { NavProps } from '../../navigation/types';
 
 export interface RenderHeadersProps {
   navigation: NavProps;

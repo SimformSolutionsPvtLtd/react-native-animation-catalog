@@ -3,7 +3,7 @@ import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxHeader, RenderDefaultProps } from 'react-native-animation-catalog';
 import { FOLLOWERS, FOLLOWING, Strings } from '../../constants';
-import type { NavProps } from '../../services/Types';
+import type { NavProps } from '../../navigation/types';
 import { Colors } from '../../theme';
 import { Header, StickyHeader } from './ParallaxHeaderScreen';
 import styles from './styles/styles';
