@@ -5,9 +5,75 @@ import { AnimatedList } from 'react-native-animation-catalog';
 import Images from '../../assets';
 import { CustomHeader } from '../../components';
 import { sampleData, Strings } from '../../constants';
-import { NavProps, SampleDataProps } from '../../services/Types';
+import { NavProps } from '../../navigation/types';
+import { SampleDataProps } from '../AnimatedList/Types';
 import styles from './styles/styles';
 
+const RenderSwipeableCardItem = ({ item }: SampleDataProps) => {
+  return (
+    <>
+      <View style={styles.backgroundImageView}>
+        <ImageBackground
+          source={item.image}
+          style={styles.backgroundHorizontalImageStyle}
+          resizeMode={'stretch'}
+        />
+        <Text style={styles.textStyle}>{item.title}</Text>
+      </View>
+
+      <View style={styles.likeCommentSectionStyle}>
+        <View style={styles.imageViewStyle}>
+          <Image source={Images.fav} style={styles.imageIconStyle} />
+        </View>
+        <View style={styles.imageViewStyle}>
+          <Image
+            source={Images.comment}
+            style={styles.imageIconStyle}
+          />
+        </View>
+        <View style={styles.imageViewStyle}>
+          <Image
+            source={Images.bookmark}
+            style={styles.imageIconStyle}
+          />
+        </View>
+      </View>
+    </>
+  )
+}
+
+const RenderSimpleCardItem = ({ item }: SampleDataProps) => {
+  return (
+    <>
+      <View style={styles.backgroundImageView}>
+        <ImageBackground
+          source={item.image}
+          style={styles.backgroundImageStyle}
+          resizeMode={'stretch'}
+        />
+        <Text style={styles.textStyle}>{item.title}</Text>
+      </View>
+
+      <View style={styles.likeCommentSectionStyle}>
+        <View style={styles.imageViewStyle}>
+          <Image source={Images.fav} style={styles.imageIconStyle} />
+        </View>
+        <View style={styles.imageViewStyle}>
+          <Image
+            source={Images.comment}
+            style={styles.imageIconStyle}
+          />
+        </View>
+        <View style={styles.imageViewStyle}>
+          <Image
+            source={Images.bookmark}
+            style={styles.imageIconStyle}
+          />
+        </View>
+      </View>
+    </>
+  )
+}
 
 const AnimatedListScreen = () => {
   const navigation = useNavigation<NavProps>();
@@ -16,7 +82,7 @@ const AnimatedListScreen = () => {
     <View style={styles.container}>
       <CustomHeader
         title={Strings.animationComponent}
-        isBack={true}
+        isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
 
@@ -33,38 +99,9 @@ const AnimatedListScreen = () => {
           horizontal={true}
           contentContainerStyle={styles.contentContainerHorizontalStyle}
           cardStyle={styles.cardHorizontalStyle}
-          renderItem={({item}: SampleDataProps) => {
-            return (
-              <>
-                <View style={styles.backgroundImageView}>
-                  <ImageBackground
-                    source={item.image}
-                    style={styles.backgroundHorizontalImageStyle}
-                    resizeMode={'stretch'}
-                  />
-                  <Text style={styles.textStyle}>{item.title}</Text>
-                </View>
-
-                <View style={styles.likeCommentSectionStyle}>
-                  <View style={styles.imageViewStyle}>
-                    <Image source={Images.fav} style={styles.imageIconStyle} />
-                  </View>
-                  <View style={styles.imageViewStyle}>
-                    <Image
-                      source={Images.comment}
-                      style={styles.imageIconStyle}
-                    />
-                  </View>
-                  <View style={styles.imageViewStyle}>
-                    <Image
-                      source={Images.bookmark}
-                      style={styles.imageIconStyle}
-                    />
-                  </View>
-                </View>
-              </>
-            );
-          }}
+          renderItem={({item}: SampleDataProps) => (
+            <RenderSwipeableCardItem item={item} />
+          )}
           ItemSeparatorComponent={() => (
             <View style={styles.separatorHorizontalStyle} />
           )}
@@ -80,38 +117,7 @@ const AnimatedListScreen = () => {
         animationType={'fade-down'}
         animationDelay={600}
         animationDuration={1200}
-        renderItem={({item}: SampleDataProps) => {
-          return (
-            <>
-              <View style={styles.backgroundImageView}>
-                <ImageBackground
-                  source={item.image}
-                  style={styles.backgroundImageStyle}
-                  resizeMode={'stretch'}
-                />
-                <Text style={styles.textStyle}>{item.title}</Text>
-              </View>
-
-              <View style={styles.likeCommentSectionStyle}>
-                <View style={styles.imageViewStyle}>
-                  <Image source={Images.fav} style={styles.imageIconStyle} />
-                </View>
-                <View style={styles.imageViewStyle}>
-                  <Image
-                    source={Images.comment}
-                    style={styles.imageIconStyle}
-                  />
-                </View>
-                <View style={styles.imageViewStyle}>
-                  <Image
-                    source={Images.bookmark}
-                    style={styles.imageIconStyle}
-                  />
-                </View>
-              </View>
-            </>
-          );
-        }}
+        renderItem={({item}: SampleDataProps) => <RenderSimpleCardItem item={item}/> }
         ItemSeparatorComponent={() => <View style={styles.separatorStyle} />}
       />
     </View>

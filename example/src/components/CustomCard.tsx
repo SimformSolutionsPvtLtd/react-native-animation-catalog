@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
-import { CustomCardProps } from '../services/Types';
+import { CustomCardProps } from './types';
 import styles from './styles/CustomCardStyles';
 
 const CustomCard = ({children, style, onPress}: CustomCardProps) => {

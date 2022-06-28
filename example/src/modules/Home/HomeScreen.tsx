@@ -7,15 +7,32 @@ import {
 import { CustomCard, CustomHeader } from '../../components';
 import { Strings } from '../../constants';
 import { AnimationComponentData } from '../../constants/DummyData';
-import { NavProps } from '../../services/Types';
+import { NavProps } from '../../navigation/types';
 import styles from './styles/styles';
+
+const RenderItems = ({
+    item,
+  }: any) => {
+    return (
+      <CustomCard style={styles.cardStyle} onPress={item.screen}>
+        <GradientProgress
+          speed={350}
+          colors={ColorSet.AccentPrimary}
+          style={styles.gradientProgressStyle}>
+          <View>
+            <Text style={styles.componentNameTextStyle}>{item.name}</Text>
+          </View>
+        </GradientProgress>
+      </CustomCard>
+    );
+};
 
 const HomeScreen = () => {
   const navigation = useNavigation<NavProps>();
 
   return (
     <View style={styles.screen}>
-      <CustomHeader title={Strings.animationComponent} isBack={false}/>
+      <CustomHeader title={Strings.animationComponent} isBackEnabled={false} />
       <AnimatedList
         animationType={'left'}
         style={styles.animatedListStyle}
@@ -25,20 +42,7 @@ const HomeScreen = () => {
         data={AnimationComponentData(navigation)}
         contentContainerStyle={styles.contentContainerStyle}
         cardStyle={styles.cardStyle}
-        renderItem={({item}) => {
-          return (
-            <CustomCard style={styles.cardStyle} onPress={item.screen}>
-              <GradientProgress
-                speed={350}
-                colors={ColorSet.AccentPrimary}
-                style={styles.gradientProgressStyle}>
-                <View>
-                  <Text style={styles.componentNameTextStyle}>{item.name}</Text>
-                </View>
-              </GradientProgress>
-            </CustomCard>
-          );
-        }}
+        renderItem={({item}) => <RenderItems item={item} />}
       />
     </View>
   );

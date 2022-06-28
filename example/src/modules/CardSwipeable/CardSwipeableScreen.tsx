@@ -9,27 +9,50 @@ import {
 import Images from '../../assets';
 import { CustomHeader } from '../../components';
 import { imageData, Strings } from '../../constants';
-import { NavProps } from '../../services/Types';
+import { NavProps } from '../../navigation/types';
 import styles from './styles/styles';
+import { RenderItems } from './types';
+
+const RenderCard = ({ onLeftSwipe, onRightSwipe, item }: RenderItems) => {
+  return (
+    <>
+      <Image source={item.image} style={styles.imageStyle} />
+      <View style={styles.leftRightButtonStyle}>
+        <TouchableOpacity onPress={onLeftSwipe}>
+          <Image
+            source={Images.like}
+            style={styles.likeDislikeButtonImageStyle}
+          />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={onRightSwipe}>
+          <Image
+            source={Images.dislike}
+            style={styles.likeDislikeButtonImageStyle}
+          />
+        </TouchableOpacity>
+      </View>
+    </>
+  );
+};
 
 const CardSwipeableScreen = () => {
   const navigation = useNavigation<NavProps>();
   const addItem = (prev = 0, next = 1) => imageData.slice(prev, next);
   const [cardData, setCardData] = useState(addItem(0, 1));
   const removeItem = (id: number) => {
-        setCardData(reject(cardData, {'id':id}));
-        if (imageData.length === id) {
+      setCardData(reject(cardData, { id }));
+      if (imageData.length === id) {
         setCardData(addItem(0, 1));
-        } else {
+      } else {
         setCardData(addItem(id, id + 1));
-        }
+      }
   };
 
   return (
     <>
       <CustomHeader
         title={Strings.cardSwipeableExample}
-        isBack={true}
+        isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
 
@@ -57,32 +80,17 @@ const CardSwipeableScreen = () => {
               onRightSwipeEnd={() => {
                 removeItem(item.id);
               }}
-              renderCard={({onLeftSwipe, onRightSwipe}: SwipeCallBackProps) => {
-                return (
-                  <>
-                    <Image source={item.image} style={styles.imageStyle} />
-                    <View style={styles.leftRightButtonStyle}>
-                      <TouchableOpacity onPress={onLeftSwipe}>
-                        <Image
-                          source={Images.like}
-                          style={styles.likeDislikeButtonImageStyle}
-                        />
-                      </TouchableOpacity>
-                      <TouchableOpacity onPress={onRightSwipe}>
-                        <Image
-                          source={Images.dislike}
-                          style={styles.likeDislikeButtonImageStyle}
-                        />
-                      </TouchableOpacity>
-                    </View>
-                  </>
-                );
-              }}
+              renderCard={({onLeftSwipe, onRightSwipe}: SwipeCallBackProps) => (
+                <RenderCard
+                  item={item}
+                  onLeftSwipe={onLeftSwipe}
+                  onRightSwipe={onRightSwipe}
+                />
+              )}
             />
           );
         })}
       </View>
-
     </>
   );
 }
