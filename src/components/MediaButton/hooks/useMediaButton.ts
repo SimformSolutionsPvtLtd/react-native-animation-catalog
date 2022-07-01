@@ -7,7 +7,7 @@ const useMediaButton = ({
   speed,
   onPlayPress = () => {},
   onPausePress = () => {},
-}: MediaButtonProps) => {
+}: Partial<MediaButtonProps>) => {
   const spinValue = useRef(new Animated.Value(0)).current;
   const [flag, setFlag] = useState(true);
 

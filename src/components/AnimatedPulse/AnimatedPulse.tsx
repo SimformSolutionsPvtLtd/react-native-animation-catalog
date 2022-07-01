@@ -1,37 +1,35 @@
-import React, { useEffect, useRef } from 'react';
-import { Animated } from 'react-native';
+import React from 'react';
+import { Animated, View } from 'react-native';
+import { useAnimatedPulse } from './hooks';
 import styles from './styles';
+import type { AnimatedPulseProps } from './types';
 
-const AnimatedPulse = ({ pulseStyle }: any) => {
-  const anim = useRef(new Animated.Value(1));
-  useEffect(() => {
-    // makes the sequence loop
-    Animated.loop(
-      // runs given animations in a sequence
-      Animated.sequence([
-        // increase size
-        Animated.timing(anim.current, {
-          toValue: 2,
-          duration: 1000,
-          useNativeDriver: true,
-        }),
-        // decrease size
-        Animated.timing(anim.current, {
-          toValue: 1,
-          duration: 1000,
-          useNativeDriver: true,
-        }),
-      ])
-    ).start();
-  }, []);
-
-  const style = styles({ anim });
+const AnimatedPulse = ({
+  pulseStyle,
+  pulseStart = 1,
+  pulseEnd = 2,
+  pulseSpeed = 1000,
+  pulseDisable = false,
+  children,
+}: AnimatedPulseProps) => {
+  const { pulseValue } = useAnimatedPulse({
+    pulseStart,
+    pulseEnd,
+    pulseSpeed,
+    pulseDisable,
+  });
 
   return (
-    <Animated.View
-      // eslint-disable-next-line react-native/no-inline-styles
-      style={[style.container, pulseStyle]}
-    />
+    <>
+      <Animated.View
+        style={[
+          styles.container,
+          pulseStyle,
+          { transform: [{ scale: pulseValue.current }] },
+        ]}
+      />
+      <View style={styles.childrenViewStyle}>{children}</View>
+    </>
   );
 };
 

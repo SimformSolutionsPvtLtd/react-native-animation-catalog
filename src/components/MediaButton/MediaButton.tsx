@@ -1,5 +1,5 @@
 import React from 'react';
-import { Animated, TouchableOpacity } from 'react-native';
+import { Animated, TouchableOpacity, View } from 'react-native';
 import Images from '../../assets';
 import { useMediaButton } from './hooks';
 import { AnimatedPulse } from '../AnimatedPulse';
@@ -9,34 +9,46 @@ import type { MediaButtonProps } from './types';
 const MediaButton = ({
   speed = 500,
   style,
+  buttonStyle,
   playImageSource = Images.play,
   pauseImageSource = Images.pause,
   imageStyle,
-  pulseStyle,
   onPlayPress = () => {},
   onPausePress = () => {},
-}: MediaButtonProps) => {
+  pulseStyle,
+  pulseStart = 1,
+  pulseEnd = 2,
+  pulseSpeed = 1000,
+  pulseDisable = false,
+}: Partial<MediaButtonProps>) => {
   const { animationEffect, animatedPauseStyle, animatedPlayStyle } =
     useMediaButton({ speed, onPlayPress, onPausePress });
 
   return (
-    <>
-      <TouchableOpacity
-        onPress={animationEffect}
-        activeOpacity={0.9}
-        style={[styles.buttonContainer, style]}
+    <View style={[styles.container, style]}>
+      <AnimatedPulse
+        pulseDisable={pulseDisable}
+        pulseEnd={pulseEnd}
+        pulseSpeed={pulseSpeed}
+        pulseStart={pulseStart}
+        pulseStyle={pulseStyle}
       >
-        <Animated.Image
-          source={playImageSource}
-          style={[styles.image, imageStyle, animatedPlayStyle]}
-        />
-        <Animated.Image
-          source={pauseImageSource}
-          style={[styles.image, imageStyle, animatedPauseStyle]}
-        />
-      </TouchableOpacity>
-      <AnimatedPulse pulseStyle={pulseStyle} />
-    </>
+        <TouchableOpacity
+          onPress={animationEffect}
+          activeOpacity={1}
+          style={[styles.buttonContainer, buttonStyle]}
+        >
+          <Animated.Image
+            source={playImageSource}
+            style={[styles.image, imageStyle, animatedPlayStyle]}
+          />
+          <Animated.Image
+            source={pauseImageSource}
+            style={[styles.image, imageStyle, animatedPauseStyle]}
+          />
+        </TouchableOpacity>
+      </AnimatedPulse>
+    </View>
   );
 };
 
