@@ -29,11 +29,10 @@ const useAnimatedPulse = ({
   );
 
   useEffect(() => {
+    pulseEffect.reset();
     if (pulseDisable) {
-      pulseEffect.reset();
       pulseEffect.stop();
     } else {
-      pulseEffect.reset();
       pulseEffect.start();
     }
   }, [pulseEnd, pulseStart, pulseSpeed, pulseEffect, pulseDisable]);

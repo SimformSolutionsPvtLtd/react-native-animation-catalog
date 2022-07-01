@@ -1,3 +1,4 @@
+![alt tag](./assets/react-native-animations.gif)
 # react-native-animation-catalog
 -------------
 [![Android](https://img.shields.io/badge/Platform-Android-green?logo=android)](https://www.android.com) [![iOS](https://img.shields.io/badge/Platform-iOS-green?logo=apple)](https://developer.apple.com/ios) [![MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
@@ -5,20 +6,20 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like ```AnimatedList```, ```SwipeableCard```, ```GradientProgress```, ```ParallaxHeader```.
+This custom animated component library provides multiple custom animated components like ```AnimatedList```, ```SwipeableCard```, ```GradientProgress```, ```ParallaxHeader```, ```MediaButton```.
 * It also provides an example app and a detailed usage overview of every available component
 * All the available components are fully Android and iOS compatible.
 * See our available <a href="#Components">Components</a>
 
 ## 🎬 Preview
 ----
-| <div style="width:270px"></div>AnimatedList (Left-Animation)               |  <div style="width:270px"></div>AnimatedList (Fadeup-Animation)              | <div style="width:270px"></div>Parallax Header
-| :-------------------------:                 |  :-------------------------:                   |:-------------------------:
-| ![alt tag](./assets/leftAnimatedList.gif)   |  ![alt tag](./assets/animatedFadeUpDown.gif)  |![alt_tag](./assets/ParallaxHeaderWithoutTabs.gif)
+| <div style="width:270px"></div>Parallax Header                |  <div style="width:270px"></div>Parallax Header (With-Tabs)               | <div style="width:270px"></div>AnimatedList (Fadeup-Animation)
+| :-------------------------:                                   |  :-------------------------:                                              |:-------------------------:
+| ![alt tag](./assets/ParallaxHeaderWithoutTabs.gif)            |  ![alt tag](./assets/ParallaxHeaderTabs.gif)                              |![alt_tag](./assets/animatedFadeUpDown.gif)
 
-| <div style="width:270px"></div>Swipeable Card                              |  <div style="width:270px"></div>Simple Card                                  | <div style="width:270px"></div>Parallax Header (With-Tabs)
-| :-------------------------:                 |  :-------------------------:                  |:-------------------------:
-| ![alt tag](./assets/CardSwipeable.gif)      |  ![alt tag](./assets/LeftSide.gif)            |![alt_tag](./assets/ParallaxHeaderTabs.gif)
+| <div style="width:270px"></div>Swipeable Card                 |  <div style="width:270px"></div>Simple Card                               | <div style="width:270px"></div>Media Button
+| :-------------------------:                                   |  :-------------------------:                                              |:-------------------------:
+| ![alt tag](./assets/CardSwipeable.gif)                        |  ![alt tag](./assets/LeftSide.gif)                                        |![alt_tag](./assets/MediaButton.gif)
 
 ## Components
 ---
@@ -36,6 +37,10 @@ This custom animated component library provides multiple custom animated compone
 ---
 ### ⅠV. [Parallax Header](./src/components/ParallaxHeader)
 [More about Parallax Header component](./src/components/ParallaxHeader/README.md)
+
+---
+### V. [Media Button](./src/components/MediaButton)
+[More about Media Button component](./src/components/MediaButton/README.md)
 
 ---
 

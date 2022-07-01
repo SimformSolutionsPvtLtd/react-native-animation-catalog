@@ -36,4 +36,13 @@ export default {
   colorSet7: ['#8E9AAF', '#CBC0D3', '#EFD3D7', '#FEEAFA', '#DEE2FF'],
   colorSet8: ['#2B2D42', '#8D99AE', '#EDF2F4', '#EF233C', '#D90429'],
   colorSet9: ['#FFBE0B', '#FB5607', '#FF006E', '#8338EC', '#3A86FF'],
+  secondPrimary: 'rgb(92, 160, 186)',
+  secondPrimary2: 'rgb(106, 166, 186)',
+  secondPrimary3: 'rgb(142, 191, 186)',
+  secondPrimary4: 'rgb(172, 211, 186)',
+  secondPrimary5: 'rgb(239, 235, 186)',
+  secondPrimary6: 'rgb(212, 222, 206)',
+  secondPrimary7: 'rgb(187, 216, 200)',
+  secondPrimary8: 'rgb(152, 197, 190)',
+  secondPrimary9: 'rgb(100, 173, 186)',
 };

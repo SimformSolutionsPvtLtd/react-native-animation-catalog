@@ -1,8 +1,8 @@
 import React from 'react';
 import { Animated, TouchableOpacity, View } from 'react-native';
 import Images from '../../assets';
-import { useMediaButton } from './hooks';
 import { AnimatedPulse } from '../AnimatedPulse';
+import { useMediaButton } from './hooks';
 import styles from './styles';
 import type { MediaButtonProps } from './types';
 
