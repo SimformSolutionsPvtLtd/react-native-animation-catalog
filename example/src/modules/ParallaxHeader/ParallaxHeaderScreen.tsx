@@ -4,7 +4,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxHeader } from 'react-native-animation-catalog';
 import Images from '../../assets';
 import { Strings } from '../../constants';
-import type { NavProps } from '../../services/Types';
+import type { NavProps } from '../../navigation/types';
 import type { RenderHeadersProps } from '../ParallaxHeader/types';
 import styles from './styles/styles';
 

@@ -1,12 +1,13 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import { NavigationStrings } from '../constants';
+import {NavigationStrings} from '../constants';
 import {
   AnimatedListScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
   HomeScreen,
+  MediaButtonScreen,
   ParallaxHeaderScreen,
   ParallaxHeaderTabScreen,
 } from '../modules';
@@ -45,6 +46,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.PARALLAX_HEADER_WITH_TABS}
           component={ParallaxHeaderTabScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.MEDIA_BUTTON}
+          component={MediaButtonScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

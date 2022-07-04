@@ -1,6 +1,6 @@
 import { NavigationStrings } from '../constants';
 import Images from '../assets';
-import {NavProps} from '../services/Types';
+import { NavProps } from '../navigation/types';
 
 export const imageData = [
   {
@@ -75,6 +75,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     screen: () =>
       navigation.navigate(NavigationStrings.PARALLAX_HEADER_WITH_TABS),
   },
+  {
+    id: 7,
+    name: 'Media Button',
+    screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
+  },
 ];
 
 export const FOLLOWING = [
@@ -146,4 +151,3 @@ export const FOLLOWERS = [
     photo: 'https://avatars.dicebear.com/api/initials/:wrons_wyen.png',
   },
 ];
-
