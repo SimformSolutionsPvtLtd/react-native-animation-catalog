@@ -22,8 +22,15 @@ const App = () => {
         />
       </View>
       <CounterButton label={'Press Here'} />
-     <View style={{marginBottom:400}}>
-      <TypingIndicator  type='sine'/>
+     <View style={{marginBottom:400,alignItems: 'center'}}>
+        <TypingIndicator 
+          dotRadius={8}
+          dotAmplitude={3}
+          dotSpacing={40}
+          dotColor={'red'}
+          dotX={0}
+          dotY={32}
+        />
      </View>
     </>
   );

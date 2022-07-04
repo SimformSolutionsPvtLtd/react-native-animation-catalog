@@ -1,4 +1,8 @@
 import TypingIndicator from './TypingIndicator';
 
 export { TypingIndicator };
-export type { TypingIndicatorProps } from './types';
+export type {
+  TypingIndicatorProps,
+  DotProps,
+  AnimationParamProps,
+} from './types';
