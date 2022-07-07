@@ -1,3 +1,4 @@
+export * from './components/AnimatedCheckMark';
 export * from './components/AnimatedList';
 export * from './components/AnimatedPulse';
 export * from './components/AnimatedCard';
