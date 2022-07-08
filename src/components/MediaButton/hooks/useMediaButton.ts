@@ -36,7 +36,7 @@ const useMediaButton = ({
   const animationEffect = () => {
     spinEffect.start(() => {
       spinEffect.reset();
-      setFlag((v) => !v);
+      setFlag(!flag);
     });
     flag ? onPlayPress() : onPausePress();
   };

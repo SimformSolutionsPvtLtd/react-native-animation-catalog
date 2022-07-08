@@ -18,4 +18,7 @@ export default {
   CHILD_COMPONENT: 'Child Component',
   CARD_SWIPEABLE: 'SwipeableCard Example',
   CARD_SIMPLE: 'SimpleCard Example',
+  DEFAULT_MEDIA_BUTTON_WITH_PULSE: 'Simple Media Button with Pulse (Default)',
+  CUSTOM_MEDIA_BUTTON_WITH_PULSE: 'Custom Media Button with Pulse',
+  SIMPLE_MEDIA_BUTTON_WITH_PULSE: 'Simple Media Button without pulse',
 };
