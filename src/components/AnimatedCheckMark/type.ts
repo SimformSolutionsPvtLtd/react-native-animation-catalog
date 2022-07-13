@@ -50,3 +50,7 @@ export interface CircularAnimatedStyle {
   size: number;
   duration: number;
 }
+export interface AnimationStyleProps {
+  size: number;
+  duration: number;
+}

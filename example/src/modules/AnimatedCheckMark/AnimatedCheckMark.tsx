@@ -19,7 +19,7 @@ const AnimatedCheckMarkScreen = () => {
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
-      <Text style={styles.variantInfo}>
+      <Text style={styles.firstVariantInfo}>
         {Strings.DEFAULT_ANIMATED_CHECK_MARK}
       </Text>
       <View style={styles.firstVariantContainer}>
@@ -32,7 +32,7 @@ const AnimatedCheckMarkScreen = () => {
           backgroundColor={Colors.redVelvet}
         />
       </View>
-      <Text style={styles.variantInfo}>
+      <Text style={styles.restVariantInfo}>
         {Strings.CIRCULAR_ANIMATED_CHECK_MARK}
       </Text>
       <View style={styles.secondVariantContainer}>
@@ -43,6 +43,17 @@ const AnimatedCheckMarkScreen = () => {
           rightBorderColor={Colors.cyan}
           bottomBorderColor={Colors.cyan}
           leftBorderColor={Colors.cyan}
+        />
+      </View>
+      <Text style={styles.restVariantInfo}>
+        {Strings.SIMPLE_ANIMATED_CHECKMARK}
+      </Text>
+      <View style={styles.secondVariantContainer}>
+        <AnimatedCheckMark.Simple
+          duration={1500}
+          backgroundColor={Colors.purple}
+          checkMarkColor={Colors.smokeWhite}
+          size={100}
         />
       </View>
     </>

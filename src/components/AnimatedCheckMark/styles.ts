@@ -34,6 +34,7 @@ const styles = ({
       backgroundColor,
     },
     image: {
+      width: moderateScale(size / 2 + (size % 10)),
       height: verticalScale(size / 2 + (size % 10)),
       position: 'absolute',
       resizeMode: 'contain',
@@ -107,6 +108,20 @@ const styles = ({
       width: size,
       height: size,
       borderRadius: size / 2,
+    },
+    checkMarkImage: {
+      position: 'absolute',
+      resizeMode: 'contain',
+      tintColor: checkMarkColor,
+    },
+    circle: {
+      height: size,
+      width: size,
+      borderRadius: size / 2,
+      backgroundColor: backgroundColor,
+      overflow: 'hidden',
+      justifyContent: 'center',
+      alignItems: 'center',
     },
   });
 

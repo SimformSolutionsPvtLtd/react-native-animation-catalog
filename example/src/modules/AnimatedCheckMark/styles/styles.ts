@@ -8,16 +8,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
+    margin: moderateScale(20),
   },
   secondVariantContainer: {
     justifyContent: 'space-around',
     alignItems: 'center',
-    margin: moderateScale(40),
+    margin: moderateScale(20),
     flexDirection: 'row',
   },
-  variantInfo: {
+  firstVariantInfo: {
     fontSize: moderateScale(16),
-    padding: moderateScale(20),
+    padding: moderateScale(22),
+    alignSelf: 'center',
+    fontWeight: '500',
+  },
+  restVariantInfo: {
+    fontSize: moderateScale(16),
+    padding: moderateScale(15),
     alignSelf: 'center',
     fontWeight: '500',
   },
