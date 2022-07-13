@@ -36,7 +36,17 @@ export interface AnimatedParticlesProps {
 export interface StyleProps {
   size: number;
   backgroundColor?: string;
-  particleColor: string;
+  particleColor?: string;
   checkMarkColor?: string;
   primaryParticleColor?: string;
+  color?: string;
+  topBorderColor?: string;
+  rightBorderColor?: string;
+  bottomBorderColor?: string;
+  leftBorderColor?: string;
+}
+
+export interface CircularAnimatedStyle {
+  size: number;
+  duration: number;
 }
