@@ -1,9 +1,8 @@
 import SimpleCard from './SimpleCard';
 import SwipeableCard from './SwipeableCard';
 
-const CardSwipeable = Object.assign(SimpleCard, {
-  SimpleCard: SimpleCard,
-  SwipeableCard: SwipeableCard,
+const AnimatedCard = Object.assign(SimpleCard, {
+  Swipeable: SwipeableCard,
 });
 
 export type {
@@ -12,4 +11,4 @@ export type {
   SwipeCallBackProps,
   SwipeCallEndProps,
 } from './types';
-export { CardSwipeable };
+export { AnimatedCard };

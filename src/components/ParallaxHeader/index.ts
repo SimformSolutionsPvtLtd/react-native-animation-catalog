@@ -1,7 +1,7 @@
-import ParallaxHeaderWithOutTab from './ParallaxHeaderWithOutTab';
+import RNParallaxHeader from './ParallaxHeader';
 import ParallaxHeaderWithTab from './ParallaxHeaderWithTab';
 
-const ParallaxHeader = Object.assign(ParallaxHeaderWithOutTab, {
+const ParallaxHeader = Object.assign(RNParallaxHeader, {
   WithTab: ParallaxHeaderWithTab,
 });
 

@@ -1,16 +1,18 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import { Image, Text, TouchableOpacity, View } from 'react-native';
-import { ParallaxHeader, RenderDefaultProps } from 'react-native-animation-catalog';
-import { FOLLOWERS, FOLLOWING, Strings } from '../../constants';
-import type { NavProps } from '../../navigation/types';
-import { Colors } from '../../theme';
-import { Header, StickyHeader } from './ParallaxHeaderScreen';
+import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {
+  ParallaxHeader,
+  RenderDefaultProps,
+} from 'react-native-animation-catalog';
+import {FOLLOWERS, FOLLOWING, Strings} from '../../constants';
+import type {NavProps} from '../../navigation/types';
+import {Colors} from '../../theme';
+import {Header, StickyHeader} from './ParallaxHeaderScreen';
 import styles from './styles/styles';
-import type { ListComponentProps } from './types';
+import type {ListComponentProps} from './types';
 
-
-const renderItems = ({ item }: RenderDefaultProps) => {
+const renderItems = ({item}: RenderDefaultProps) => {
   return (
     <TouchableOpacity>
       <View style={styles.containerTabsItem}>
@@ -21,7 +23,7 @@ const renderItems = ({ item }: RenderDefaultProps) => {
   );
 };
 
-const ListComponent = ({ title }: ListComponentProps) => {
+const ListComponent = ({title}: ListComponentProps) => {
   return (
     <View style={styles.listComponentStyle}>
       <Text style={styles.listTextComponentStyle}>{title}</Text>
@@ -56,33 +58,31 @@ const ParallaxHeaderTabScreen = () => {
       data: [],
       renderTabContent: renderItems,
       renderFlatListProps: {
-        ListEmptyComponent: () => (
-          <ListComponent title={'No Data'} />
-        ),
+        ListEmptyComponent: () => <ListComponent title={'No Data'} />,
       },
     },
   ];
 
   return (
-      <ParallaxHeader.WithTab
-        renderHeader={() => (
-          <Header
-            navigation={navigation}
-            title={Strings.parallaxHeaderWithTabs}
-          />
-        )}
-        renderStickyHeader={() => (
-          <StickyHeader
-            navigation={navigation}
-            title={Strings.parallaxHeaderWithTabs}
-          />
-        )}
-        tabs={tabsData}
-        screenOptions={{
-          tabBarActiveTintColor: Colors.redVelvet,
-          tabBarIndicatorStyle: {backgroundColor: Colors.redVelvet},
-        }}
-      />
+    <ParallaxHeader.WithTab
+      renderHeader={() => (
+        <Header
+          navigation={navigation}
+          title={Strings.PARALLAX_HEADER_WITH_TABS}
+        />
+      )}
+      renderStickyHeader={() => (
+        <StickyHeader
+          navigation={navigation}
+          title={Strings.PARALLAX_HEADER_WITH_TABS}
+        />
+      )}
+      tabs={tabsData}
+      screenOptions={{
+        tabBarActiveTintColor: Colors.redVelvet,
+        tabBarIndicatorStyle: {backgroundColor: Colors.redVelvet},
+      }}
+    />
   );
 };
 

@@ -15,7 +15,7 @@ const HEADER_HEIGHT = 48;
 
 const OVERLAY_VISIBILITY_OFFSET = 32;
 
-const useParallaxHeaderWithOutTab = () => {
+const useParallaxHeader = () => {
   const { top, bottom } = useSafeAreaInsets();
 
   const { height: screenHeight } = useWindowDimensions();
@@ -116,4 +116,4 @@ const useParallaxHeaderWithOutTab = () => {
   };
 };
 
-export default useParallaxHeaderWithOutTab;
+export default useParallaxHeader;

@@ -1,5 +1,5 @@
 import useParallaxHeaderWithTab from './useParallaxHeaderWithTab';
 import useScrollSync from './useScrollSync';
-import useParallaxHeaderWithOutTab from './useParallaxHeaderWithOutTab';
+import useParallaxHeader from './useParallaxHeader';
 
-export { useScrollSync, useParallaxHeaderWithTab, useParallaxHeaderWithOutTab };
+export { useScrollSync, useParallaxHeaderWithTab, useParallaxHeader };

@@ -1,11 +1,11 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
-import { GradientProgress } from 'react-native-animation-catalog';
-import { CustomHeader } from '../../components';
-import { Strings } from '../../constants';
-import { NavProps } from '../../navigation/types';
-import { Colors } from '../../theme';
+import {Text, TouchableOpacity, View} from 'react-native';
+import {GradientProgress} from 'react-native-animation-catalog';
+import {CustomHeader} from '../../components';
+import {Strings} from '../../constants';
+import {NavProps} from '../../navigation/types';
+import {Colors} from '../../theme';
 import styles from './styles/styles';
 
 const SimpleGradientProgressBar = () => {
@@ -30,7 +30,7 @@ const SimpleGradientProgressBar = () => {
       </View>
     </View>
   );
-}
+};
 
 const CustomGradientProgressBar = () => {
   return (
@@ -70,7 +70,7 @@ const CustomGradientProgressBar = () => {
       </View>
     </View>
   );
-}
+};
 
 const GradientProgressBarWithChild = () => {
   return (
@@ -93,7 +93,7 @@ const GradientProgressBarWithChild = () => {
       </View>
     </View>
   );
-}
+};
 
 const GradientProgressScreen = () => {
   const navigation = useNavigation<NavProps>();
@@ -101,7 +101,7 @@ const GradientProgressScreen = () => {
   return (
     <View>
       <CustomHeader
-        title={Strings.gradientProgressExample}
+        title={Strings.GRADIENT_PROGRESS_EXAMPLE}
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />

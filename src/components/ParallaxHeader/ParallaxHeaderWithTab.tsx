@@ -2,7 +2,7 @@ import {
   createMaterialTopTabNavigator,
   MaterialTopTabBarProps,
 } from '@react-navigation/material-top-tabs';
-import React, { memo, useCallback } from 'react';
+import React, { memo, useCallback, useEffect } from 'react';
 import { View } from 'react-native';
 import Animated from 'react-native-reanimated';
 import { DefaultItem, Header, StickyHeader, TabBar } from './components';
@@ -19,7 +19,7 @@ const renderDefault = ({ item }: RenderDefaultProps) => (
   <DefaultItem items={item} />
 );
 
-// default array which set as default
+// default tabs array with some data
 const defaultTabs = [
   {
     title: 'Followers',
@@ -54,7 +54,9 @@ const ParallaxHeaderWithTab = ({
     collapsedOverlayStyle,
   } = useParallaxHeaderWithTab(tabs);
 
-  onTabChange ? onTabChange({ tabIndex }) : null;
+  useEffect(() => {
+    onTabChange ? onTabChange({ tabIndex }) : null;
+  }, [onTabChange, tabIndex]);
 
   const renderTabs = tabsHandlers.map(
     useCallback(

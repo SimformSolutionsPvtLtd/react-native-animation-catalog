@@ -10,7 +10,10 @@
   "files": [
     "lib"
   ],
-  "repository": {"type": "git","url": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog"
+  },
   "keywords": [
     "react",
     "react-native",
@@ -24,7 +27,8 @@
     "build": "rm -rf lib && tsc -p . && cp -R ./src/assets ./lib/",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "example": "yarn --cwd example"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
@@ -100,6 +104,5 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "dependencies": {}
+  }
 }

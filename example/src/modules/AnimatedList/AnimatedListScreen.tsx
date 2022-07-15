@@ -1,15 +1,15 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import { Image, ImageBackground, Text, View } from 'react-native';
-import { AnimatedList } from 'react-native-animation-catalog';
+import {Image, ImageBackground, Text, View} from 'react-native';
+import {AnimatedList} from 'react-native-animation-catalog';
 import Images from '../../assets';
-import { CustomHeader } from '../../components';
-import { sampleData, Strings } from '../../constants';
-import { NavProps } from '../../navigation/types';
-import { SampleDataProps } from '../AnimatedList/Types';
+import {CustomHeader} from '../../components';
+import {sampleData, Strings} from '../../constants';
+import {NavProps} from '../../navigation/types';
+import {SampleDataProps} from '../AnimatedList/Types';
 import styles from './styles/styles';
 
-const RenderSwipeableCardItem = ({ item }: SampleDataProps) => {
+const RenderSwipeableCardItem = ({item}: SampleDataProps) => {
   return (
     <>
       <View style={styles.backgroundImageView}>
@@ -26,23 +26,17 @@ const RenderSwipeableCardItem = ({ item }: SampleDataProps) => {
           <Image source={Images.fav} style={styles.imageIconStyle} />
         </View>
         <View style={styles.imageViewStyle}>
-          <Image
-            source={Images.comment}
-            style={styles.imageIconStyle}
-          />
+          <Image source={Images.comment} style={styles.imageIconStyle} />
         </View>
         <View style={styles.imageViewStyle}>
-          <Image
-            source={Images.bookmark}
-            style={styles.imageIconStyle}
-          />
+          <Image source={Images.bookmark} style={styles.imageIconStyle} />
         </View>
       </View>
     </>
-  )
-}
+  );
+};
 
-const RenderSimpleCardItem = ({ item }: SampleDataProps) => {
+const RenderSimpleCardItem = ({item}: SampleDataProps) => {
   return (
     <>
       <View style={styles.backgroundImageView}>
@@ -59,21 +53,15 @@ const RenderSimpleCardItem = ({ item }: SampleDataProps) => {
           <Image source={Images.fav} style={styles.imageIconStyle} />
         </View>
         <View style={styles.imageViewStyle}>
-          <Image
-            source={Images.comment}
-            style={styles.imageIconStyle}
-          />
+          <Image source={Images.comment} style={styles.imageIconStyle} />
         </View>
         <View style={styles.imageViewStyle}>
-          <Image
-            source={Images.bookmark}
-            style={styles.imageIconStyle}
-          />
+          <Image source={Images.bookmark} style={styles.imageIconStyle} />
         </View>
       </View>
     </>
-  )
-}
+  );
+};
 
 const AnimatedListScreen = () => {
   const navigation = useNavigation<NavProps>();
@@ -81,13 +69,13 @@ const AnimatedListScreen = () => {
   return (
     <View style={styles.container}>
       <CustomHeader
-        title={Strings.animationComponent}
+        title={Strings.ANIMATION_COMPONENT}
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
 
       <Text style={styles.titleTextStyle}>
-        {Strings.animatedListHorizontalExample}
+        {Strings.ANIMATEDLIST_HORIZONTAL_EXAMPLE}
       </Text>
       <View style={styles.horizontalViewStyle}>
         <AnimatedList
@@ -109,7 +97,7 @@ const AnimatedListScreen = () => {
       </View>
 
       <Text style={styles.titleTextStyle}>
-        {Strings.animatedListVerticalExample}
+        {Strings.ANIMATEDLIST_VERTICAL_EXAMPLE}
       </Text>
       <AnimatedList
         data={sampleData}
@@ -117,11 +105,13 @@ const AnimatedListScreen = () => {
         animationType={'fade-down'}
         animationDelay={600}
         animationDuration={1200}
-        renderItem={({item}: SampleDataProps) => <RenderSimpleCardItem item={item}/> }
+        renderItem={({item}: SampleDataProps) => (
+          <RenderSimpleCardItem item={item} />
+        )}
         ItemSeparatorComponent={() => <View style={styles.separatorStyle} />}
       />
     </View>
   );
-}
+};
 
 export default AnimatedListScreen;
