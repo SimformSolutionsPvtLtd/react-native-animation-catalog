@@ -10,7 +10,7 @@ import {
 import Animated from 'react-native-reanimated';
 import { Header, StickyHeader } from './components';
 import { data, FOLLOWERS, Strings } from './constants';
-import { useParallaxHeaderWithOutTab } from './hooks';
+import { useParallaxHeader } from './hooks';
 import styles from './styles';
 import type { ParallaxHeaderProps, RenderCardsProps } from './types';
 
@@ -57,7 +57,7 @@ const RenderCards = ({ value, index }: RenderCardsProps) => {
   );
 };
 
-const ParallaxHeaderWithOutTab = ({
+const ParallaxHeader = ({
   renderHeader,
   renderStickyHeader,
   stickyHeadertitle,
@@ -70,7 +70,7 @@ const ParallaxHeaderWithOutTab = ({
     sharedProps,
     headerContainerStyle,
     collapsedOverlayStyle,
-  } = useParallaxHeaderWithOutTab();
+  } = useParallaxHeader();
 
   return (
     <View style={styles.container}>
@@ -100,4 +100,4 @@ const ParallaxHeaderWithOutTab = ({
   );
 };
 
-export default memo(ParallaxHeaderWithOutTab);
+export default memo(ParallaxHeader);

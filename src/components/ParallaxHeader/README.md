@@ -1,69 +1,73 @@
 # Parallax Header
 
-```Parallax Header``` component can be used to show Parallax Header with custom animations.
-* ```Parallax Header``` component have two different variants: ```<ParallaxHeader />``` and ```<ParallaxHeader.WithTab />```.
+`Parallax Header` component can be used to show Parallax Header with custom animations.
+
+- `Parallax Header` component have two different variants: `<ParallaxHeader />` and `<ParallaxHeader.WithTab />`.
 
 #### 🎬 Preview
-----
-Parallax Header              |  Parallax Header (With-Tabs)
-:-------------------------:|:-------------------------
-![alt_tag](/assets/ParallaxHeaderWithoutTabs.gif)|![alt_tag](/assets/ParallaxHeaderTabs.gif)
+
+---
+
+|                  Parallax Header                  | Parallax Header (With-Tabs)                |
+| :-----------------------------------------------: | :----------------------------------------- |
+| ![alt_tag](/assets/ParallaxHeaderWithoutTabs.gif) | ![alt_tag](/assets/ParallaxHeaderTabs.gif) |
 
 #### Default Usage
+
 ---
+
 ```jsx
 import React from 'react';
 import { ParallaxHeader } from 'react-native-animation-catalog';
 
-const ParallaxHeader = () => {
-    return (
-        <ParallaxHeader />
-    );
-}
+const ParallaxHeader = () => <ParallaxHeader />;
 
 export default ParallaxHeader;
 ```
 
 #### 1. ParallaxHeader
+
 ---
+
 ##### Usage
+
 ```jsx
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxHeader } from 'react-native-animation-catalog';
 
 const Header = () => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.headerViewStyle}>
-            <Text style={styles.headerTextStyle}>Design Header</Text>
-            <Text style={styles.description}>Let's Start</Text>
-            <TouchableOpacity style={styles.followTouchableStyle}>
-                <Text style={styles.textFollow}>follow</Text>
-            </TouchableOpacity>
-            </View>
-        </View>
-    )
-}
+  return (
+    <View style={styles.container}>
+      <View style={styles.headerViewStyle}>
+        <Text style={styles.headerTextStyle}>Design Header</Text>
+        <Text style={styles.description}>Let's Start</Text>
+        <TouchableOpacity style={styles.followTouchableStyle}>
+          <Text style={styles.textFollow}>follow</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
 
 const StickyHeader = () => {
-    return (
-        <View style={styles.headerViewStyle}>
-            <Text style={styles.stickyHeaderStyle}>Design Header</Text>
-        </View>
-    )
-}
+  return (
+    <View style={styles.headerViewStyle}>
+      <Text style={styles.stickyHeaderStyle}>Design Header</Text>
+    </View>
+  );
+};
 
 const ParallaxHeader = () => {
-    return (
-        <View style={styles.screen}>
-            <ParallaxHeader 
-              renderHeader={() => <Header />}
-              renderStickyHeader={() => <StickyHeader />}
-            />
-        </View>
-    );
-}
+  return (
+    <View style={styles.screen}>
+      <ParallaxHeader
+        renderHeader={() => <Header />}
+        renderStickyHeader={() => <StickyHeader />}
+      />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   screen: {
@@ -82,10 +86,10 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     color: '#FF5252',
   },
-  stickyHeaderStyle:{
-    fontSize: 25, 
-    fontWeight: '500', 
-    color: '#FF5252'
+  stickyHeaderStyle: {
+    fontSize: 25,
+    fontWeight: '500',
+    color: '#FF5252',
   },
   description: {
     fontSize: 15,
@@ -111,46 +115,52 @@ export default ParallaxHeader;
 ```
 
 ##### Usage Preview
+
 ![alt tag](/assets/ParallaxHeaderSimple.gif)
 
 #### Properties
-Props | Default | Type | Description
-:---- | :----- | :---- | :----- 
-renderHeader | - | function | Renders custom header for ```ParallaxHeader```.
-renderStickyHeader | - | function | Renders custom sticky header for ```ParallaxHeader```.
-stickyHeadertitle | - | string | ```title``` of display in default sticky header.
-children | - | component | ```ParallaxHeader``` render child component.
 
--------
+| Props              | Default | Type      | Description                                        |
+| :----------------- | :------ | :-------- | :------------------------------------------------- |
+| renderHeader       | -       | function  | Renders custom header for `ParallaxHeader`.        |
+| renderStickyHeader | -       | function  | Renders custom sticky header for `ParallaxHeader`. |
+| stickyHeadertitle  | -       | string    | `title` of display in default sticky header.       |
+| children           | -       | component | `ParallaxHeader` render child component.           |
+
+---
 
 #### 2. ParallaxHeader-WithTabs
+
 ---
-* ```Parallax Header``` with tabs have tabs prop which is array that include with fix type of defining array.
+
+- `Parallax Header` with tabs have tabs prop which is array that include with fix type of defining array.
 
 ##### defining array
+
 ```jsx
 const array = [
-    {
-        title: string,
-        data: array,
-        renderTabContent: component,
-        tabOptions: object,
-        renderFlatListProps: object,
-
-    }
-]
+  {
+    title: string,
+    data: array,
+    renderTabContent: component,
+    tabOptions: object,
+    renderFlatListProps: object,
+  },
+];
 ```
-#### Array field
-Field                                   | Type          | Description
-:----                                   | :-----        | :---- 
-<strong>title*</strong>                 | string        | Tab name which is always unique.
-<strong>data*</strong>                                   | array         | Array of object to display items in tab list.
-<strong>renderTabContent*</strong>                       | component     | Renders tab item content in tab list.
-tabOptions                              | object        | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#options">Tab options</a> which is use to customize your tabs.
-renderFlatListProps                     | any           | <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a> props.
 
+#### Array field
+
+| Field                               | Type      | Description                                                                                                                         |
+| :---------------------------------- | :-------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+| <strong>title\*</strong>            | string    | Tab name which is always unique.                                                                                                    |
+| <strong>data\*</strong>             | array     | Array of object to display items in tab list.                                                                                       |
+| <strong>renderTabContent\*</strong> | component | Renders tab item content in tab list.                                                                                               |
+| tabOptions                          | object    | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#options">Tab options</a> which is use to customize your tabs. |
+| renderFlatListProps                 | any       | <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a> props.                                                           |
 
 ##### Usage
+
 ```jsx
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
@@ -230,40 +240,40 @@ interface RenderItemsProps {
   item: {
     photo: string,
     name: string,
-  }
+  };
 }
 
 interface RenderListComponent {
-  title: string
+  title: string;
 }
 
 const Header = () => {
-    return (
-        <View style={styles.container}>
-            <View style={styles.headerViewStyle}>
-            <Text style={styles.headerTextStyle}>Design Header</Text>
-            <Text style={styles.description}>Let's Start</Text>
-            <TouchableOpacity style={styles.followTouchableStyle}>
-                <Text style={styles.textFollow}>follow</Text>
-            </TouchableOpacity>
-            </View>
-        </View>
-    )
-}
+  return (
+    <View style={styles.container}>
+      <View style={styles.headerViewStyle}>
+        <Text style={styles.headerTextStyle}>Design Header</Text>
+        <Text style={styles.description}>Let's Start</Text>
+        <TouchableOpacity style={styles.followTouchableStyle}>
+          <Text style={styles.textFollow}>follow</Text>
+        </TouchableOpacity>
+      </View>
+    </View>
+  );
+};
 
 const StickyHeader = () => {
-    return (
-        <View style={styles.headerViewStyle}>
-            <Text style={styles.stickyHeaderStyle}>Design Header</Text>
-        </View>
-    )
-}
+  return (
+    <View style={styles.headerViewStyle}>
+      <Text style={styles.stickyHeaderStyle}>Design Header</Text>
+    </View>
+  );
+};
 
 const renderItems = ({ item }: RenderItemsProps) => {
   return (
     <TouchableOpacity>
       <View style={styles.containerTabsItem}>
-        <Image style={styles.imageTabsItem} source={{uri: item.photo}} />
+        <Image style={styles.imageTabsItem} source={{ uri: item.photo }} />
         <Text style={styles.nameTabsItem}>{item.name}</Text>
       </View>
     </TouchableOpacity>
@@ -278,51 +288,50 @@ const ListComponent = ({ title }: RenderListComponent) => {
   );
 };
 
-
 const ParallaxHeader = () => {
-    const tabsData = [
-        {
-            title: 'Tab 1',
-            data: FOLLOWERS,
-            renderTabContent: renderItems,
-            tabOptions: {
-                tabBarLabel: 'Followers',
-            },
-            renderFlatListProps: {
-                ListHeaderComponent: () => (
-                <ListComponent title={'Header of Component'} />
-                ),
-            },
-        },
-        {
-            title: 'Following',
-            data: FOLLOWING,
-            renderTabContent: renderItems,
-        },
-        {
-            title: 'About',
-            data: [],
-            renderTabContent: renderItems,
-            renderFlatListProps: {
-                ListEmptyComponent: () => <ListComponent title={'No Data'} />,
-            },
-        },
-    ];
+  const tabsData = [
+    {
+      title: 'Tab 1',
+      data: FOLLOWERS,
+      renderTabContent: renderItems,
+      tabOptions: {
+        tabBarLabel: 'Followers',
+      },
+      renderFlatListProps: {
+        ListHeaderComponent: () => (
+          <ListComponent title={'Header of Component'} />
+        ),
+      },
+    },
+    {
+      title: 'Following',
+      data: FOLLOWING,
+      renderTabContent: renderItems,
+    },
+    {
+      title: 'About',
+      data: [],
+      renderTabContent: renderItems,
+      renderFlatListProps: {
+        ListEmptyComponent: () => <ListComponent title={'No Data'} />,
+      },
+    },
+  ];
 
-    return (
-        <View style={styles.screen}>
-            <ParallaxHeader.WithTab 
-              renderHeader={() => <Header />}
-              renderStickyHeader={() => <StickyHeader />}
-              tabs={tabsData}
-              screenOptions={{
-                tabBarActiveTintColor: '#FF5252',
-                tabBarIndicatorStyle: {backgroundColor: '#FF5252'},
-              }}
-            />
-        </View>
-    );
-}
+  return (
+    <View style={styles.screen}>
+      <ParallaxHeader.WithTab
+        renderHeader={() => <Header />}
+        renderStickyHeader={() => <StickyHeader />}
+        tabs={tabsData}
+        screenOptions={{
+          tabBarActiveTintColor: '#FF5252',
+          tabBarIndicatorStyle: { backgroundColor: '#FF5252' },
+        }}
+      />
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   screen: {
@@ -341,10 +350,10 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     color: '#FF5252',
   },
-  stickyHeaderStyle:{
-    fontSize: 25, 
-    fontWeight: '500', 
-    color: '#FF5252'
+  stickyHeaderStyle: {
+    fontSize: 25,
+    fontWeight: '500',
+    color: '#FF5252',
   },
   description: {
     fontSize: 15,
@@ -394,22 +403,26 @@ export default ParallaxHeader;
 ```
 
 ##### Usage Preview
+
 ![alt tag](/assets/ParallaxHeaderWithTabs.gif)
 
 #### Properties
-Props | Default | Type | Description
-:---- | :----- | :---- | :----- 
-renderHeader | - | function | Renders custom header for ```ParallaxHeader```.
-renderStickyHeader | - | function | Renders custom sticky header for ```ParallaxHeader```.
-tabs | - | array | Array for render tabs and includes with their view and list style.
-screenOptions | - | MaterialTopTabNavigationOptions | Default <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#options">options</a> to use for the screens in the navigator.
-onTabChange | - | function | A callback function which can be returns an active index.
-backBehavior | firstRoute | string | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Back Behavior</a> are ```firstRoute```, ```initialRoute```, ```order```, ```history``` and ```none```.
-tabBarPosition | top | string | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Position</a> of the tab bar in the tab view. Values are ```top``` and ```bottom```
-initialRouteName | - | string | The name of the route to render on first load of the navigator.
+
+| Props              | Default    | Type                            | Description                                                                                                                                                     |
+| :----------------- | :--------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| renderHeader       | -          | function                        | Renders custom header for `ParallaxHeader`.                                                                                                                     |
+| renderStickyHeader | -          | function                        | Renders custom sticky header for `ParallaxHeader`.                                                                                                              |
+| tabs               | -          | array                           | Array for render tabs and includes with their view and list style.                                                                                              |
+| screenOptions      | -          | MaterialTopTabNavigationOptions | Default <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#options">options</a> to use for the screens in the navigator.                     |
+| onTabChange        | -          | function                        | A callback function which can be returns an active index.                                                                                                       |
+| backBehavior       | firstRoute | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Back Behavior</a> are `firstRoute`, `initialRoute`, `order`, `history` and `none`. |
+| tabBarPosition     | top        | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Position</a> of the tab bar in the tab view. Values are `top` and `bottom`         |
+| initialRouteName   | -          | string                          | The name of the route to render on first load of the navigator.                                                                                                 |
 
 #### 🎬 Preview Example
-----
+
+---
+
 [Parallax Header](/example/src/modules/ParallaxHeader/ParallaxHeaderScreen.tsx)
 
 [ParallaxHeader-WithTabs](/example/src/modules/ParallaxHeader/ParallaxHeaderTabScreen.tsx)

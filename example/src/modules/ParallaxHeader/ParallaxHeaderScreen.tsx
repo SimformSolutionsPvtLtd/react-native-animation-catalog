@@ -19,9 +19,9 @@ export const Header = ({ navigation, title }: RenderHeadersProps) => {
       <Image style={styles.photo} source={Images.avatar} />
       <View style={styles.textContainer}>
         <Text style={styles.name}>{title}</Text>
-        <Text style={styles.description}>{Strings.letsStart}</Text>
+        <Text style={styles.description}>{Strings.LETS_START}</Text>
         <TouchableOpacity style={styles.followTouchableStyle}>
-          <Text style={styles.textFollow}>{Strings.follow}</Text>
+          <Text style={styles.textFollow}>{Strings.FOLLOW}</Text>
         </TouchableOpacity>
       </View>
     </>
@@ -36,9 +36,7 @@ export const StickyHeader = ({ navigation, title }: RenderHeadersProps) => {
         onPress={() => navigation.goBack()}>
         <Image style={styles.backButtonImageStyle} source={Images.arrow_back} />
       </TouchableOpacity>
-      <Text style={styles.textStickyHeader}>
-        {title}
-      </Text>
+      <Text style={styles.textStickyHeader}>{title}</Text>
       <View style={styles.backButtonImageStyle} />
     </View>
   );
@@ -50,10 +48,10 @@ const ParallaxHeaderScreen = () => {
   return (
     <ParallaxHeader
       renderHeader={() => (
-        <Header navigation={navigation} title={Strings.parallaxHeader} />
+        <Header navigation={navigation} title={Strings.PARALLAX_HEADER} />
       )}
       renderStickyHeader={() => (
-        <StickyHeader navigation={navigation} title={Strings.parallaxHeader} />
+        <StickyHeader navigation={navigation} title={Strings.PARALLAX_HEADER} />
       )}
     />
   );
