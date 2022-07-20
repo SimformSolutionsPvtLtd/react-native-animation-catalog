@@ -1,9 +1,18 @@
 # Parallax Header
-
+---
 `Parallax Header` component can be used to show Parallax Header with custom animations.
 
-- `Parallax Header` component have two different variants: `<ParallaxHeader />` and `<ParallaxHeader.WithTab />`.
+- Parallax Header component have two different variants: `<ParallaxHeader />` and `<ParallaxHeader.WithTab />`.
 
+> Note: Make sure to wrap your root component / entry point with SafeAreaProvider
+
+```jsx
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+export default const App = () => {
+  return <SafeAreaProvider>{/* content */}</SafeAreaProvider>;
+}
+```
 #### 🎬 Preview
 
 ---
@@ -19,22 +28,30 @@
 ```jsx
 import React from 'react';
 import { ParallaxHeader } from 'react-native-animation-catalog';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-const ParallaxHeader = () => <ParallaxHeader />;
+const ParallaxHeaderScreen = () => {
+  return (
+    <SafeAreaProvider>
+      <ParallaxHeader />
+    </SafeAreaProvider>
+  )
+};
 
-export default ParallaxHeader;
+export default ParallaxHeaderScreen;
 ```
 
-#### 1. ParallaxHeader
+### 1. ParallaxHeader
 
 ---
 
 ##### Usage
-
+---
 ```jsx
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxHeader } from 'react-native-animation-catalog';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Header = () => {
   return (
@@ -58,14 +75,16 @@ const StickyHeader = () => {
   );
 };
 
-const ParallaxHeader = () => {
+const ParallaxHeaderScreen = () => {
   return (
-    <View style={styles.screen}>
-      <ParallaxHeader
-        renderHeader={() => <Header />}
-        renderStickyHeader={() => <StickyHeader />}
-      />
-    </View>
+    <SafeAreaProvider>
+      <View style={styles.screen}>
+        <ParallaxHeader
+          renderHeader={() => <Header />}
+          renderStickyHeader={() => <StickyHeader />}
+        />
+      </View>
+    </SafeAreaProvider>
   );
 };
 
@@ -111,30 +130,40 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ParallaxHeader;
+export default ParallaxHeaderScreen;
 ```
 
-##### Usage Preview
-
+#### 🎬 Usage Preview
+---
 ![alt tag](/assets/ParallaxHeaderSimple.gif)
 
 #### Properties
-
+---
 | Props              | Default | Type      | Description                                        |
 | :----------------- | :------ | :-------- | :------------------------------------------------- |
-| renderHeader       | -       | function  | Renders custom header for `ParallaxHeader`.        |
-| renderStickyHeader | -       | function  | Renders custom sticky header for `ParallaxHeader`. |
-| stickyHeadertitle  | -       | string    | `title` of display in default sticky header.       |
-| children           | -       | component | `ParallaxHeader` render child component.           |
+| renderHeader       | -       | function  | Render custom header for ParallaxHeader.        |
+| renderStickyHeader | -       | function  | Render   custom sticky header for ParallaxHeader. |
+| stickyHeadertitle  | -       | string    | Title of display in default sticky header.       |
+| children           | -       | component | Render child component.           |
 
 ---
 
-#### 2. ParallaxHeader-WithTabs
+### 2. ParallaxHeader-WithTabs
 
 ---
 
 - `Parallax Header` with tabs have tabs prop which is array that include with fix type of defining array.
 
+> Note: Make sure to wrap your root component / entry point with NavigationContainer
+
+```jsx
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+
+export default const App = () => {
+  return <SafeAreaProvider><NavigationContainer>{/* content */}</NavigationContainer></SafeAreaProvider>;
+}
+```
 ##### defining array
 
 ```jsx
@@ -150,7 +179,7 @@ const array = [
 ```
 
 #### Array field
-
+---
 | Field                               | Type      | Description                                                                                                                         |
 | :---------------------------------- | :-------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | <strong>title\*</strong>            | string    | Tab name which is always unique.                                                                                                    |
@@ -160,11 +189,13 @@ const array = [
 | renderFlatListProps                 | any       | <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a> props.                                                           |
 
 ##### Usage
-
+---
 ```jsx
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { ParallaxHeader } from 'react-native-animation-catalog';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
 
 const FOLLOWING = [
   {
@@ -288,7 +319,7 @@ const ListComponent = ({ title }: RenderListComponent) => {
   );
 };
 
-const ParallaxHeader = () => {
+const ParallaxHeaderScreen = () => {
   const tabsData = [
     {
       title: 'Tab 1',
@@ -319,17 +350,21 @@ const ParallaxHeader = () => {
   ];
 
   return (
-    <View style={styles.screen}>
-      <ParallaxHeader.WithTab
-        renderHeader={() => <Header />}
-        renderStickyHeader={() => <StickyHeader />}
-        tabs={tabsData}
-        screenOptions={{
-          tabBarActiveTintColor: '#FF5252',
-          tabBarIndicatorStyle: { backgroundColor: '#FF5252' },
-        }}
-      />
-    </View>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        <View style={styles.screen}>
+          <ParallaxHeader.WithTab
+            renderHeader={() => <Header />}
+            renderStickyHeader={() => <StickyHeader />}
+            tabs={tabsData}
+            screenOptions={{
+              tabBarActiveTintColor: '#FF5252',
+              tabBarIndicatorStyle: { backgroundColor: '#FF5252' },
+            }}
+          />
+        </View>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 
@@ -399,24 +434,24 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ParallaxHeader;
+export default ParallaxHeaderScreen;
 ```
 
-##### Usage Preview
-
+#### 🎬 Usage Preview
+---
 ![alt tag](/assets/ParallaxHeaderWithTabs.gif)
 
 #### Properties
 
 | Props              | Default    | Type                            | Description                                                                                                                                                     |
 | :----------------- | :--------- | :------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| renderHeader       | -          | function                        | Renders custom header for `ParallaxHeader`.                                                                                                                     |
-| renderStickyHeader | -          | function                        | Renders custom sticky header for `ParallaxHeader`.                                                                                                              |
+| renderHeader       | -          | function                        | Render custom header for ParallaxHeader.                                                                                                                     |
+| renderStickyHeader | -          | function                        | Render custom sticky header for ParallaxHeader.                                                                                                              |
 | tabs               | -          | array                           | Array for render tabs and includes with their view and list style.                                                                                              |
 | screenOptions      | -          | MaterialTopTabNavigationOptions | Default <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#options">options</a> to use for the screens in the navigator.                     |
 | onTabChange        | -          | function                        | A callback function which can be returns an active index.                                                                                                       |
-| backBehavior       | firstRoute | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Back Behavior</a> are `firstRoute`, `initialRoute`, `order`, `history` and `none`. |
-| tabBarPosition     | top        | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Position</a> of the tab bar in the tab view. Values are `top` and `bottom`         |
+| backBehavior       |  | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Back Behavior</a> are `firstRoute`, `initialRoute`, `order`, `history` and `none`. |
+| tabBarPosition     |         | string                          | <a href="https://reactnavigation.org/docs/material-top-tab-navigator/#props">Position</a> of the tab bar in the tab view. Values are `top` and `bottom`         |
 | initialRouteName   | -          | string                          | The name of the route to render on first load of the navigator.                                                                                                 |
 
 #### 🎬 Preview Example

@@ -8,7 +8,7 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `AnimatedList`, `SwipeableCard`, `GradientProgress`, `ParallaxHeader`, `MediaButton`.
+This custom animated component library provides multiple custom animated components like `AnimatedList`, `AnimatedCard`, `GradientProgress`, `ParallaxHeader`, `MediaButton`.
 
 - It also provides an example app and a detailed usage overview of every available component
 - All the available components are fully Android and iOS compatible.
