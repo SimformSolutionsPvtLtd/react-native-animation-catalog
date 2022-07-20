@@ -1,10 +1,10 @@
 # Gradient Progress
-
+---
 `Gradient Progress` component can be used to show Gradient Progress Bar with custom gradient animations.
 
-- `Gradient Progress` also use as background gradient.
+- Gradient Progress also use as background gradient.
 
->  <p style="color:red;">You should pass <strong style="color:blue;">four or more</strong> in an array to see the proper gradient effect.</p>
+> Note: You should pass four or more colors in an array to see the proper gradient effect.
 
 #### 🎬 Preview
 
@@ -33,22 +33,23 @@ export default ProgressBar;
 
 ```jsx
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { GradientProgress } from 'react-native-animation-catalog';
 
+const colorSet = ['#FFBE0B', '#FB5607', '#FF006E', '#8338EC', '#3A86FF'];
+
 const GradientBackground = () => {
-  const colorSet9 = ['#FFBE0B', '#FB5607', '#FF006E', '#8338EC', '#3A86FF'];
 
   return (
     <View style={styles.gradientChildViewStyle}>
       <GradientProgress
-        colors={colorSet9}
+        colors={colorSet}
         speed={1000}
         start={{ x: 0.3, y: 0 }}
         end={{ x: 1, y: 1 }}
         style={styles.gradientChildStyle}
       >
-        <Text style={styles.textChildStyle}>{Strings.CHILD_COMPONENT}</Text>
+        <Text style={styles.textChildStyle}>Child Component</Text>
         <TouchableOpacity style={styles.clickButtonStyle}>
           <Text style={styles.clickTextStyle}>Click Here!!!</Text>
         </TouchableOpacity>
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textChildStyle: {
-    color: Colors.white,
+    color: '#fff',
     alignItems: 'center',
     fontSize: 18,
     paddingBottom: 20,
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   clickButtonStyle: {
-    backgroundColor: Colors.smokeWhite,
+    backgroundColor: '#F8F8FF',
     borderRadius: 20,
     marginHorizontal: 100,
     justifyContent: 'center',
@@ -95,22 +96,19 @@ const styles = StyleSheet.create({
 export default GradientBackground;
 ```
 
-##### Custom Usage Preview
-
-![alt tag](/assets/CustomGradientProgress.gif)
-
+#### 🎬 Custom Usage Preview
 ---
-
+![alt tag](/assets/CustomGradientProgress.gif)
 #### Properties
-
+---
 | Props    | Default                                                                               | Type      | Description                                                             |
 | :------- | :------------------------------------------------------------------------------------ | :-------- | :---------------------------------------------------------------------- |
-| colors   | ColorSet.Primary                                                                      | array     | `Colors` is colors of array which are displayed in `Gradient Progress`. |
-| speed    | 200                                                                                   | number    | `Speed` is the speed of gradient moving.                                |
-| start    | `{ x: 0, y: 0.2 }`                                                                    | object    | `start` is `x` and `y` starting coordinates of gradient.                |
-| end      | `{ x: 1, y: 0.2 }`                                                                    | object    | `end` is `x` and `y` ending coordinates of gradient.                    |
-| style    | `{{ width: '100%', height: '0.50%', flexDirection: 'column', alignItems: 'stretch'}}` | ViewStyle | `Gradient Progress` internal view style.                                |
-| children | -                                                                                     | component | `children` render child component.                                      |
+| colors   | ColorSet.Primary                                                                      | array     | Set of the colors which are displayed in Gradient Progress|
+| speed    | 200                                                                                   | number    | Speed of gradient moving.                                |
+| start    | { x: 0, y: 0.2 }                                                                    | object    | In start, x and y are starting coordinates of the gradient            |
+| end      | { x: 1, y: 0.2 }                                                                    | object    | In end, x and y are ending coordinates of the gradient.                    |
+| style    |{}| ViewStyle | Inner container style.                                |
+| children | -                                                                                     | function | Render child component.                                      |
 
 #### 🎬 Preview Example
 
