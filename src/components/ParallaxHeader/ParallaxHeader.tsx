@@ -60,7 +60,7 @@ const RenderCards = ({ value, index }: RenderCardsProps) => {
 const ParallaxHeader = ({
   renderHeader,
   renderStickyHeader,
-  stickyHeadertitle,
+  stickyHeaderTitle,
   children,
 }: Partial<ParallaxHeaderProps>) => {
   const {
@@ -79,7 +79,7 @@ const ParallaxHeader = ({
       </Animated.View>
       <Animated.View style={collapsedOverlayStyle}>
         {!renderStickyHeader ? (
-          <StickyHeader name={stickyHeadertitle} />
+          <StickyHeader name={stickyHeaderTitle} />
         ) : (
           <StickyHeader>{renderStickyHeader()}</StickyHeader>
         )}

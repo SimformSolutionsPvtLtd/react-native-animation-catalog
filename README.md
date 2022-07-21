@@ -22,7 +22,7 @@ This custom animated component library provides multiple custom animated compone
 | :------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------: |
 | ![alt tag](./assets/ParallaxHeaderWithoutTabs.gif) |        ![alt tag](./assets/ParallaxHeaderTabs.gif)         | ![alt_tag](./assets/animatedFadeUpDown.gif) |
 
-| <div style="width:270px"></div>Swipeable Card | <div style="width:270px"></div>Simple Card | <div style="width:270px"></div>Media Button |
+| <div style="width:270px"></div>Swipeable Card | <div style="width:270px"></div>Animated Card | <div style="width:270px"></div>Media Button |
 | :-------------------------------------------: | :----------------------------------------: | :-----------------------------------------: |
 |    ![alt tag](./assets/CardSwipeable.gif)     |     ![alt tag](./assets/LeftSide.gif)      |    ![alt_tag](./assets/MediaButton.gif)     |
 
@@ -36,9 +36,9 @@ This custom animated component library provides multiple custom animated compone
 
 ---
 
-### ⅠI. [Swipeable Card](./src/components/CardSwipeable)
+### ⅠI. [Animated Card](./src/components/CardSwipeable)
 
-[More about Swipeable component](./src/components/CardSwipeable/README.md)
+[More about AnimatedCard component](./src/components/CardSwipeable/README.md)
 
 ---
 

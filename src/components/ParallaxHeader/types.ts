@@ -82,7 +82,7 @@ export interface AnimatedFlatListProps {
 export interface ParallaxHeaderProps {
   renderHeader: () => React.ReactElement;
   renderStickyHeader: () => React.ReactElement;
-  stickyHeadertitle: string;
+  stickyHeaderTitle: string;
   children: ReactNode;
 }
 

@@ -48,26 +48,23 @@ interface AnimalDataProp {
     }
   ];
 
-const AnimationList = () => {
-
-  return (
+const AnimationList = () =>(
     <AnimatedList
       data={animalData}
       animationType={'left'}
       animationDelay={600}
       cardStyle={styles.cardStyle}
       animationDuration={1200}
-      renderItem={({item}: AnimalDataProp) => {
-        return (
+      renderItem={({item}: AnimalDataProp) => (
           <View style={styles.itemStyle}>
             <Text>{item.name}</Text>
           </View>
-        );
-      }}
+        )
+      }
       ItemSeparatorComponent={() => <View style={styles.separatorStyle} />}
     />
   );
-}
+
 
 const styles = StyleSheet.create({
   cardStyle:{
@@ -91,15 +88,15 @@ export default AnimationList;
 
 | Props                                            | Default | Type      | Description                                                                 |
 | :----------------------------------------------- | :------ | :-------- | :-------------------------------------------------------------------------- |
-| <strong style="color:red;">data\*</strong>       | -       | array     | Data is a plain array containing the items to render.                       |
-| <strong style="color:red;">renderItem\*</strong> | -       | function  | renderItem takes an item from data and renders it into the list.        |
-| animationType                                    | fade-up | string    | AnimationType are left, right, bottom, fade-up and fade-down.   |
-| animationDelay                                   | 600     | number    | Animation Delay between items display.                                      |
+| <strong style="color:red;">data\*</strong>       | -       | array     | Data is a plain array containing the items to render                       |
+| <strong style="color:red;">renderItem\*</strong> | -       | function  | renderItem takes an item from data and renders it into the list        |
+| animationType                                    | fade-up | string    | AnimationType are left, right, bottom, fade-up and fade-down  |
+| animationDelay                                   | 600     | number    | Animation Delay between items display                                      |
 | animationDuration                                | 1500    | number    | Animation Duration of display items                                         |
-| horizontal                                       | false   | boolean   | If true, show list horizontally. If false show vertically default.    |
-| ItemSeparatorComponent                           | -       | function  | ItemSeparatorComponent is used for each item, but not at the top or bottom. |
-| style                                            | {}      | ViewStyle | Inner container style.                                       |
-| cardStyle                                        | {}      | ViewStyle | Inner card style.                                            |
+| horizontal                                       | false   | boolean   | If true, show list horizontally. If false show vertically default    |
+| ItemSeparatorComponent                           | -       | function  | ItemSeparatorComponent is used for each item, but not at the top or bottom |
+| style                                            | {}      | ViewStyle | Container style                                      |
+| cardStyle                                        | {}      | ViewStyle | Card style                                            |
 
 >Check out more <a href="https://reactnative.dev/docs/flatlist#props">FlatList</a> Props
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, View } from 'react-native';
 import Animated, { Layout, ZoomIn } from 'react-native-reanimated';
-import { Colors } from './../../theme';
+import { Colors } from '../../theme';
 import { useAnimatedCard } from './hooks';
 import styles from './styles';
 import type { SimpleCardProps, SwipeCallBackProps } from './types';
@@ -29,7 +29,7 @@ const RenderCard = ({ onLeftSwipe, onRightSwipe }: SwipeCallBackProps) => {
   );
 };
 
-const SimpleCard = ({
+const AnimatedCard = ({
   style,
   renderCard,
   onLeftSwipeEnd,
@@ -58,4 +58,4 @@ const SimpleCard = ({
   );
 };
 
-export default SimpleCard;
+export default AnimatedCard;

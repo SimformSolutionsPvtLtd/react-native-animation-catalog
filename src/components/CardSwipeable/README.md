@@ -1,10 +1,10 @@
-# Swipeable Card
+# Animated Card
 
-`Swipeable Card` component can be used to swipe items with custom animations.
+`Animated Card` component can be used to swipe items with custom animations.
 
-- `Swipeable Card` component have two different variants:`<AnimatedCard />` and `<AnimatedCard.Swipeable />`.
+- AnimatedCard component has two different variants as default and swipeable.
 
-> <p style="color:red;">⚠️ When you use <strong>AnimatedCard.Swipeable</strong> in your app, Make sure to wrap your root component in <a style="text-decoration: underline" href="https://docs.swmansion.com/react-native-gesture-handler/docs/1.10.3/">GestureHandleRootView</a> from <a style="text-decoration: underline" href="https://www.npmjs.com/package/react-native-gesture-handler">react-native-gesture-handler</a> and Don’t give any absolute position to GestureHandleRootView. ⚠️ </p>
+> <p style="color:red;">⚠️ For <strong>swipeable animated card </strong>component, Make sure to wrap your root component / enetry point with <a style="text-decoration: underline" href="https://docs.swmansion.com/react-native-gesture-handler/docs/1.10.3/">GestureHandleRootView</a> And don’t give any absolute position to GestureHandleRootView. ⚠️ </p>
 
 > Check out example [here](/example/src/App.tsx)
 
@@ -12,15 +12,14 @@
 
 ---
 
-|            Swipeable Card             |           Simple Card            |
+|            Swipeable Card             |           Animated Card            |
 | :-----------------------------------: | :------------------------------: |
 | ![alt tag](/assets/CardSwipeable.gif) | ![alt tag](/assets/LeftSide.gif) |
 
 
 
 ## Swipeable
-- Using Swipeable we can swipe a card from left to right or right to left.
----
+-  Swipeable Card variant can be used to swipe a card from left to right or right to left
 
 #### Default Usage
 ---
@@ -98,16 +97,16 @@ export default Card;
 ---
 | Props     | Default | Type      | Description                              |
 | :-------- | :------ | :-------- | :--------------------------------------- |
-| style     | {}      | ViewStyle | Inner container style.  |
-| children  | -       | function  | Render child component. |
-| cardStyle | {}       | ViewStyle | Inner card style.       |
+| style     | {}      | ViewStyle | Container style  |
+| children  | -       | function  | Render child component |
+| cardStyle | {}       | ViewStyle | Card style       |
 
 
-## SimpleCard
+## Animated Card
 
 ---
 
-- We have a prop called renderCard which returns callback functions `onLeftSwipe` and `onRightSwipe`.
+- It has a prop called renderCard that returns callback functions `onLeftSwipe` and `onRightSwipe`.
 
 ##### Default Usage
 ---
@@ -168,15 +167,14 @@ const Card = () => {
         onRightSwipeEnd={() => {
           removeItem(item.id);
         }}
-        renderCard={({ onLeftSwipe, onRightSwipe }: SwipeCallBackProps) => {
-          return (
+        renderCard={({ onLeftSwipe, onRightSwipe }: SwipeCallBackProps) =>  (
             <View style={styles.viewStyle}>
               <Text style={styles.textStyle}>{item.name}</Text>
               <Button title='Left Click' onPress={onLeftSwipe} />
               <Button title='Right Click' onPress={onRightSwipe} />
             </View>
-          );
-        }}
+          )
+        }
       />
     );
   });
@@ -211,11 +209,11 @@ export default Card;
 ---
 | Props           | Default | Type      | Description                                                                                           |
 | :-------------- | :------ | :-------- | :---------------------------------------------------------------------------------------------------- |
-| style           | {}      | ViewStyle | Inner container style.                                                               |
-| renderCard      | -       | function  | Renders custom view for SimpleCard. It returns callback functions onLeftSwipe and onRightSwipe. |
-| cardStyle       | {}      | ViewStyle | Inner card style.                                                                    |
-| onLeftSwipeEnd  | -       | function  | A callback function which can be used to perform tasks when Left animation ends.                      |
-| onRightSwipeEnd | -       | function  | A callback function which can be used to perform tasks when Right animation ends.                     |
+| style           | {}      | ViewStyle | Container style                                                               |
+| renderCard      | -       | function  | Renders custom view for Animatedcard. It returns callback functions onLeftSwipe and onRightSwipe |
+| cardStyle       | {}      | ViewStyle | Card style                                                                    |
+| onLeftSwipeEnd  | -       | function  | A callback function which can be used to perform tasks when Left animation ends                      |
+| onRightSwipeEnd | -       | function  | A callback function which can be used to perform tasks when Right animation ends                     |
 
 #### 🎬 Preview Example
 
@@ -223,4 +221,4 @@ export default Card;
 
 [Swipeable Card](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
 
-[Simple Card](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
+[Animated Card](/example/src/modules/CardSwipeable/CardSwipeableScreen.tsx)
