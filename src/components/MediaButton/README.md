@@ -1,8 +1,6 @@
 # Media Button
 ---
-`Media Button` component can be used for any type of handling events with custom pulse animations.
-
-- Media Button also provides a customized pulse effect around the buttons and you can handle callback events.
+` Media Button` component comes with custom animation and a customized pulse effect around the buttons
 
 #### 🎬 Preview
 
@@ -64,19 +62,19 @@ export default MediaButtonScreen;
 ---
 | Props            | Default                                                                                                                    | Type                | Description                                |
 | :--------------- | :------------------------------------------------------------------------------------------------------------------------- | :------------------ | :----------------------------------------- |
-| speed            | 500                                                                                                                        | number              | Speed of icon rotations.    |
-| style            | {}                         | ViewStyle           | Media Button view style.                 |
-| buttonStyle      |{}| ViewStyle           | Media Button internal button style. |
-| imageStyle       | {}                                                                                                                          | ImageStyle          | Media Button internal image style.       |
-| playImageSource  | -                                                                                                                          | ImageSourcePropType | Play image source path.                       |
-| pauseImageSource | -                                                                                                                          | ImageSourcePropType | Pause image source path.                       |
-| onPlayPress      | -                                                                                                                          | function            | Play callback function.     |
-| onPausePress     | -                                                                                                                          | function            | Pause callback function.    |
-| pulseStyle       | {}                                  | ViewStyle           | Animated Pulse inner view style.      |
-| pulseStart       | 1                                                                                                                          | number              | Animated Pulse starting scale value.     |
-| pulseEnd         | 2                                                                                                                          | number              | Animated Pulse ending scale value.       |
-| pulseSpeed       | 1000                                                                                                                       | number              | Animated Pulse pulsing effect speed.     |
-| pulseDisable     | false                                                                                                                      | number              | Animated Pulse disable pulse effect.     |
+| speed            | 500                                                                                                                        | number              | Speed of icon rotation    |
+| style            | {}                         | ViewStyle           | Container style.                 |
+| buttonStyle      |{}| ViewStyle           | Button container style |
+| imageStyle       | {}                                                                                                                          | ImageStyle          |  Button image style       |
+| playImageSource  | -                                                                                                                          | ImageSourcePropType | Play image source path                       |
+| pauseImageSource | -                                                                                                                          | ImageSourcePropType | Pause image source path                       |
+| onPlayPress      | -                                                                                                                          | function            | Play callback function     |
+| onPausePress     | -                                                                                                                          | function            | Pause callback function    |
+| pulseStyle       | {}                                  | ViewStyle           | Pulse view style      |
+| pulseStart       | 1                                                                                                                          | number              | Pulse starting scale value     |
+| pulseEnd         | 2                                                                                                                          | number              | Pulse ending scale value       |
+| pulseSpeed       | 1000                                                                                                                       | number              | Pulse effect speed     |
+| pulseDisable     | false                                                                                                                      | number              | Disable pulse effect     |
 
 
 #### 🎬 Preview Example

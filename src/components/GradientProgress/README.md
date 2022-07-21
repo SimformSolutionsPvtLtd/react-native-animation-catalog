@@ -1,8 +1,6 @@
 # Gradient Progress
 ---
-`Gradient Progress` component can be used to show Gradient Progress Bar with custom gradient animations.
-
-- Gradient Progress also use as background gradient.
+`Gradient Progress` component can be used to show Gradient Progress Bar with custom gradient animations and also can be used as a background gradient
 
 > Note: You should pass four or more colors in an array to see the proper gradient effect.
 
@@ -38,9 +36,7 @@ import { GradientProgress } from 'react-native-animation-catalog';
 
 const colorSet = ['#FFBE0B', '#FB5607', '#FF006E', '#8338EC', '#3A86FF'];
 
-const GradientBackground = () => {
-
-  return (
+const GradientBackground = () => (
     <View style={styles.gradientChildViewStyle}>
       <GradientProgress
         colors={colorSet}
@@ -56,7 +52,7 @@ const GradientBackground = () => {
       </GradientProgress>
     </View>
   );
-};
+
 
 const styles = StyleSheet.create({
   gradientChildViewStyle: {
@@ -104,11 +100,11 @@ export default GradientBackground;
 | Props    | Default                                                                               | Type      | Description                                                             |
 | :------- | :------------------------------------------------------------------------------------ | :-------- | :---------------------------------------------------------------------- |
 | colors   | ColorSet.Primary                                                                      | array     | Set of the colors which are displayed in Gradient Progress|
-| speed    | 200                                                                                   | number    | Speed of gradient moving.                                |
+| speed    | 200                                                                                   | number    | Speed of gradient animation                                |
 | start    | { x: 0, y: 0.2 }                                                                    | object    | In start, x and y are starting coordinates of the gradient            |
-| end      | { x: 1, y: 0.2 }                                                                    | object    | In end, x and y are ending coordinates of the gradient.                    |
-| style    |{}| ViewStyle | Inner container style.                                |
-| children | -                                                                                     | function | Render child component.                                      |
+| end      | { x: 1, y: 0.2 }                                                                    | object    | In end, x and y are ending coordinates of the gradient                    |
+| style    |{}| ViewStyle | Container style                                |
+| children | -                                                                                     | function | Render child component                                      |
 
 #### 🎬 Preview Example
 

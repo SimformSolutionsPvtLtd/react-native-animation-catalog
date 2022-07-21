@@ -1,7 +1,7 @@
-import SimpleCard from './SimpleCard';
+import RNAnimatedCard from './AnimatedCard';
 import SwipeableCard from './SwipeableCard';
 
-const AnimatedCard = Object.assign(SimpleCard, {
+const AnimatedCard = Object.assign(RNAnimatedCard, {
   Swipeable: SwipeableCard,
 });
 
