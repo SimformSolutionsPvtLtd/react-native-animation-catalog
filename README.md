@@ -36,9 +36,9 @@ This custom animated component library provides multiple custom animated compone
 
 ---
 
-### ⅠI. [Animated Card](./src/components/CardSwipeable)
+### ⅠI. [Animated Card](./src/components/AnimatedCard)
 
-[More about AnimatedCard component](./src/components/CardSwipeable/README.md)
+[More about AnimatedCard component](./src/components/AnimatedCard/README.md)
 
 ---
 

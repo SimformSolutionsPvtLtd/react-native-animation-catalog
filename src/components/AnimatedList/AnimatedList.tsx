@@ -1,8 +1,10 @@
 import React from 'react';
-import { FlatList } from 'react-native';
+import { FlatList, FlatListProps } from 'react-native';
 import AnimatedCard from './AnimatedCard';
 import styles from './styles';
 import type { AnimatedListProps, RenderItemProps } from './types';
+
+type FlatProps = FlatListProps<any>;
 
 const AnimatedList = ({
   data,
@@ -15,7 +17,7 @@ const AnimatedList = ({
   cardStyle,
   horizontal,
   ...rest
-}: AnimatedListProps) => {
+}: AnimatedListProps & FlatProps) => {
   return (
     <FlatList
       style={[styles.flatListStyle, style]}
