@@ -75,8 +75,8 @@ const useAnimatedCard = ({
     .onEnd(({ velocityX }) => {
       const animationWidth =
         translateX.value > 0 && velocityX > 0
-          ? Metrics.width + 200
-          : -Metrics.width - 200;
+          ? Metrics.width + Metrics.width
+          : -Metrics.width - Metrics.width;
       translateX.value = withSpring(animationWidth, { velocity: velocityX });
     });
 
