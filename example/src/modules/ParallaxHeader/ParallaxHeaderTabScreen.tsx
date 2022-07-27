@@ -43,9 +43,7 @@ const ParallaxHeaderTabScreen = () => {
         tabBarLabel: 'Followers',
       },
       renderFlatListProps: {
-        ListHeaderComponent: () => (
-          <ListComponent title={'Header of Component'} />
-        ),
+        ListHeaderComponent: () => <ListComponent title={'List Header'} />,
       },
     },
     {
@@ -66,15 +64,12 @@ const ParallaxHeaderTabScreen = () => {
   return (
     <ParallaxHeader.WithTab
       renderHeader={() => (
-        <Header
-          navigation={navigation}
-          title={Strings.PARALLAX_HEADER_WITH_TABS}
-        />
+        <Header navigation={navigation} title={Strings.HEADER_PROFILE_NAME} />
       )}
       renderStickyHeader={() => (
         <StickyHeader
           navigation={navigation}
-          title={Strings.PARALLAX_HEADER_WITH_TABS}
+          title={Strings.HEADER_PROFILE_NAME}
         />
       )}
       tabs={tabsData}

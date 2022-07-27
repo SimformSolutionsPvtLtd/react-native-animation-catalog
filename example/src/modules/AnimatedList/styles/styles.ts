@@ -1,5 +1,5 @@
-import { StyleSheet } from "react-native";
-import { Colors, Metrics } from '../../../theme';
+import {StyleSheet} from 'react-native';
+import {Colors, Metrics} from '../../../theme';
 
 const {verticalScale, horizontalScale, moderateScale} = Metrics;
 
@@ -10,9 +10,9 @@ const styles = StyleSheet.create({
   titleTextStyle: {
     color: Colors.black,
     textAlign: 'center',
-    fontSize: moderateScale(16),
-    marginTop: verticalScale(5),
-    fontWeight: '400',
+    fontSize: moderateScale(18),
+    fontWeight: '500',
+    margin: moderateScale(20),
   },
   separatorStyle: {
     height: verticalScale(30),
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
   backgroundImageStyle: {
     height: verticalScale(200),
   },
-  horizontalViewStyle:{
-    height: verticalScale(235)
+  horizontalViewStyle: {
+    height: verticalScale(235),
   },
-  contentContainerHorizontalStyle:{
+  contentContainerHorizontalStyle: {
     marginStart: horizontalScale(10),
   },
-  cardHorizontalStyle:{
+  cardHorizontalStyle: {
     width: horizontalScale(190),
   },
   backgroundHorizontalImageStyle: {

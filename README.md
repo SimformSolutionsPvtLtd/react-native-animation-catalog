@@ -22,9 +22,9 @@ This custom animated component library provides multiple custom animated compone
 | :------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------: |
 | ![alt tag](./assets/ParallaxHeaderWithoutTabs.gif) |        ![alt tag](./assets/ParallaxHeaderTabs.gif)         | ![alt_tag](./assets/animatedFadeUpDown.gif) |
 
-| <div style="width:270px"></div>Swipeable Card | <div style="width:270px"></div>Animated Card | <div style="width:270px"></div>Media Button |
-| :-------------------------------------------: | :----------------------------------------: | :-----------------------------------------: |
-|    ![alt tag](./assets/CardSwipeable.gif)     |     ![alt tag](./assets/LeftSide.gif)      |    ![alt_tag](./assets/MediaButton.gif)     |
+| <div style="width:270px"></div>Gradient Progress | <div style="width:270px"></div>Animated Card | <div style="width:270px"></div>Media Button |
+| :----------------------------------------------: | :------------------------------------------: | :-----------------------------------------: |
+|    ![alt tag](./assets/GradientProgress.gif)     |    ![alt tag](./assets/AnimatedCard.gif)     |    ![alt_tag](./assets/MediaButton.gif)     |
 
 ## Components
 

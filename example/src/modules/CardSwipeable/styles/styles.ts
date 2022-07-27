@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 
 import {Colors, Metrics} from '../../../theme';
 
@@ -11,12 +11,13 @@ const styles = StyleSheet.create({
   cardTextStyle: {
     width: '100%',
     textAlign: 'center',
-    fontSize: moderateScale(16),
+    fontSize: moderateScale(18),
     color: Colors.black,
-    fontWeight: '400',
+    fontWeight: '500',
   },
   cardStyle: {
     height: verticalScale(200),
+    marginTop: verticalScale(40),
   },
   imageStyle: {
     width: '100%',
