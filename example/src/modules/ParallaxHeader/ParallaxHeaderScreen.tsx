@@ -48,10 +48,13 @@ const ParallaxHeaderScreen = () => {
   return (
     <ParallaxHeader
       renderHeader={() => (
-        <Header navigation={navigation} title={Strings.PARALLAX_HEADER} />
+        <Header navigation={navigation} title={Strings.HEADER_PROFILE_NAME} />
       )}
       renderStickyHeader={() => (
-        <StickyHeader navigation={navigation} title={Strings.PARALLAX_HEADER} />
+        <StickyHeader
+          navigation={navigation}
+          title={Strings.HEADER_PROFILE_NAME}
+        />
       )}
     />
   );

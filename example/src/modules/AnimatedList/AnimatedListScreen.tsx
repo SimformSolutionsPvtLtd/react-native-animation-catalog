@@ -69,13 +69,13 @@ const AnimatedListScreen = () => {
   return (
     <View style={styles.container}>
       <CustomHeader
-        title={Strings.ANIMATION_COMPONENT}
+        title={Strings.ANIMATED_LIST}
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
 
       <Text style={styles.titleTextStyle}>
-        {Strings.ANIMATEDLIST_HORIZONTAL_EXAMPLE}
+        {Strings.ANIMATEDLIST_HORIZONTAL}
       </Text>
       <View style={styles.horizontalViewStyle}>
         <AnimatedList
@@ -96,9 +96,7 @@ const AnimatedListScreen = () => {
         />
       </View>
 
-      <Text style={styles.titleTextStyle}>
-        {Strings.ANIMATEDLIST_VERTICAL_EXAMPLE}
-      </Text>
+      <Text style={styles.titleTextStyle}>{Strings.ANIMATEDLIST_VERTICAL}</Text>
       <AnimatedList
         data={sampleData}
         style={styles.animatedListStyle}

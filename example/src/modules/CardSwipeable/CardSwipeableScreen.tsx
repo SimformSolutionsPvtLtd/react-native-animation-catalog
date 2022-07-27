@@ -48,13 +48,13 @@ const CardSwipeableScreen = () => {
   return (
     <>
       <CustomHeader
-        title={Strings.CARD_SWIPEABLE_EXAMPLE}
+        title={Strings.CARD_SWIPEABLE}
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
 
       <View style={styles.swipeableCardView}>
-        <Text style={styles.cardTextStyle}>{Strings.CARD_SWIPEABLE}</Text>
+        <Text style={styles.cardTextStyle}>{Strings.SWIPEABLE_CARD}</Text>
         {imageData.map((item, index) => {
           return (
             <AnimatedCard.Swipeable key={item.id} style={styles.cardStyle}>
