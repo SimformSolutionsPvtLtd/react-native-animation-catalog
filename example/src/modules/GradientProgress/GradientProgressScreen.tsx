@@ -101,7 +101,7 @@ const GradientProgressScreen = () => {
   return (
     <View>
       <CustomHeader
-        title={Strings.GRADIENT_PROGRESS_EXAMPLE}
+        title={Strings.GRADIENT_PROGRESS}
         isBackEnabled={true}
         onBackPress={() => navigation.goBack()}
       />
