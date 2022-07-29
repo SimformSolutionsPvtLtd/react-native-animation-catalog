@@ -40,7 +40,7 @@ const useAnimatedCard = ({
 
   const onLeftSwipe = () => {
     translateX.value = withTiming(
-      -Metrics.width - 150,
+      -(2 * Metrics.width),
       {
         duration: 1000,
       },
@@ -52,7 +52,7 @@ const useAnimatedCard = ({
 
   const onRightSwipe = () => {
     translateX.value = withTiming(
-      Metrics.width + 150,
+      2 * Metrics.width,
       {
         duration: 1000,
       },
@@ -72,11 +72,9 @@ const useAnimatedCard = ({
     .onUpdate(({ translationX }) => {
       translateX.value = offset.value.x + translationX;
     })
-    .onEnd(({ velocityX }) => {
+    .onEnd(({ velocityX = 15 }) => {
       const animationWidth =
-        translateX.value > 0 && velocityX > 0
-          ? Metrics.width + Metrics.width
-          : -Metrics.width - Metrics.width;
+        translateX?.value > 0 ? 2 * Metrics.width : -(2 * Metrics.width);
       translateX.value = withSpring(animationWidth, { velocity: velocityX });
     });
 
