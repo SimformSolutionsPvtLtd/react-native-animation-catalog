@@ -46,7 +46,7 @@ const useParallaxHeaderWithTab = (tabs: any) => {
 
   const headerDiff = heightExpanded - heightCollapsed;
 
-  const rendered = headerHeight > 0;
+  const rendered = headerHeight >= 0;
 
   const handleHeaderLayout = useCallback<NonNullable<ViewProps['onLayout']>>(
     (event) => setHeaderHeight(event.nativeEvent.layout.height),
