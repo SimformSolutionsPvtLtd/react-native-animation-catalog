@@ -119,6 +119,9 @@ Check out our [Contributing Guide](CONTRIBUTING.md) for ideas on contributing.
 
 For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog/issues)
 
+## Awesome Mobile Libraries
+- Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries)
+
 ### License
 
 - [MIT License](./LICENSE)
