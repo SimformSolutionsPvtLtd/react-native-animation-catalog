@@ -1,6 +1,6 @@
-import { NavigationStrings } from '../constants';
+import {NavigationStrings} from '../constants';
 import Images from '../assets';
-import { NavProps } from '../navigation/types';
+import {NavProps} from '../navigation/types';
 
 export const imageData = [
   {
@@ -79,6 +79,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     id: 7,
     name: 'Media Button',
     screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
+  },
+  {
+    id: 8,
+    name: 'Animated Check Mark',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_CHECK_MARK),
   },
 ];
 

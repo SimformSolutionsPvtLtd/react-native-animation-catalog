@@ -3,4 +3,7 @@ export default {
   reactNative: require('./react_native.png'),
   play: require('./play.png'),
   pause: require('./pause.png'),
+  checkMark: require('./check.png'),
+  star: require('./star.png'),
+  multipleStar: require('./multipleStar.png'),
 };
