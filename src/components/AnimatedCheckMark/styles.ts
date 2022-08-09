@@ -10,6 +10,10 @@ const styles = ({
   particleColor,
   checkMarkColor,
   primaryParticleColor,
+  topBorderColor,
+  rightBorderColor,
+  bottomBorderColor,
+  leftBorderColor,
 }: StyleProps) =>
   StyleSheet.create({
     primaryCircle: {
@@ -52,6 +56,58 @@ const styles = ({
     primaryParticle: { position: 'absolute', tintColor: primaryParticleColor },
     leftParticle: { marginLeft: horizontalScale(-size * 0.25) },
     rightParticle: { marginLeft: horizontalScale(size * 0.25) },
+    parentCircle: {
+      width: size,
+      height: size,
+      borderWidth: 5,
+      borderRadius: size / 2,
+      borderColor: 'transparent',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 1,
+    },
+    progressCircle: {
+      width: size,
+      height: size,
+      position: 'absolute',
+      borderWidth: 5,
+      borderRadius: size / 2,
+      zIndex: 2,
+    },
+    topRightViewStyle: {
+      borderLeftColor: 'transparent',
+      borderBottomColor: 'transparent',
+      borderRightColor: 'transparent',
+      borderTopColor: topBorderColor,
+    },
+    bottomRightViewStyle: {
+      borderLeftColor: 'transparent',
+      borderBottomColor: 'transparent',
+      borderRightColor: rightBorderColor,
+      borderTopColor: 'transparent',
+    },
+    bottomLeftViewStyle: {
+      borderLeftColor: 'transparent',
+      borderBottomColor: bottomBorderColor,
+      borderRightColor: 'transparent',
+      borderTopColor: 'transparent',
+    },
+    topLeftViewStyle: {
+      borderLeftColor: leftBorderColor,
+      borderBottomColor: 'transparent',
+      borderRightColor: 'transparent',
+      borderTopColor: 'transparent',
+    },
+    checkMark: {
+      position: 'absolute',
+      resizeMode: 'contain',
+      tintColor: checkMarkColor,
+    },
+    checkMarkBackground: {
+      width: size,
+      height: size,
+      borderRadius: size / 2,
+    },
   });
 
 export default styles;
