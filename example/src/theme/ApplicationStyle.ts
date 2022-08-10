@@ -1,11 +1,11 @@
 import { StyleSheet } from 'react-native';
 import { Metrics } from 'react-native-animation-catalog';
-import { Colors } from './index';
+import Colors from './Colors';
 
 const applicationStyle = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: Colors.blue700
+    backgroundColor: Colors.blue700,
   },
 });
 

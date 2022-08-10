@@ -26,4 +26,5 @@ export default {
     '●  Animated Checkmark with fade effect and particles(default)',
   CIRCULAR_ANIMATED_CHECK_MARK:
     '●  Animated Checkmark with simple circular effect',
+  SIMPLE_ANIMATED_CHECKMARK: '●  Animated Checkmark with simple effect',
 };
