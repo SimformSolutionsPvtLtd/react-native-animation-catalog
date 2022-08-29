@@ -85,6 +85,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Check Mark',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_CHECK_MARK),
   },
+  {
+    id: 9,
+    name: 'Animated Wallet',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_WALLET),
+  },
 ];
 
 export const FOLLOWING = [
