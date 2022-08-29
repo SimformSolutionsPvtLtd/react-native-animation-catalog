@@ -37,6 +37,8 @@ const Colors = {
   redVelvet: '#FF5252',
   offWhite: '#FAFAFA',
   red100: '#FFCDD2',
+  red: '#f51e0f',
+  orange: '#f07a05',
 };
 
 export default Colors;

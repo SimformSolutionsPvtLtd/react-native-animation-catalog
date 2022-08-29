@@ -5,6 +5,7 @@ import { NavigationStrings } from '../constants';
 import {
   AnimatedCheckMarkScreen,
   AnimatedListScreen,
+  AnimatedWalletScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
   HomeScreen,
@@ -57,6 +58,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_CHECK_MARK}
           component={AnimatedCheckMarkScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_WALLET}
+          component={AnimatedWalletScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
