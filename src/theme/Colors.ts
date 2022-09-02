@@ -40,6 +40,8 @@ const Colors = {
   red100: '#FFCDD2',
   red: '#f51e0f',
   orange: '#f07a05',
+  kournikova: '#ffe767',
+  darkModerateViolet: '#513788',
 };
 
 export default Colors;

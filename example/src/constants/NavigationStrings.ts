@@ -9,4 +9,5 @@ export default {
   MEDIA_BUTTON: 'Media Button',
   ANIMATED_CHECK_MARK: 'Animated Check Mark',
   ANIMATED_WALLET: 'Animated Wallet',
+  ANIMATED_SWITCH: 'Animated Switch',
 };

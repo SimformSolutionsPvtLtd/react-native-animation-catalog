@@ -1,4 +1,4 @@
-import { Dimensions } from 'react-native';
+import { Dimensions, PixelRatio } from 'react-native';
 
 let { width, height } = Dimensions.get('window');
 if (width > height) {
@@ -17,10 +17,13 @@ const verticalScale = (size: number) => (height / guidelineBaseHeight) * size;
 const moderateScale = (size: number, factor = 0.5) =>
   size + (horizontalScale(size) - size) * factor;
 
+const { roundToNearestPixel } = PixelRatio;
+
 export default {
   horizontalScale,
   verticalScale,
   moderateScale,
   width,
   height,
+  roundToNearestPixel,
 };

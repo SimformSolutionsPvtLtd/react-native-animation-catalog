@@ -7,12 +7,13 @@ import {
   AnimatedListScreen,
   AnimatedScannerScreen,
   AnimatedWalletScreen,
+  AnimatedSwitchScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
   HomeScreen,
   MediaButtonScreen,
   ParallaxHeaderScreen,
-  ParallaxHeaderTabScreen,
+  ParallaxHeaderTabScreen
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -70,6 +71,11 @@ const Routes = () => {
           name={NavigationStrings.ANIMATED_SCANNER}
           component={AnimatedScannerScreen}
           options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_SWITCH}
+          component={AnimatedSwitchScreen}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>
