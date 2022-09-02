@@ -95,6 +95,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Scanner',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_SCANNER),
   },
+  {
+    id: 11,
+    name: 'Animated Switch',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SWITCH),
+  },
 ];
 
 export const FOLLOWING = [

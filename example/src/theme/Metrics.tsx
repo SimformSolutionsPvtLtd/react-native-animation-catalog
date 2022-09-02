@@ -1,4 +1,4 @@
-import { Dimensions, Platform } from 'react-native';
+import { Dimensions, PixelRatio, Platform } from 'react-native';
 
 let { width, height } = Dimensions.get('window');
 if (width > height) {
@@ -17,8 +17,16 @@ const verticalScale = (size: number) => (height / guidelineBaseHeight) * size;
 const moderateScale = (size: number, factor = 0.5) =>
   size + (horizontalScale(size) - size) * factor;
 
+const { roundToNearestPixel } = PixelRatio;
+
 const globalMetrics = {
   isAndroid: Platform.OS !== 'ios',
 };
 
-export default { globalMetrics, horizontalScale, verticalScale, moderateScale };
+export default {
+  globalMetrics,
+  horizontalScale,
+  verticalScale,
+  moderateScale,
+  roundToNearestPixel,
+};

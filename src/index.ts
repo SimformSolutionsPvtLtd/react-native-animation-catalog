@@ -4,6 +4,7 @@ export * from './components/AnimatedList';
 export * from './components/AnimatedPulse';
 export * from './components/AnimatedScanner';
 export * from './components/AnimatedWallet';
+export * from './components/AnimatedSwitch';
 export * from './components/GradientProgress';
 export * from './components/MediaButton';
 export * from './components/ParallaxHeader';

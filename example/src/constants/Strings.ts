@@ -27,5 +27,6 @@ export default {
   CIRCULAR_ANIMATED_CHECK_MARK:
     '●  Animated Checkmark with simple circular effect',
   SIMPLE_ANIMATED_CHECKMARK: '●  Animated Checkmark with simple effect',
-  ANIMATED_SCANNER: 'Animated Scanner Component'
+  ANIMATED_SCANNER: 'Animated Scanner Component',
+  ANIMATED_SWITCH: 'Animated Switch',
 };
