@@ -7,4 +7,5 @@ export default {
   PARALLAX_HEADER_WITH_TABS: 'With Tabs Component',
   MEDIA_BUTTON: 'Media Button',
   ANIMATED_CHECK_MARK: 'Animated Check Mark',
+  ANIMATED_SWITCH: 'Animated Switch',
 };

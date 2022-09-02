@@ -1,5 +1,6 @@
 import AnimatedCheckMarkScreen from './AnimatedCheckMark/AnimatedCheckMark';
 import AnimatedListScreen from './AnimatedList/AnimatedListScreen';
+import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
 import CardSwipeableScreen from './CardSwipeable/CardSwipeableScreen';
 import GradientProgressScreen from './GradientProgress/GradientProgressScreen';
 import HomeScreen from './Home/HomeScreen';
@@ -16,4 +17,5 @@ export {
   ParallaxHeaderTabScreen,
   MediaButtonScreen,
   AnimatedCheckMarkScreen,
+  AnimatedSwitchScreen,
 };

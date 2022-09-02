@@ -37,6 +37,8 @@ const Colors = {
   redVelvet: '#FF5252',
   offWhite: '#FAFAFA',
   red100: '#FFCDD2',
+  kournikova: '#ffe767',
+  darkModerateViolet: '#513788',
 };
 
 export default Colors;

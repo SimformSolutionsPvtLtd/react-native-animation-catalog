@@ -5,12 +5,13 @@ import { NavigationStrings } from '../constants';
 import {
   AnimatedCheckMarkScreen,
   AnimatedListScreen,
+  AnimatedSwitchScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
   HomeScreen,
   MediaButtonScreen,
   ParallaxHeaderScreen,
-  ParallaxHeaderTabScreen,
+  ParallaxHeaderTabScreen
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -57,6 +58,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_CHECK_MARK}
           component={AnimatedCheckMarkScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_SWITCH}
+          component={AnimatedSwitchScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

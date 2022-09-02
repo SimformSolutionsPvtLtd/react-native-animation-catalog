@@ -1,5 +1,5 @@
-import {NavigationStrings} from '../constants';
 import Images from '../assets';
+import {NavigationStrings} from '../constants';
 import {NavProps} from '../navigation/types';
 
 export const imageData = [
@@ -84,6 +84,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     id: 8,
     name: 'Animated Check Mark',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_CHECK_MARK),
+  },
+  {
+    id: 10,
+    name: 'Animated Switch',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SWITCH),
   },
 ];
 

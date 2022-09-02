@@ -9,6 +9,8 @@ export default {
   cyan: '#00838F',
   redVelvet: '#FF5252',
   purple: '#9575CD',
+  kournikova: '#ffe767',
+  darkModerateViolet: '#513788',
 
   //-------------------- ColorSets for Gradient --------------------
   colorSet2: [
