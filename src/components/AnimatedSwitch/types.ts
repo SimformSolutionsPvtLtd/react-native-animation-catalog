@@ -1,3 +1,5 @@
+import type { ViewStyle } from 'react-native';
+
 // this type is written for range between 15-150 for size
 type Enumerate<
   N extends number,
@@ -19,4 +21,18 @@ export interface AnimatedSwitchProps {
 
 export interface StyleProps {
   size: Range<40, 151>;
+}
+
+export interface DayAndNightAnimatedSwitchProps {
+  size: Range<40, 151>;
+}
+
+export interface AnimatedCloudProps {
+  cloudPosition?: ViewStyle;
+  cloudBackground?: ViewStyle;
+  cloudCircle?: ViewStyle;
+}
+
+export interface AnimatedStarProps {
+  starContainerStyle: ViewStyle;
 }

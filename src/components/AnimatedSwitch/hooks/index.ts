@@ -1,3 +1,4 @@
 import useAnimatedSwitch from './useAnimatedSwitch';
+import useDayAndNightAnimatedSwitch from './useDayAndNightAnimatedSwitch';
 
-export { useAnimatedSwitch };
+export { useAnimatedSwitch, useDayAndNightAnimatedSwitch };

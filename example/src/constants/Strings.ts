@@ -29,4 +29,5 @@ export default {
   SIMPLE_ANIMATED_CHECKMARK: '●  Animated Checkmark with simple effect',
   ANIMATED_SCANNER: 'Animated Scanner Component',
   ANIMATED_SWITCH: 'Animated Switch',
+  DAY_AND_NIGHT_ANIMATED_SWITCH: 'Day and Night Animated Switch',
 };
