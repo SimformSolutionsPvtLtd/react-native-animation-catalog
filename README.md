@@ -20,6 +20,7 @@ This custom animated component library provides multiple custom animated compone
 | <div style="width:270px"></div>Swipeable Card                 |  <div style="width:270px"></div>Simple Card                               | <div style="width:270px"></div>Media Button
 | :-------------------------:                                   |  :-------------------------:                                              |:-------------------------:
 | ![alt tag](./assets/CardSwipeable.gif)                        |  ![alt tag](./assets/LeftSide.gif)                                        |![alt_tag](./assets/MediaButton.gif)
+|![alt_tag](./assets/CustomTypingIndicator.gif)
 
 ## Components
 ---
