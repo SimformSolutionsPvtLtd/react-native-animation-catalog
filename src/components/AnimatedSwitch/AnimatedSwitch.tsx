@@ -6,7 +6,7 @@ import { useAnimatedSwitch } from './hooks';
 import styles from './styles';
 import type { AnimatedSwitchProps } from './types';
 
-const AnimatedSwitch = ({
+const AnimatedThemeSwitch = ({
   size = 100,
   lightThemeColor = Colors.kournikova,
   darkThemeColor = Colors.darkModerateViolet,
@@ -38,4 +38,4 @@ const AnimatedSwitch = ({
   );
 };
 
-export default AnimatedSwitch;
+export default AnimatedThemeSwitch;

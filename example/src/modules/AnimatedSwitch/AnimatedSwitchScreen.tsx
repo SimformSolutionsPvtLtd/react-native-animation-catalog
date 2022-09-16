@@ -1,11 +1,11 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
-import {AnimatedSwitch} from 'react-native-animation-catalog';
-import {NavProps} from 'src/navigation/types';
-import {CustomHeader} from '../../components';
-import {Strings} from '../../constants';
-import {Colors} from '../../theme';
+import { Text, View } from 'react-native';
+import { AnimatedSwitch } from 'react-native-animation-catalog';
+import { NavProps } from 'src/navigation/types';
+import { CustomHeader } from '../../components';
+import { Strings } from '../../constants';
+import { Colors } from '../../theme';
 import styles from './styles/styles';
 
 const AnimatedSwitchScreen = () => {
@@ -29,6 +29,14 @@ const AnimatedSwitchScreen = () => {
               lightThemeColor={Colors.kournikova}
               darkThemeColor={Colors.darkModerateViolet}
             />
+          </View>
+        </View>
+        <View style={styles.firstVariantContainer}>
+          <Text style={styles.firstVariantTitle}>
+            {Strings.DAY_AND_NIGHT_ANIMATED_SWITCH}
+          </Text>
+          <View style={styles.firstSwitchContainer}>
+            <AnimatedSwitch.DayAndNightTheme size={100} />
           </View>
         </View>
       </View>

@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
-import {Colors, Metrics} from '../../../theme';
+import { StyleSheet } from 'react-native';
+import { Colors, Metrics } from '../../../theme';
 
-const {moderateScale, verticalScale} = Metrics;
+const { moderateScale, verticalScale } = Metrics;
 
 const styles = StyleSheet.create({
   container: {
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     color: Colors.black,
   },
   firstSwitchContainer: {
-    marginTop: verticalScale(15),
+    marginTop: verticalScale(22),
     alignItems: 'center',
   },
 });
