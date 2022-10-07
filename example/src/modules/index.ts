@@ -4,6 +4,7 @@ import AnimatedFlickerLoaderScreen from './AnimatedFlickerLoader/AnimatedFlicker
 import AnimatedListScreen from './AnimatedList/AnimatedListScreen';
 import AnimatedNotificationScreen from './AnimatedNotification/AnimatedNotification';
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
+import AnimatedSignal from './AnimatedSignal/AnimatedSignalScreen';
 import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
 import AnimatedWalletScreen from './AnimatedWallet/AnimatedWallet';
 import CardSwipeableScreen from './CardSwipeable/CardSwipeableScreen';
@@ -23,6 +24,7 @@ export {
   AnimatedListScreen,
   AnimatedNotificationScreen,
   AnimatedScannerScreen,
+  AnimatedSignal,
   AnimatedSwitchScreen,
   AnimatedWalletScreen,
   CardSwipeableScreen,

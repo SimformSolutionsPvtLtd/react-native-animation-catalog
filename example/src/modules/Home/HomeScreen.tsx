@@ -9,7 +9,7 @@ import {
 import { CustomCard, CustomHeader } from '../../components';
 import { Strings } from '../../constants';
 import { AnimationComponentData } from '../../constants/DummyData';
-import { NavProps } from '../../navigation/types';
+import type { NavProps } from '../../navigation/types';
 import styles from './styles/styles';
 
 const RenderItems = ({ item }: any) => {

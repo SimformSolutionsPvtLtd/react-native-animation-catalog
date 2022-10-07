@@ -37,4 +37,5 @@ export default {
   FOLLOWUP_HEARTRATE: 'FollowUp HeartRate',
   HEART_RATE: 'Heart Rate',
   ANIMATED_CHARGING: 'Animated Charging',
+  ANIMATED_SIGNAL: 'Animated Signal',
 };

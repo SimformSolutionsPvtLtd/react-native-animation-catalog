@@ -131,6 +131,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Charging',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_CHARGING),
   },
+  {
+    id: 18,
+    name: 'Animated Signal',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SIGNAL),
+  },
 ];
 
 export const FOLLOWING = [

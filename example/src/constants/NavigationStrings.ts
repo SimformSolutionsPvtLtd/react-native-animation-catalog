@@ -16,4 +16,5 @@ export default {
   WIRELESS_CHARGER: 'Wireless Charger',
   HEART_RATE: 'Heart Rate',
   ANIMATED_CHARGING: 'Animated Charging',
+  ANIMATED_SIGNAL: 'Animated Signal',
 };
