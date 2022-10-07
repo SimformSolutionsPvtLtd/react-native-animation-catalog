@@ -9,6 +9,7 @@ import HomeScreen from './Home/HomeScreen';
 import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import ParallaxHeaderScreen from './ParallaxHeader/ParallaxHeaderScreen';
 import ParallaxHeaderTabScreen from './ParallaxHeader/ParallaxHeaderTabScreen';
+import AnimatedNotificationScreen from './AnimatedNotification/AnimatedNotification';
 
 export {
   HomeScreen,
@@ -22,4 +23,5 @@ export {
   AnimatedCheckMarkScreen,
   AnimatedWalletScreen,
   AnimatedSwitchScreen,
+  AnimatedNotificationScreen,
 };

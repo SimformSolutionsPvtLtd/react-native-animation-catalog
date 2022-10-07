@@ -7,4 +7,5 @@ export default {
   star: require('./star.png'),
   multipleStar: require('./multipleStar.png'),
   pdf: require('./pdf.png'),
+  messageBox: require('./messageBox.png'),
 };

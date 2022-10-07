@@ -10,4 +10,5 @@ export default {
   ANIMATED_CHECK_MARK: 'Animated Check Mark',
   ANIMATED_WALLET: 'Animated Wallet',
   ANIMATED_SWITCH: 'Animated Switch',
+  ANIMATED_NOTIFICATION: 'Animated Notification',
 };

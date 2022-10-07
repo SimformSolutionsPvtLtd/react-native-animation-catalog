@@ -1,6 +1,7 @@
 export * from './components/AnimatedCard';
 export * from './components/AnimatedCheckMark';
 export * from './components/AnimatedList';
+export * from './components/AnimatedNotification';
 export * from './components/AnimatedPulse';
 export * from './components/AnimatedScanner';
 export * from './components/AnimatedWallet';

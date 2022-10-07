@@ -1,7 +1,7 @@
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import {NavigationStrings} from '../constants';
+import { NavigationStrings } from '../constants';
 import {
   AnimatedCheckMarkScreen,
   AnimatedListScreen,
@@ -13,7 +13,8 @@ import {
   HomeScreen,
   MediaButtonScreen,
   ParallaxHeaderScreen,
-  ParallaxHeaderTabScreen
+  ParallaxHeaderTabScreen,
+  AnimatedNotificationScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -25,56 +26,61 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.HOME}
           component={HomeScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.GRADIENT}
           component={GradientProgressScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.CARD_SWIPEABLE}
           component={CardSwipeableScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.ANIMATED_LIST}
           component={AnimatedListScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.PARALLAX_HEADER}
           component={ParallaxHeaderScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.PARALLAX_HEADER_WITH_TABS}
           component={ParallaxHeaderTabScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.MEDIA_BUTTON}
           component={MediaButtonScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.ANIMATED_CHECK_MARK}
           component={AnimatedCheckMarkScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.ANIMATED_WALLET}
           component={AnimatedWalletScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.ANIMATED_SCANNER}
           component={AnimatedScannerScreen}
-          options={{headerShown: false}}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name={NavigationStrings.ANIMATED_SWITCH}
           component={AnimatedSwitchScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_NOTIFICATION}
+          component={AnimatedNotificationScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
