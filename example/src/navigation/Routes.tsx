@@ -4,10 +4,11 @@ import React from 'react';
 import { NavigationStrings } from '../constants';
 import {
   AnimatedCheckMarkScreen,
+  AnimatedFlickerLoaderScreen,
   AnimatedListScreen,
   AnimatedScannerScreen,
-  AnimatedWalletScreen,
   AnimatedSwitchScreen,
+  AnimatedWalletScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
   HomeScreen,
@@ -81,6 +82,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_NOTIFICATION}
           component={AnimatedNotificationScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_FLICKER_LOADER}
+          component={AnimatedFlickerLoaderScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
