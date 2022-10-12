@@ -1,6 +1,6 @@
 import Images from '../assets';
-import { NavigationStrings } from '../constants';
-import { NavProps } from '../navigation/types';
+import {NavigationStrings} from '../constants';
+import {NavProps} from '../navigation/types';
 
 export const imageData = [
   {
