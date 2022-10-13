@@ -10,7 +10,7 @@
 | :------------------------------------------: |
 | ![alt tag](/assets/AnimatedNotification.gif) |
 
-#### Usage
+#### Default Usage
 
 ---
 
@@ -22,12 +22,10 @@ import { AnimatedNotification } from 'react-native-animation-catalog';
 const AnimatedNotificationScreen = () => {
   return (
     <View style={styles.container}>
-      <AnimatedNotification size={100} />
+      <AnimatedNotification size={140} />
     </View>
   );
 };
-
-export default AnimatedNotificationScreen;
 
 const styles = StyleSheet.create({
   container: {
@@ -37,7 +35,44 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+export default AnimatedNotificationScreen;
 ```
+
+#### Custom Usage
+
+---
+
+```jsx
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { AnimatedNotification } from 'react-native-animation-catalog';
+
+const AnimatedNotificationScreen = () => {
+  return (
+    <View style={styles.container}>
+      <AnimatedNotification size={100} numberOfNotification={2} color='red' />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: '20%',
+    flex: 1,
+  },
+});
+
+export default AnimatedNotificationScreen;
+```
+
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageOfNotification.gif)
 
 ---
 
@@ -45,7 +80,7 @@ const styles = StyleSheet.create({
 
 | Props                | Default   | Type   | Description                          |
 | :------------------- | :-------- | :----- | :----------------------------------- |
-| size                 | `200`     | number | `size` of wallet                     |
+| size                 | `140`     | number | `size` of notification box           |
 | color                | '#77aa12' | string | `color` of notification counter view |
 | numberOfNotification | `1`       | number | `number` of notification             |
 

@@ -63,11 +63,12 @@ const DayAndNightAnimatedSwitch = ({
             />
           </Animated.View>
           <Animated.View style={[cloudsAnimatedStyle]}>
-            <AnimatedClouds />
+            <AnimatedClouds size={size} />
             <AnimatedClouds
               cloudPosition={lowerCloudPosition}
               cloudBackground={lowerCloudBackgroundStyle}
               cloudCircle={lowerCloudCircleSize}
+              size={size}
             />
           </Animated.View>
           <Animated.View style={[fallingStar, fallingStarAnimatedStyle]} />

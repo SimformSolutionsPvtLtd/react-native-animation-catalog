@@ -31,6 +31,7 @@ export interface AnimatedCloudProps {
   cloudPosition?: ViewStyle;
   cloudBackground?: ViewStyle;
   cloudCircle?: ViewStyle;
+  size: Range<40, 151>;
 }
 
 export interface AnimatedStarProps {

@@ -6,12 +6,12 @@ const { horizontalScale, verticalScale, moderateScale } = Metrics;
 
 const styles = ({
   strokeColor = Colors.red100,
-  height = verticalScale(200),
+  height = 207,
   borderColor = Colors.lightBlue900,
   borderRadius = moderateScale(10),
   borderWidth = horizontalScale(2),
   strokeWidth = horizontalScale(240),
-  width = horizontalScale(300),
+  width = 307,
 }: Partial<AnimatedScannerProps>) =>
   StyleSheet.create({
     container: {
@@ -93,6 +93,7 @@ const styles = ({
     imageStyle: {
       height: verticalScale(200),
       width: horizontalScale(200),
+      marginTop: verticalScale(7),
     },
   });
 export default styles;

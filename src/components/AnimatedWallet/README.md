@@ -23,14 +23,58 @@ import { AnimatedWallet } from 'react-native-animation-catalog';
 
 const AnimatedWallet = () => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <AnimatedWallet numberOfCards={2} />
+    <View style={style.container}>
+      <AnimatedWallet />
     </View>
   );
 };
 
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
 export default AnimatedWallet;
 ```
+
+#### 🎬 Custom Usage
+
+```jsx
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { AnimatedWallet } from 'react-native-animation-catalog';
+
+const AnimatedWallet = () => {
+  return (
+    <View style={style.container}>
+      <AnimatedWallet
+        numberOfCards={3}
+        size={150}
+        primaryColor='orange'
+        secondaryColor='green'
+      />
+    </View>
+  );
+};
+
+const style = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+export default AnimatedWallet;
+```
+
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageofWallet.gif)
 
 ---
 

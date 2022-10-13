@@ -35,9 +35,9 @@ const AnimatedScanner = () => {
   return <AnimatedScanner
               stopZooming={true}
               style={style.customStyle}
-              borderColor = {#FF0000}
+              borderColor = {#000000}
               strokeDelay = {1400}
-              strokeColor = {'red'}
+              strokeColor = {'#0000FF'}
               initialZoomScale = {0.9}
               height = {200}
               zoomingDelay = {800}
@@ -55,6 +55,12 @@ const styles = Stylesheet({
 
 export default AnimatedScanner;
 ```
+
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageOfScanner.gif)
 
 #### Properties
 

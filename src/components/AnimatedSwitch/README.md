@@ -40,7 +40,7 @@ const AnimatedSwitch = () => {
   return (
     <View style={styles.container}>
       <AnimatedSwitch
-        size={100}
+        size={130}
         lightThemeColor={'#59abdd'}
         darkThemeColor={'#0f1341'}
       />
@@ -58,6 +58,12 @@ const styles = StyleSheet.create({
 
 export default AnimatedSwitch;
 ```
+
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageOfAnimatedSwitch.gif)
 
 #### Properties
 
@@ -81,38 +87,6 @@ const AnimatedSwitch = () => <AnimatedSwitch.DayAndNightTheme />;
 
 export default AnimatedSwitch;
 ```
-
-#### Custom Usage
-
-```jsx
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { AnimatedSwitch } from 'react-native-animation-catalog';
-
-const AnimatedSwitch = () => {
-  return (
-    <View style={styles.container}>
-      <AnimatedSwitch.DayAndNightTheme size={100} />
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    flex: 1,
-  },
-});
-
-export default AnimatedSwitch;
-```
-
-##### Custom Usage Preview
-
-![alt tag](/assets/DayAndNIghtThemeCustomUsageAnimatedSwitch.gif)
-
----
 
 #### Properties
 

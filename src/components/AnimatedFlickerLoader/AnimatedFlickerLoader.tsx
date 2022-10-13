@@ -10,7 +10,7 @@ const AnimatedFlickerLoader = ({
   leftCircleColor,
   rightCircleColor,
   duration,
-  size = 70,
+  size = 100,
 }: Partial<AnimatedFlickerLoaderProp>) => {
   const { animatedStylesForLeftCircle, animatedStylesForRightCircle } =
     useAnimatedFlicker({
