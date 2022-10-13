@@ -1,4 +1,4 @@
-# AnimatedWallet
+# Animated Wallet
 
 `AnimatedWallet` component can be used to provide a fascinating experience of wallet with animated cards.
 
@@ -51,10 +51,10 @@ const AnimatedWallet = () => {
   return (
     <View style={style.container}>
       <AnimatedWallet
-        numberOfCards={3}
+        numberOfCards={2}
         size={150}
-        primaryColor='orange'
-        secondaryColor='green'
+        primaryColor='#FFA500'
+        secondaryColor='#81B622'
       />
     </View>
   );
@@ -74,16 +74,14 @@ export default AnimatedWallet;
 
 ---
 
-![alt tag](/assets/CustomUsageofWallet.gif)
-
----
+![alt tag](/assets/CustomUsageOfWallet.gif)
 
 #### Properties
 
 | Props          | Default   | Type   | Description                                |
 | :------------- | :-------- | :----- | :----------------------------------------- |
 | size           | `200`     | number | `size` of wallet                           |
-| numberOfCards  | `2`       | number | `number of cards` in Wallet `Note` : Max 3 |
+| numberOfCards  | `3`       | number | `number of cards` in Wallet `Note` : Max 3 |
 | primaryColor   | `#f51e0f` | string | `primary color` of Animated Wallet         |
 | secondaryColor | `#f07a05` | string | `secondary color` of Animated Wallet       |
 

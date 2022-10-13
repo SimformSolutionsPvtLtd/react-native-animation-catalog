@@ -8,7 +8,7 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `AnimatedList`, `AnimatedCard`, `GradientProgress`, `ParallaxHeader`, `MediaButton`,`AnimatedScanner` .
+This custom animated component library provides multiple custom animated components like `AnimatedList`,`AnimatedCard`,`GradientProgress`,`ParallaxHeader`,`MediaButton` and many more!
 
 - It also provides an example app and a detailed usage overview of every available component
 - All the available components are fully Android and iOS compatible.
@@ -25,6 +25,14 @@ This custom animated component library provides multiple custom animated compone
 | <div style="width:270px"></div>Gradient Progress | <div style="width:270px"></div>Animated Card | <div style="width:270px"></div>Media Button |
 | :----------------------------------------------: | :------------------------------------------: | :-----------------------------------------: |
 |    ![alt tag](./assets/GradientProgress.gif)     |    ![alt tag](./assets/AnimatedCard.gif)     |    ![alt_tag](./assets/MediaButton.gif)     |
+
+| <div style="width:270px"></div>Animated CheckMark | <div style="width:270px"></div>Animated Wallet | <div style="width:270px"></div>Animated Scanner |
+| :-----------------------------------------------: | :--------------------------------------------: | :---------------------------------------------: |
+|    ![alt_tag](./assets/AnimatedCheckMark.gif)     |    ![alt_tag](./assets/AnimatedWallet.gif)     |    ![alt_tag](./assets/AnimatedScanner.gif)     |
+
+| <div style="width:270px"></div>Animated Switch | <div style="width:270px"></div>Animated Notification | <div style="width:270px"></div>Animated Flicker Loader |
+| :--------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------: |
+|    ![alt_tag](./assets/AnimatedSwitch.gif)     |    ![alt_tag](./assets/AnimatedNotification.gif)     |     ![alt_tag](./assets/AnimatedFlickerLoader.gif)     |
 
 ## Installation
 
@@ -60,44 +68,75 @@ module.exports = {
           'react-native-reanimated/plugin',
       ],
   };
-``` | ![alt tag](./assets/AnimatedScanner.gif)
+```
 
 ## Components
 
 ---
 
-### Ⅰ. [Animated List](./src/components/AnimatedList)
-
-[More about AnimatedList component](./src/components/AnimatedList/README.md)
-
----
-
-### ⅠI. [Animated Card](./src/components/AnimatedCard)
+### Ⅰ. [Animated Card](./src/components/AnimatedCard)
 
 [More about AnimatedCard component](./src/components/AnimatedCard/README.md)
 
 ---
 
-### ⅠII. [Gradient Progress](./src/components/GradientProgress)
+### ⅠI. [Animated List](./src/components/AnimatedList)
 
-[More about Gradient Progress component](./src/components/GradientProgress/README.md)
-
----
-
-### ⅠV. [Parallax Header](./src/components/ParallaxHeader)
-
-[More about Parallax Header component](./src/components/ParallaxHeader/README.md)
+[More about AnimatedList component](./src/components/AnimatedList/README.md)
 
 ---
 
-### V. [Animated Scanner](./src//components/AnimatedScanner)
-[More about Animated Scanner](./src//components/AnimatedScanner/README.md)
+### III. [Animated Notification](./src/components/AnimatedNotification)
+
+[More about Animated Notification component](./src/components/AnimatedNotification/README.md)
 
 ---
 
-### VI. [Media Button](./src/components/MediaButton)
+### IV. [Animated Scanner](./src/components/AnimatedScanner)
+
+[More about Animated Scanner component](./src/components/AnimatedScanner/README.md)
+
+---
+
+### V. [Animated Switch](./src/components/AnimatedSwitch)
+
+[More about Animated Switch component](./src/components/AnimatedSwitch/README.md)
+
+---
+
+### VI. [Animated Wallet](./src/components/AnimatedWallet)
+
+[More about Animated Wallet component](./src/components/AnimatedWallet/README.md)
+
+---
+
+### VII. [Animated Check Mark](./src/components/AnimatedCheckMark)
+
+[More about Animated Check Mark component](./src/components/AnimatedCheckMark/README.md)
+
+---
+
+### VIII. [Animated Flicker Loader](./src/components/AnimatedFlickerLoader)
+
+[More about Animated Loader component](./src/components/AnimatedFlickerLoader/README.md)
+
+---
+
+### IX. [Gradient Progress](./src/components/GradientProgress)
+
+[More about Animated Gradient Progress](./src/components/GradientProgress/README.md)
+
+---
+
+### X. [Media Button](./src/components/MediaButton)
 
 [More about Media Button component](./src/components/MediaButton/README.md)
+
+---
+
+### XI. [Parallax Header](./src/components/ParallaxHeader)
+
+[More about Parallax Header component](./src/components/ParallaxHeader/README.md)
 
 ---
 
@@ -125,6 +164,7 @@ Check out our [Contributing Guide](CONTRIBUTING.md) for ideas on contributing.
 For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/react-native-animation-catalog/issues)
 
 ## Awesome Mobile Libraries
+
 - Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries)
 
 ### License

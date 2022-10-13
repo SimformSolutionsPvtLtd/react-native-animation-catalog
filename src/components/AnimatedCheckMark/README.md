@@ -1,8 +1,8 @@
-# AnimatedCheckMark
+# Animated CheckMark
 
-`AnimatedCheckMark` component can be used to provide a delightful experience on success of any particular task.
+`Animated CheckMark` component can be used to provide a delightful experience on success of any particular task.
 
-- `AnimatedCheckMark` component has three different variants: `<AnimatedCheckMark />`, `<AnimatedCheckMark.Circular/>` and `<AnimatedCheckMark.Simple/>`.
+- `Animated CheckMark` component has three different variants: `<AnimatedCheckMark />`, `<AnimatedCheckMark.Circular/>` and `<AnimatedCheckMark.Simple/>`.
 
 #### 🎬 Preview
 

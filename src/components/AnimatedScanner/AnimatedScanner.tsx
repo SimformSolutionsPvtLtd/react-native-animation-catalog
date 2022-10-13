@@ -36,7 +36,7 @@ const AnimatedScanner = ({
     container,
     childernView,
     animationView,
-    innerVerticalScrollAnimated,
+    verticalScrollAnimated,
     verticalLineView,
     propsView,
     imageStyle,
@@ -62,9 +62,7 @@ const AnimatedScanner = ({
           borderRadius={borderRadius}
           borderWidth={borderWidth}
         />
-        <Animated.View
-          style={[innerVerticalScrollAnimated, verticalAnimationStyle]}
-        >
+        <Animated.View style={[verticalScrollAnimated, verticalAnimationStyle]}>
           <View style={verticalLineView} />
         </Animated.View>
         <View style={propsView} />

@@ -10,7 +10,7 @@ const AnimatedWallet = ({
   size = 250,
   primaryColor = Colors.red,
   secondaryColor = Colors.orange,
-  numberOfCards = 1,
+  numberOfCards = 3,
 }: Partial<AnimatedWalletStyle>) => {
   const {
     AnimatedGradientView,
