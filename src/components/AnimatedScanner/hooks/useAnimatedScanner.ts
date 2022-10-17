@@ -5,16 +5,13 @@ import {
   withRepeat,
   withTiming,
 } from 'react-native-reanimated';
-import { Metrics } from '../../../theme';
 import type { AnimatedScannerProps } from '../types';
-
-const { verticalScale } = Metrics;
 
 const useAnimatedScanner = ({
   zoomingDelay,
   strokeDelay = 1400,
   initialZoomScale = 0.9,
-  height = verticalScale(200),
+  height = 205,
 }: Partial<AnimatedScannerProps>) => {
   const progress = useSharedValue(0);
   const scale = useSharedValue(initialZoomScale);

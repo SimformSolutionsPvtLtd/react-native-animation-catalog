@@ -72,7 +72,7 @@ export default AnimatedCheckMark;
 #### Properties
 
 | Props                | Default   | Type      | Description                                                                                      |
-| :------------------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------- | --- |
+| :------------------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------- |
 | duration             | 2000      | number    | `speed` of animation for both image and circle.                                                  |
 | size                 | 100       | number    | component size                                                                                   |
 | containerStyle       | -         | ViewStyle | `Animated CheckMark` internal view style.                                                        |
@@ -81,7 +81,7 @@ export default AnimatedCheckMark;
 | checkMarkColor       | `#ffffff` | string    | defines color for check mark or image.                                                           |
 | disableParticles     | false     | boolean   | hide animated particles around the circle.                                                       |
 | particleColor        | `#01579B` | string    | color for animated particles (`Note`: it will only work if value of disableParticles are false). |
-| primaryParticleColor | `#01579B` | string    | source of image.                                                                                 |     |
+| primaryParticleColor | `#01579B` | string    | source of image.                                                                                 |
 | imageSource          | -         | string    | source of image.                                                                                 |
 
 #### 2. Circular
@@ -138,7 +138,7 @@ export default AnimatedCheckMark;
 #### Properties
 
 | Props             | Default   | Type   | Description                                     |
-| :---------------- | :-------- | :----- | :---------------------------------------------- | --- |
+| :---------------- | :-------- | :----- | :---------------------------------------------- |
 | duration          | 1300      | number | `speed` of animation for both image and circle. |
 | size              | 100       | number | circle size.                                    |
 | checkMarkColor    | `#01579B` | string | image color.                                    |
@@ -146,7 +146,7 @@ export default AnimatedCheckMark;
 | topBorderColor    | `#E91E63` | string | border top color.                               |
 | rightBorderColor  | `#01579B` | string | border right color.                             |
 | bottomBorderColor | `#FFA726` | string | border bottom color.                            |
-| leftBorderColor   | `#6aa6ba` | string | border left color.                              |     |
+| leftBorderColor   | `#6aa6ba` | string | border left color.                              |
 
 #### 3. Simple
 
@@ -202,11 +202,11 @@ export default AnimatedCheckMark;
 #### Properties
 
 | Props           | Default    | Type   | Description                                     |
-| :-------------- | :--------- | :----- | :---------------------------------------------- | --- |
+| :-------------- | :--------- | :----- | :---------------------------------------------- |
 | duration        | 2000       | number | `speed` of animation for both image and circle. |
 | size            | 150        | number | circle size.                                    |
 | backgroundColor | `#81D4FA ` | string | circle background color.                        |
-| checkMarkColor  | `#01579B`  | string | check mark color.                               |     |
+| checkMarkColor  | `#01579B`  | string | check mark color.                               |
 
 #### 🎬 Preview Example
 

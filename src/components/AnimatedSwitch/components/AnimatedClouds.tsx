@@ -7,12 +7,13 @@ const AnimatedClouds = ({
   cloudPosition,
   cloudBackground,
   cloudCircle,
+  size,
 }: AnimatedCloudProps) => {
   const {
     upperCloudBackgroundStyle,
     upperCloudCircleStyle,
     upperCloudPosition,
-  } = style({});
+  } = style({ size });
 
   return (
     <View style={[upperCloudPosition, cloudPosition]}>

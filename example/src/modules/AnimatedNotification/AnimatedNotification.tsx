@@ -17,7 +17,7 @@ const AnimatedNotificationScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <AnimatedNotification size={100} />
+        <AnimatedNotification size={140} />
       </View>
     </>
   );

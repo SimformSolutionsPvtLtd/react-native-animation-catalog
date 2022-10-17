@@ -4,9 +4,9 @@
 
 #### 🎬 Preview
 
-|        Animated Flicker loader        |
-| :-----------------------------------: |
-| ![alt_tag](/assets/FlickerLoader.gif) |
+|            Animated Flicker loader            |
+| :-------------------------------------------: |
+| ![alt_tag](/assets/AnimatedFlickerLoader.gif) |
 
 ### Default usage
 
@@ -34,9 +34,10 @@ import { AnimatedFlickerLoader } from 'react-native-animation-catalog';
 const AnimatedFlicker = () => {
   return (
     <AnimatedFlickerLoader
-      rightCircleColor='black'
-      leftCircleColor='white'
+      rightCircleColor='#000000'
+      leftCircleColor='#FFA500'
       style={style.container}
+      size={50}
     />
   );
 };
@@ -50,6 +51,12 @@ const style = StyleSheet.create({
 export default AnimatedFlicker;
 ```
 
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageOfFlicker.gif)
+
 #### Properties
 
 | Props            | Default | Type   | Description                                                    |
@@ -57,7 +64,7 @@ export default AnimatedFlicker;
 | leftCircleColor  | `red`   | string | `leftCircleColor` to change background color                   |
 | rightCircleColor | `blue`  | string | `rightCircleColor`to change background color                   |
 | duration         | 800     | number | `duration` use for specific time to complete animation         |
-| size             | 70      | number | `size` use to give size of animation circle.(height and width) |
+| size             | 100     | number | `size` use to give size of animation circle.(height and width) |
 
 #### 🎬 Preview Example
 
