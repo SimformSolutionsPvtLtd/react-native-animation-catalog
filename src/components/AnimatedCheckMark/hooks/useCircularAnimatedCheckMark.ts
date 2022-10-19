@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { Animated } from 'react-native';
-import type { CircularAnimatedStyle } from '../type';
+import type { CircularAnimatedProps } from '../types';
 
 const useCircularAnimatedCheckMark = ({
   size,
   duration,
-}: CircularAnimatedStyle) => {
+}: CircularAnimatedProps) => {
   const animation = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {

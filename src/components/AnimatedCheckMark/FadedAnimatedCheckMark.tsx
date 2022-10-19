@@ -5,7 +5,7 @@ import { Colors } from '../../theme';
 import AnimatedParticles from './AnimatedParticles';
 import { useAnimatedCheckMark } from './hooks';
 import styles from './styles';
-import type { AnimatedCheckMarkProps } from './type';
+import type { AnimatedCheckMarkProps } from './types';
 
 const AnimatedCheckMark = ({
   containerStyle,

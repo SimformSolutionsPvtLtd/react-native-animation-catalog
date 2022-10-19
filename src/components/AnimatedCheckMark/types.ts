@@ -46,11 +46,11 @@ export interface StyleProps {
   leftBorderColor?: string;
 }
 
-export interface CircularAnimatedStyle {
+export interface CircularAnimatedProps {
   size: number;
   duration: number;
 }
-export interface AnimationStyleProps {
+export interface AnimationCheckMarkProps {
   size: number;
   duration: number;
 }

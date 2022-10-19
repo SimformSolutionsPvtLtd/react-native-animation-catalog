@@ -47,18 +47,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { AnimatedWallet } from 'react-native-animation-catalog';
 
-const AnimatedWallet = () => {
-  return (
-    <View style={style.container}>
-      <AnimatedWallet
-        numberOfCards={2}
-        size={150}
-        primaryColor='#FFA500'
-        secondaryColor='#81B622'
-      />
-    </View>
-  );
-};
+const AnimatedWallet = () => (
+  <View style={style.container}>
+    <AnimatedWallet
+      numberOfCards={2}
+      size={150}
+      primaryColor='#FFA500'
+      secondaryColor='#81B622'
+    />
+  </View>
+);
 
 const style = StyleSheet.create({
   container: {

@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Animated } from 'react-native';
 import { Colors } from '../../../theme';
 import styles from '../styles';
-import type { AnimatedParticlesProps } from '../type';
+import type { AnimatedParticlesProps } from '../types';
 
 const useAnimatedParticles = ({
   size = 80,

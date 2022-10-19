@@ -11,6 +11,7 @@ import type { DayAndNightAnimatedSwitchProps } from '../types';
 
 const useDayAndNightAnimatedSwitch = ({
   size,
+  onToggle,
 }: DayAndNightAnimatedSwitchProps) => {
   const [darkTheme, setDarkTheme] = useState(false);
   const offSet = useSharedValue(0);
@@ -21,18 +22,20 @@ const useDayAndNightAnimatedSwitch = ({
   const toggle = useCallback(() => {
     if (offSet.value === 0) {
       setDarkTheme(true);
+      onToggle?.('dark');
       offSet.value = withTiming(1, { duration: 700 });
       cloudOffSet.value = withTiming(2, { duration: 500 });
       starOffSet.value = withTiming(2, { duration: 1500 });
       fallingStarOffset.value = withTiming(1, { duration: 2400 });
     } else {
       setDarkTheme(false);
+      onToggle?.('light');
       offSet.value = withTiming(0, { duration: 700 });
       cloudOffSet.value = withTiming(0, { duration: 1400 });
       starOffSet.value = withTiming(0, { duration: 500 });
       fallingStarOffset.value = withTiming(0, { duration: 10 });
     }
-  }, [offSet, cloudOffSet, starOffSet, fallingStarOffset]);
+  }, [offSet, cloudOffSet, starOffSet, fallingStarOffset, onToggle]);
 
   const notchAnimatedStyle = useAnimatedStyle(() => {
     return {

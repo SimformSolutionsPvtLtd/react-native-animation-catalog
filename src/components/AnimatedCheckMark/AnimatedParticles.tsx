@@ -1,7 +1,7 @@
 import React from 'react';
 import { Animated } from 'react-native';
 import { useAnimatedParticles } from './hooks';
-import type { AnimatedCheckMarkProps } from './type';
+import type { AnimatedCheckMarkProps } from './types';
 import Images from '../../assets';
 
 const AnimatedParticles = ({

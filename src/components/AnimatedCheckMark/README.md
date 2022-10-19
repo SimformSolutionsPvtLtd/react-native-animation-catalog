@@ -71,18 +71,18 @@ export default AnimatedCheckMark;
 
 #### Properties
 
-| Props                | Default   | Type      | Description                                                                                      |
-| :------------------- | :-------- | :-------- | :----------------------------------------------------------------------------------------------- |
-| duration             | 2000      | number    | `speed` of animation for both image and circle.                                                  |
-| size                 | 100       | number    | component size                                                                                   |
-| containerStyle       | -         | ViewStyle | `Animated CheckMark` internal view style.                                                        |
-| backgroundColor      | `#01579B` | string    | `Animated CheckMark` background color.                                                           |
-| innerCircle          | true      | boolean   | shows inner circle                                                                               |
-| checkMarkColor       | `#ffffff` | string    | defines color for check mark or image.                                                           |
-| disableParticles     | false     | boolean   | hide animated particles around the circle.                                                       |
-| particleColor        | `#01579B` | string    | color for animated particles (`Note`: it will only work if value of disableParticles are false). |
-| primaryParticleColor | `#01579B` | string    | source of image.                                                                                 |
-| imageSource          | -         | string    | source of image.                                                                                 |
+| Props                | Default   | Type      | Description                                                                   |
+| :------------------- | :-------- | :-------- | :---------------------------------------------------------------------------- |
+| duration             | 2000      | number    | `speed` of animation for both image and circle.                               |
+| size                 | 100       | number    | component size                                                                |
+| containerStyle       | -         | ViewStyle | `Animated CheckMark` internal view style.                                     |
+| backgroundColor      | `#01579B` | string    | `Animated CheckMark` background color.                                        |
+| innerCircle          | true      | boolean   | shows inner circle                                                            |
+| checkMarkColor       | `#ffffff` | string    | defines color for check mark or image.                                        |
+| disableParticles     | false     | boolean   | hide animated particles around the circle.                                    |
+| particleColor        | `#01579B` | string    | color for animated particles (`Note`: if value of disableParticles is false). |
+| primaryParticleColor | `#01579B` | string    | color for animated particles                                                  |
+| imageSource          | -         | string    | source of image.                                                              |
 
 #### 2. Circular
 
@@ -106,17 +106,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AnimatedCheckMark } from 'react-native-animation-catalog';
 
-const AnimatedCheckMark = () => {
-  return (
-    <View style={styles.container}>
-      <AnimatedCheckMark.Circular
-        size={120}
-        checkMarkColor={'blue'}
-        duration={1500}
-      />
-    </View>
-  );
-};
+const AnimatedCheckMark = () => (
+  <View style={styles.container}>
+    <AnimatedCheckMark.Circular
+      size={120}
+      checkMarkColor={'blue'}
+      duration={1500}
+    />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -170,17 +168,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AnimatedCheckMark } from 'react-native-animation-catalog';
 
-const AnimatedCheckMark = () => {
-  return (
-    <View style={styles.container}>
-      <AnimatedCheckMark.Simple
-        size={120}
-        checkMarkColor={'black'}
-        duration={1500}
-      />
-    </View>
-  );
-};
+const AnimatedCheckMark = () => (
+  <View style={styles.container}>
+    <AnimatedCheckMark.Simple
+      size={120}
+      checkMarkColor={'black'}
+      duration={1500}
+    />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {

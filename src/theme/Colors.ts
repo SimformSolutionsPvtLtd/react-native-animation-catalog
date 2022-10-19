@@ -50,6 +50,7 @@ const Colors = {
   matterhornSnow: '#edfcfe',
   havelockBlue: '#59abdd',
   violet: '#0b0e37',
+  green: '#77aa12'
 };
 
 export default Colors;

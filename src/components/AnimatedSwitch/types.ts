@@ -17,6 +17,7 @@ export interface AnimatedSwitchProps {
   size: Range<40, 151>;
   lightThemeColor: string;
   darkThemeColor: string;
+  onToggle?: (status: string) => void;
 }
 
 export interface StyleProps {
@@ -25,6 +26,7 @@ export interface StyleProps {
 
 export interface DayAndNightAnimatedSwitchProps {
   size: Range<40, 151>;
+  onToggle?: (status: string) => void;
 }
 
 export interface AnimatedCloudProps {

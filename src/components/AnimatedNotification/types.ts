@@ -10,7 +10,7 @@ export type Range<F extends number, T extends number> = Exclude<
   Enumerate<F>
 >;
 
-export interface AnimatedNotificationStyle {
+export interface AnimatedNotificationProps {
   size?: Range<20, 230>;
   color?: string;
   numberOfNotification?: number;

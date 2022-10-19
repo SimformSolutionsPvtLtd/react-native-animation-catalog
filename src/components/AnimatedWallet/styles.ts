@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 import { Metrics } from '../../theme';
-import type { AnimatedWalletStyle } from './types';
+import type { AnimatedWalletProps } from './types';
 
 const { moderateScale, horizontalScale, verticalScale } = Metrics;
-const styles = ({ size }: AnimatedWalletStyle) =>
+const styles = ({ size }: AnimatedWalletProps) =>
   StyleSheet.create({
     container: {
       height: verticalScale(size),

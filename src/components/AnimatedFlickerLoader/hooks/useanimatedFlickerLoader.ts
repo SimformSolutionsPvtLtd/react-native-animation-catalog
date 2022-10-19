@@ -5,7 +5,7 @@ import {
   withRepeat,
   withTiming,
 } from 'react-native-reanimated';
-import type { AnimatedFlickerLoaderProp } from '../type';
+import type { AnimatedFlickerLoaderProp } from '../types';
 
 const useAnimatedFlicker = ({
   duration = 800,

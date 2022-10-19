@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Animated, Easing } from 'react-native';
-import type { AnimatedCheckMarkProps } from '../type';
+import type { AnimatedCheckMarkProps } from '../types';
 
 const useAnimatedCheckMark = ({
   size = 80,

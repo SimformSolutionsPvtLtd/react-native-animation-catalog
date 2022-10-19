@@ -1,12 +1,12 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
-import {AnimatedCheckMark} from 'react-native-animation-catalog';
+import { Text, View } from 'react-native';
+import { AnimatedCheckMark } from 'react-native-animation-catalog';
 import Images from '../../assets';
-import {CustomHeader} from '../../components';
-import {Strings} from '../../constants';
-import {NavProps} from '../../navigation/types';
-import {Colors} from '../../theme';
+import { CustomHeader } from '../../components';
+import { Strings } from '../../constants';
+import { NavProps } from '../../navigation/types';
+import { Colors } from '../../theme';
 import styles from './styles/styles';
 
 const AnimatedCheckMarkScreen = () => {

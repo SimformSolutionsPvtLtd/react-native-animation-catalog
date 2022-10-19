@@ -1,11 +1,11 @@
 import { useEffect, useRef } from 'react';
 import { Animated } from 'react-native';
-import type { AnimationStyleProps } from '../type';
+import type { AnimationCheckMarkProps } from '../types';
 
 const useSimpleAnimatedCheckMark = ({
   size,
   duration,
-}: AnimationStyleProps) => {
+}: AnimationCheckMarkProps) => {
   const animation = useRef(new Animated.Value(0)).current;
 
   const parentCircleAnimation = {

@@ -36,17 +36,15 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { AnimatedSwitch } from 'react-native-animation-catalog';
 
-const AnimatedSwitch = () => {
-  return (
-    <View style={styles.container}>
-      <AnimatedSwitch
-        size={130}
-        lightThemeColor={'#59abdd'}
-        darkThemeColor={'#0f1341'}
-      />
-    </View>
-  );
-};
+const AnimatedSwitch = () => (
+  <View style={styles.container}>
+    <AnimatedSwitch
+      size={130}
+      lightThemeColor={'#59abdd'}
+      darkThemeColor={'#0f1341'}
+    />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -67,11 +65,12 @@ export default AnimatedSwitch;
 
 #### Properties
 
-| Props           | Default   | Type   | Description                     |
-| :-------------- | :-------- | :----- | :------------------------------ |
-| size            | `100`     | number | `size` of `switch`.             |
-| lightThemeColor | `#59abdd` | string | `switch color` when it's `OFF`. |
-| darkThemeColor  | `#0f1341` | string | `switch color` when it's `ON`   |
+| Props           | Default   | Type   | Description                                               |
+| :-------------- | :-------- | :----- | :-------------------------------------------------------- |
+| size            | `100`     | number | `size` of `switch`.                                       |
+| lightThemeColor | `#59abdd` | string | `switch color` when it's `OFF`.                           |
+| darkThemeColor  | `#0f1341` | string | `switch color` when it's `ON`                             |
+| onToggle        | `light`   | string | `onToggle`to get the value of switch either light or dark |
 
 #### 2. DayAndNightTheme
 
@@ -90,9 +89,10 @@ export default AnimatedSwitch;
 
 #### Properties
 
-| Props | Default | Type   | Description         |
-| :---- | :------ | :----- | :------------------ |
-| size  | `100`   | number | `size` of `switch`. |
+| Props    | Default | Type   | Description                                                |
+| :------- | :------ | :----- | :--------------------------------------------------------- |
+| size     | `100`   | number | `size` of `switch`.                                        |
+| onToggle | light   | string | `onToggle` to get the value of switch either light or dark |
 
 #### 🎬 Preview Example
 
