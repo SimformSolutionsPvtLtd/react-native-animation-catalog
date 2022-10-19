@@ -1,4 +1,4 @@
-# AnimatedSwitch
+# Animated Switch
 
 `AnimatedSwitch` component can be used to provide a marvellous animation when user changing the state of system functionalities and preferences using Toggle Switch.
 

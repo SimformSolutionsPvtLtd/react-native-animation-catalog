@@ -16,7 +16,7 @@ const AnimatedWalletScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <AnimatedWallet numberOfCards={1} />
+        <AnimatedWallet />
       </View>
     </>
   );

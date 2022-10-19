@@ -44,7 +44,7 @@ const styles = ({
       width: horizontalScale(50),
       borderTopRightRadius: borderRadius,
     },
-    innerVerticalScrollAnimated: {
+    verticalScrollAnimated: {
       alignItems: 'center',
       justifyContent: 'center',
     },
