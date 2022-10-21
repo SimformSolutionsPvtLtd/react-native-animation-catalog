@@ -1,16 +1,17 @@
 import React from 'react';
 import { View } from 'react-native';
 import Animated from 'react-native-reanimated';
+import { Colors } from '../../theme';
 import Image from '../../assets/index';
 import { useAnimatedNotification } from './hooks';
 import styles from './styles';
-import type { AnimatedNotificationStyle } from './type';
+import type { AnimatedNotificationProps } from './types';
 
 const AnimatedNotification = ({
   size = 100,
-  color = '#77aa12',
+  color = Colors.green,
   numberOfNotification = 1,
-}: Partial<AnimatedNotificationStyle>) => {
+}: Partial<AnimatedNotificationProps>) => {
   const {
     messageBoxAnimation,
     primaryCircleAnimation,

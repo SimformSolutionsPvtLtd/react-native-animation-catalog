@@ -4,14 +4,14 @@ import LinearGradient from 'react-native-linear-gradient';
 import { Colors } from '../../theme';
 import { useAnimatedWallet } from './hook';
 import styles from './styles';
-import type { AnimatedWalletStyle } from './types';
+import type { AnimatedWalletProps } from './types';
 
 const AnimatedWallet = ({
   size = 250,
   primaryColor = Colors.red,
   secondaryColor = Colors.orange,
   numberOfCards = 3,
-}: Partial<AnimatedWalletStyle>) => {
+}: Partial<AnimatedWalletProps>) => {
   const {
     AnimatedGradientView,
     walletPinAnimation,

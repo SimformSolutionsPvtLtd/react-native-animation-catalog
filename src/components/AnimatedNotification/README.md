@@ -19,13 +19,11 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { AnimatedNotification } from 'react-native-animation-catalog';
 
-const AnimatedNotificationScreen = () => {
-  return (
-    <View style={styles.container}>
-      <AnimatedNotification size={140} />
-    </View>
-  );
-};
+const AnimatedNotificationScreen = () => (
+  <View style={styles.container}>
+    <AnimatedNotification size={140} />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {

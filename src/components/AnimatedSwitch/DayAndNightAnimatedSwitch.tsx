@@ -9,6 +9,7 @@ import type { DayAndNightAnimatedSwitchProps } from './types';
 
 const DayAndNightAnimatedSwitch = ({
   size = 100,
+  onToggle,
 }: Partial<DayAndNightAnimatedSwitchProps>) => {
   const {
     toggle,
@@ -20,7 +21,7 @@ const DayAndNightAnimatedSwitch = ({
     cloudsAnimatedStyle,
     fallingStarAnimatedStyle,
     starsAnimatedStyle,
-  } = useDayAndNightAnimatedSwitch({ size });
+  } = useDayAndNightAnimatedSwitch({ size, onToggle });
 
   const {
     backgroundContainer,

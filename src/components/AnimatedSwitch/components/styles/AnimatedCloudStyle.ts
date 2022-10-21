@@ -1,6 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 import { Colors, Metrics } from '../../../../theme';
-import type { StyleProps } from "../../types";
+import type { StyleProps } from '../../types';
 
 const { roundToNearestPixel } = Metrics;
 
@@ -27,4 +27,4 @@ const style = ({ size = 100 }: Partial<StyleProps>) =>
       bottom: roundToNearestPixel(size * 0.04375),
     },
   });
-  export default style;
+export default style;

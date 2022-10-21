@@ -1,9 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import Animated from 'react-native-reanimated';
-import useAnimatedFlicker from './hooks/useanimatedFlickerLoader';
-import styles from './style';
-import type { AnimatedFlickerLoaderProp } from './type';
+import { useAnimatedFlicker } from './hooks';
+import styles from './styles';
+import type { AnimatedFlickerLoaderProp } from './types';
 
 const AnimatedFlickerLoader = ({
   style,

@@ -10,18 +10,18 @@ const AnimatedThemeSwitch = ({
   size = 100,
   lightThemeColor = Colors.kournikova,
   darkThemeColor = Colors.darkModerateViolet,
+  onToggle,
 }: Partial<AnimatedSwitchProps>) => {
   const {
     toggle,
     interpolatedButtonColor,
     overrideNotchAnimatedStyle,
     notchAnimatedStyle,
-  } = useAnimatedSwitch({ size, lightThemeColor, darkThemeColor });
+  } = useAnimatedSwitch({ size, lightThemeColor, darkThemeColor, onToggle });
 
   const { buttonContainer, overrideNotch, notch } = styles({
     size,
   });
-
   return (
     <Animated.View style={[buttonContainer, interpolatedButtonColor]}>
       <Pressable onPress={toggle} style={buttonContainer}>

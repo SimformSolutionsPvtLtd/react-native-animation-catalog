@@ -3,13 +3,13 @@ import { useEffect, useRef } from 'react';
 import { Animated } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from '../styles';
-import type { AnimatedWalletStyle } from '../types';
+import type { AnimatedWalletProps } from '../types';
 
 const useAnimatedWallet = ({
   size,
   primaryColor = '',
   secondaryColor = '',
-}: AnimatedWalletStyle) => {
+}: AnimatedWalletProps) => {
   const AnimatedGradientView = Animated.createAnimatedComponent(LinearGradient);
   const animation = useRef(new Animated.Value(0))?.current;
 

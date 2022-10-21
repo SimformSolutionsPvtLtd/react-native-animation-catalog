@@ -11,6 +11,7 @@ const useAnimatedSwitch = ({
   size,
   lightThemeColor,
   darkThemeColor,
+  onToggle,
 }: AnimatedSwitchProps) => {
   const [darkTheme, setDarkTheme] = useState(false);
   const offSet = useSharedValue(0);
@@ -21,12 +22,14 @@ const useAnimatedSwitch = ({
       offSet.value = withTiming(0.5, { duration: 810 });
       overSet.value = withTiming(0.5, { duration: 810 });
       setDarkTheme(true);
+      onToggle?.('dark');
     } else {
       setDarkTheme(false);
+      onToggle?.('light');
       offSet.value = withTiming(0, { duration: 810 });
       overSet.value = withTiming(0, { duration: 810 });
     }
-  }, [offSet, overSet]);
+  }, [offSet, overSet, onToggle]);
 
   const notchAnimatedStyle = useAnimatedStyle(() => {
     return {

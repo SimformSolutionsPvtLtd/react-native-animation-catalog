@@ -7,4 +7,10 @@ const AnimatedCheckMark = Object.assign(FadedAnimatedCheckMark, {
   Simple: SimpleAnimatedCheckMark,
 });
 
+export type {
+  AnimationCheckMarkProps,
+  CircularAnimatedProps,
+  AnimatedParticlesProps,
+  AnimatedCheckMarkProps,
+} from './types';
 export { AnimatedCheckMark };

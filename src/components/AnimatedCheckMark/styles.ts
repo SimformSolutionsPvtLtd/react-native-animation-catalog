@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Metrics } from '../../theme';
-import type { StyleProps } from './type';
+import type { StyleProps } from './types';
 
 const { moderateScale, horizontalScale, verticalScale } = Metrics;
 

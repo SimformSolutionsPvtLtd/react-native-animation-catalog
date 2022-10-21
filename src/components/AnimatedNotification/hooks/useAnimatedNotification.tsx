@@ -7,12 +7,12 @@ import {
   useSharedValue,
   withTiming,
 } from 'react-native-reanimated';
-import type { AnimatedNotificationStyle } from '../type';
+import type { AnimatedNotificationProps } from '../types';
 
 const useAnimatedNotification = ({
   size = 100,
   color = '#77aa12',
-}: AnimatedNotificationStyle) => {
+}: AnimatedNotificationProps) => {
   const animation = useSharedValue(0);
 
   const messageBoxAnimation = useAnimatedStyle(() => {
@@ -219,7 +219,8 @@ const useAnimatedNotification = ({
 
   useEffect(() => {
     animation.value = withTiming(8, { duration: 2500 });
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return {
     messageBoxAnimation,

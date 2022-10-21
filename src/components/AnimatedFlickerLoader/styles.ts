@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Colors, Metrics } from '../../theme';
-import type { AnimatedFlickerLoaderProp } from './type';
+import type { AnimatedFlickerLoaderProp } from './types';
 
 const { moderateScale } = Metrics;
 

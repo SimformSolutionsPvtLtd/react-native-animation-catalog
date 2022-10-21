@@ -2,7 +2,7 @@ import React from 'react';
 import { Animated } from 'react-native';
 import Images from '../../assets';
 import { Colors } from '../../theme';
-import useSimpleAnimatedCheckMark from './hooks/useSimpleAnimatedCheckMark';
+import { useSimpleAnimatedCheckMark } from './hooks';
 import styles from './styles';
 
 const SimpleAnimatedCheckMark = ({
