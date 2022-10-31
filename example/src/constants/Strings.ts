@@ -22,4 +22,12 @@ export default {
   DEFAULT_MEDIA_BUTTON_WITH_PULSE: 'Simple Media Button with Pulse (Default)',
   CUSTOM_MEDIA_BUTTON_WITH_PULSE: 'Custom Media Button with Pulse',
   SIMPLE_MEDIA_BUTTON_WITH_PULSE: 'Simple Media Button without pulse',
+  DEFAULT_ANIMATED_CHECK_MARK:
+    '●  Animated Checkmark with fade effect and particles(default)',
+  CIRCULAR_ANIMATED_CHECK_MARK:
+    '●  Animated Checkmark with simple circular effect',
+  SIMPLE_ANIMATED_CHECKMARK: '●  Animated Checkmark with simple effect',
+  ANIMATED_SCANNER: 'Animated Scanner',
+  ANIMATED_SWITCH: 'Animated Switch',
+  DAY_AND_NIGHT_ANIMATED_SWITCH: 'Day and Night Animated Switch',
 };

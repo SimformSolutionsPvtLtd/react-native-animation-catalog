@@ -1,6 +1,6 @@
-import { NavigationStrings } from '../constants';
 import Images from '../assets';
-import { NavProps } from '../navigation/types';
+import {NavigationStrings} from '../constants';
+import {NavProps} from '../navigation/types';
 
 export const imageData = [
   {
@@ -80,6 +80,36 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Media Button',
     screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
   },
+  {
+    id: 8,
+    name: 'Animated Check Mark',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_CHECK_MARK),
+  },
+  {
+    id: 9,
+    name: 'Animated Wallet',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_WALLET),
+  },
+  {
+    id: 10,
+    name: 'Animated Scanner',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SCANNER),
+  },
+  {
+    id: 11,
+    name: 'Animated Switch',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SWITCH),
+  },
+  {
+    id: 12,
+    name: 'Animated Notification',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_NOTIFICATION),
+  },
+  {
+    id: 13,
+    name: 'Animated Flicker Loader',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
+  }
 ];
 
 export const FOLLOWING = [

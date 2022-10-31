@@ -8,6 +8,16 @@ export default {
   blue700: '#0288D1',
   cyan: '#00838F',
   redVelvet: '#FF5252',
+  purple: '#9575CD',
+  kournikova: '#ffe767',
+  darkModerateViolet: '#513788',
+  mayaBlue: '#69c7ff',
+  lightYellow: '#ffef88',
+  midnightExpress: '#0f1341',
+  lightCyan: '#dcf4f7',
+  matterhornSnow: '#edfcfe',
+  havelockBlue: '#59abdd',
+  violet: '#0b0e37',
 
   //-------------------- ColorSets for Gradient --------------------
   colorSet2: [

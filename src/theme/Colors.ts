@@ -1,6 +1,7 @@
 const Colors = {
   //Gradient shade 1 colors (Material Design Color --> Primary)
   lightBlue900: '#01579B',
+  lightBlue800: '#0277BD',
   lightBlue500: '#03A9F4',
   lightBlue400: '#29B6F6',
   lightBlue300: '#4FC3F7',
@@ -37,6 +38,19 @@ const Colors = {
   redVelvet: '#FF5252',
   offWhite: '#FAFAFA',
   red100: '#FFCDD2',
+  red: '#f51e0f',
+  orange: '#f07a05',
+  kournikova: '#ffe767',
+  darkModerateViolet: '#513788',
+  blue: '#0000FF',
+  mayaBlue: '#69c7ff',
+  lightYellow: '#ffef88',
+  midnightExpress: '#0f1341',
+  lightCyan: '#dcf4f7',
+  matterhornSnow: '#edfcfe',
+  havelockBlue: '#59abdd',
+  violet: '#0b0e37',
+  green: '#77aa12'
 };
 
 export default Colors;
