@@ -2,7 +2,7 @@
 
 `AnimatedSwitch` component can be used to provide a marvellous animation when user changing the state of system functionalities and preferences using Toggle Switch.
 
-- `AnimatedSwitch` component has two different variants: `<AnimatedSwitch />` and `<AnimatedSwitch.DayAndNightTheme/>`.
+- `AnimatedSwitch` component has three different variants: `<AnimatedSwitch />`,`<AnimatedSwitch.DayAndNightTheme/>` and `<AnimatedSwitch.SeaTheme/>`.
 
 #### 🎬 Preview
 
@@ -10,7 +10,7 @@
 
 |            Animated Switch             |
 | :------------------------------------: |
-| ![alt tag](/assets/AnimatedSwitch.gif) |
+| ![alt tag](/assets/AnimatedSwitchDefault.gif) |
 
 #### 1. Default
 
@@ -119,6 +119,61 @@ export default AnimatedSwitch;
 ##### Custom Usage Preview
 
 ![alt tag](/assets/DayAndNIghtThemeCustomUsageAnimatedSwitch.gif)
+
+---
+
+#### Properties
+
+| Props           | Default   | Type   | Description                  |
+| :-------------- | :-------- | :----- | :--------------------------- |
+| size            | 100       | number | `size` of Switch.            |
+
+#### 3. SeaTheme
+
+#### Default Usage
+
+---
+
+```jsx
+import React from 'react';
+import { AnimatedSwitch } from 'react-native-animation-catalog';
+
+const AnimatedSwitch = () => <AnimatedSwitch.DayAndNightTheme />;
+
+export default AnimatedSwitch;
+```
+
+#### Custom Usage
+
+```jsx
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { AnimatedSwitch } from 'react-native-animation-catalog';
+
+const AnimatedSwitch = () => {
+  return (
+    <View style={styles.container}>
+      <AnimatedSwitch.SeaTheme
+        size={100}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+  },
+});
+
+export default AnimatedSwitch;
+```
+
+##### Custom Usage Preview
+
+![alt tag](/assets/SeaThemeSwitch.gif)
 
 ---
 

@@ -7,16 +7,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  firstVariantContainer: {
+  variantContainer: {
     padding: moderateScale(20),
   },
-  firstVariantTitle: {
+  variantTitle: {
     fontSize: moderateScale(16),
     fontWeight: '500',
     letterSpacing: 1,
     color: Colors.black,
   },
-  firstSwitchContainer: {
+  switchContainer: {
     marginTop: verticalScale(22),
     alignItems: 'center',
   },

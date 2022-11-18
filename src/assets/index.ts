@@ -6,4 +6,11 @@ export default {
   checkMark: require('./check.png'),
   star: require('./star.png'),
   multipleStar: require('./multipleStar.png'),
+  river: require('./river.png'),
+  middleCloud: require('./middleCloud.png'),
+  upperCloud: require('./upperCloud.png'),
+  lowerCloud: require('./lowerCloud.png'),
+  sideCloud: require('./sideCloud.png'),
+  coconutTree: require('./coconutTree.png'),
+  reverseCoconutTree: require('./secondCoconutTree.png'),
 };

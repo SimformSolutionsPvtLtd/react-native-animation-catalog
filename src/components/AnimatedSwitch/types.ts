@@ -36,3 +36,7 @@ export interface AnimatedCloudProps {
 export interface AnimatedStarProps {
   starStyle: ViewStyle;
 }
+
+export interface SeaThemeSwitchProps {
+  size: Range<40, 151>;
+}

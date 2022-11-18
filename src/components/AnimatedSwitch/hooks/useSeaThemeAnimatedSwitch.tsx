@@ -1,57 +1,57 @@
 import { useCallback, useState } from 'react';
 import {
+  interpolate,
   interpolateColor,
   useAnimatedStyle,
   useSharedValue,
   withTiming,
-  interpolate,
 } from 'react-native-reanimated';
 import { Colors } from '../../../theme';
-import type { AnimatedSwitchProps } from '../types';
+import type { SeaThemeSwitchProps } from '../types';
 
-const useSeaThemeAnimatedSwitch = ({
-  size,
-  lightThemeColor,
-  darkThemeColor,
-}: AnimatedSwitchProps) => {
+const useSeaThemeAnimatedSwitch = ({ size }: SeaThemeSwitchProps) => {
   const [darkTheme, setDarkTheme] = useState(false);
   const offSet = useSharedValue(0);
-  const overSet = useSharedValue(0);
-
+  const sunOffSet = useSharedValue(0);
+  const moonOffset = useSharedValue(0);
   const toggle = useCallback(() => {
     if (offSet?.value === 0) {
       offSet.value = withTiming(0.5, { duration: 810 });
-      overSet.value = withTiming(0.5, { duration: 810 });
+      sunOffSet.value = withTiming(0.5, { duration: 500 });
+      moonOffset.value = withTiming(0, { duration: 100 });
+
       setDarkTheme(true);
     } else {
       setDarkTheme(false);
       offSet.value = withTiming(0, { duration: 810 });
-      overSet.value = withTiming(0, { duration: 810 });
+      sunOffSet.value = withTiming(0, { duration: 6000 });
+
+      moonOffset.value = withTiming(1, { duration: 1600 });
     }
-  }, [offSet, overSet]);
+  }, [offSet, sunOffSet, moonOffset]);
 
   const notchAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
         {
-          translateX: offSet.value * size * 3.22,
+          translateX: offSet.value * size * 3.21,
         },
       ],
     };
   }, []);
 
-  const interpolatedButtonColor = useAnimatedStyle(() => {
+  const buttonContainerAnimatedStyle = useAnimatedStyle(() => {
     const backgroundColor = interpolateColor(
       offSet.value,
       [0, 0.5],
-      [lightThemeColor, darkThemeColor]
+      [Colors.frenchPass, Colors.koromiko]
     );
 
     return {
       backgroundColor,
     };
   });
-  const interpolatedriverColor = useAnimatedStyle(() => {
+  const riverAnimatedStyle = useAnimatedStyle(() => {
     const tintColor = interpolateColor(
       offSet.value,
       [0, 0.5],
@@ -63,7 +63,7 @@ const useSeaThemeAnimatedSwitch = ({
     };
   });
 
-  const interpolatedSeaColor = useAnimatedStyle(() => {
+  const seaAnimatedStyle = useAnimatedStyle(() => {
     const backgroundColor = interpolateColor(
       offSet.value,
       [0, 0.5],
@@ -74,23 +74,18 @@ const useSeaThemeAnimatedSwitch = ({
       backgroundColor,
     };
   });
-  const interpolatedUpperCloudColor = useAnimatedStyle(() => {
-    // const tintColor = interpolateColor(
-    //   offSet.value,
-    //   [0, 0.5],
-    //   [Colors.anakiwa, Colors.texasRose]
-    // );
 
+  const upperCloudsAnimatedStyle = useAnimatedStyle(() => {
     return {
-      // tintColor,
       opacity: interpolate(offSet.value, [0, 0.4, 0.5], [0, 0, 1]),
     };
   });
-  const interpolatedCloudColor = useAnimatedStyle(() => {
+
+  const cloudsAnimatedStyle = useAnimatedStyle(() => {
     const tintColor = interpolateColor(
       offSet.value,
-      [0, 0.3, 0.4, 0.5],
-      [Colors.anakiwa, Colors.casablanca, Colors.casablanca, Colors.casablanca]
+      [0, 0.5],
+      [Colors.anakiwa, Colors.casablanca]
     );
 
     return {
@@ -98,15 +93,62 @@ const useSeaThemeAnimatedSwitch = ({
     };
   });
 
+  const sunAnimatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [
+        {
+          translateX: interpolate(
+            sunOffSet.value,
+            [0, 0.2, 0.3, 0.4, 0.5, 1],
+            [0, 0, 0, 0, size * -0.6, size * -0.6]
+          ),
+        },
+        {
+          translateY: interpolate(
+            sunOffSet.value,
+            [0, 0.2, 0.3, 0.4, 0.5, 1],
+            [0, 0, 0, 0, size * -0.6, size * -0.6]
+          ),
+        },
+      ],
+      opacity: interpolate(
+        sunOffSet.value,
+        [0, 0.1, 0.4, 0.5, 0.6],
+        [1, 1, 1, 0, 1]
+      ),
+    };
+  });
+
+  const moonAnimatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [
+        {
+          translateY: interpolate(
+            moonOffset.value,
+            [0, 1, 2],
+            [0, size * 0.6, size * 0.7]
+          ),
+        },
+      ],
+      opacity: interpolate(
+        sunOffSet.value,
+        [0, 0.1, 0.4, 0.5, 0.6],
+        [0, 0, 0, 1, 1]
+      ),
+    };
+  }, []);
+
   return {
     toggle,
-    interpolatedButtonColor,
+    buttonContainerAnimatedStyle,
     notchAnimatedStyle,
     darkTheme,
-    interpolatedSeaColor,
-    interpolatedriverColor,
-    interpolatedUpperCloudColor,
-    interpolatedCloudColor,
+    seaAnimatedStyle,
+    riverAnimatedStyle,
+    upperCloudsAnimatedStyle,
+    cloudsAnimatedStyle,
+    sunAnimatedStyle,
+    moonAnimatedStyle,
   };
 };
 

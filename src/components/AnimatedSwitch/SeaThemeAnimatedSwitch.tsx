@@ -1,65 +1,75 @@
 import React from 'react';
 import { Image, Pressable } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { Colors } from '../../theme';
+import Images from '../../assets';
 import { useSeaThemeAnimatedSwitch } from './hooks';
 import styles from './styles';
-import type { AnimatedSwitchProps } from './types';
-import Images from '../../assets';
+import type { SeaThemeSwitchProps } from './types';
+
 const SeaThemeAnimatedSwitch = ({
   size = 100,
-  lightThemeColor = Colors.kournikova,
-  darkThemeColor = Colors.darkModerateViolet,
-}: Partial<AnimatedSwitchProps>) => {
+}: Partial<SeaThemeSwitchProps>) => {
   const {
     toggle,
-    interpolatedButtonColor,
+    buttonContainerAnimatedStyle,
     notchAnimatedStyle,
-    interpolatedSeaColor,
-    interpolatedriverColor,
-    interpolatedUpperCloudColor,
-    interpolatedCloudColor,
-  } = useSeaThemeAnimatedSwitch({ size, lightThemeColor, darkThemeColor });
+    seaAnimatedStyle,
+    riverAnimatedStyle,
+    upperCloudsAnimatedStyle,
+    cloudsAnimatedStyle,
+    sunAnimatedStyle,
+    moonAnimatedStyle,
+  } = useSeaThemeAnimatedSwitch({ size });
 
   const {
     seaThemeButtonContainer,
     seaThemeNotch,
     seaViewStyle,
-
     riverStyle,
     cloudStyle,
     upperCloudStyle,
     sideCloudStyle,
     coconutTree,
     reverseCoconutTree,
+    firstLayerOfSun,
+    secondLayerOfSun,
+    thirdLayerOfSun,
+    moonStyle,
   } = styles({
     size,
   });
 
   return (
-    <Animated.View style={[seaThemeButtonContainer, interpolatedButtonColor]}>
+    <Animated.View
+      style={[seaThemeButtonContainer, buttonContainerAnimatedStyle]}
+    >
       <Pressable onPress={toggle} style={seaThemeButtonContainer}>
+        <Animated.View style={[firstLayerOfSun, sunAnimatedStyle]}>
+          <Animated.View style={secondLayerOfSun}>
+            <Animated.View style={thirdLayerOfSun} />
+          </Animated.View>
+        </Animated.View>
+        <Animated.View style={[moonStyle, moonAnimatedStyle]} />
         <Animated.View style={[seaThemeNotch, notchAnimatedStyle]} />
         <Animated.Image
           source={Images.upperCloud}
-          style={[upperCloudStyle, interpolatedUpperCloudColor]}
+          style={[upperCloudStyle, upperCloudsAnimatedStyle]}
         />
         <Animated.Image
-          source={Images.cloud1}
-          style={[cloudStyle, interpolatedCloudColor]}
+          source={Images.middleCloud}
+          style={[cloudStyle, cloudsAnimatedStyle]}
         />
         <Image source={Images.coconutTree} style={coconutTree} />
         <Animated.Image
           source={Images.sideCloud}
-          style={[sideCloudStyle, interpolatedUpperCloudColor]}
+          style={[sideCloudStyle, upperCloudsAnimatedStyle]}
         />
         <Image source={Images.reverseCoconutTree} style={reverseCoconutTree} />
 
-        <Animated.View style={[interpolatedSeaColor, seaViewStyle]}>
+        <Animated.View style={[seaAnimatedStyle, seaViewStyle]}>
           <Animated.Image
             source={Images.river}
-            style={[riverStyle, interpolatedriverColor]}
-            // resizeMode={'contain'}
+            style={[riverStyle, riverAnimatedStyle]}
           />
         </Animated.View>
       </Pressable>

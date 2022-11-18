@@ -29,4 +29,5 @@ export default {
   SIMPLE_ANIMATED_CHECKMARK: '●  Animated Checkmark with simple effect',
   ANIMATED_SWITCH: 'Animated Switch',
   DAY_AND_NIGHT_ANIMATED_SWITCH: 'Day and Night Animated Switch',
+  SEA_THEME_ANIMATED_SWITCH: 'Sea theme Animated Switch',
 };
