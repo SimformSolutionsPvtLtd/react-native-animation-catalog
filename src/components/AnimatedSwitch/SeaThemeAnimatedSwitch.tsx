@@ -43,7 +43,7 @@ const SeaThemeAnimatedSwitch = ({
     <Animated.View
       style={[seaThemeButtonContainer, buttonContainerAnimatedStyle]}
     >
-      <Pressable onPress={toggle} style={seaThemeButtonContainer}>
+      <Pressable onPress={toggle}>
         <Animated.View style={[firstLayerOfSun, sunAnimatedStyle]}>
           <Animated.View style={secondLayerOfSun}>
             <Animated.View style={thirdLayerOfSun} />

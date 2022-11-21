@@ -20,9 +20,7 @@ const AnimatedSwitchScreen = () => {
       />
       <View style={styles.container}>
         <View style={styles.variantContainer}>
-          <Text style={styles.variantContainer}>
-            {Strings.ANIMATED_SWITCH}
-          </Text>
+          <Text style={styles.variantContainer}>{Strings.ANIMATED_SWITCH}</Text>
           <View style={styles.switchContainer}>
             <AnimatedSwitch
               size={100}
@@ -44,7 +42,7 @@ const AnimatedSwitchScreen = () => {
             {Strings.SEA_THEME_ANIMATED_SWITCH}
           </Text>
           <View style={styles.switchContainer}>
-            <AnimatedSwitch.SeaTheme size={40} />
+            <AnimatedSwitch.SeaTheme size={100} />
           </View>
         </View>
       </View>

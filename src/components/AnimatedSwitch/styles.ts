@@ -154,7 +154,7 @@ const styles = ({ size = 100 }: Partial<StyleProps>) =>
       width: roundToNearestPixel(size * 2.6),
       borderRadius: size / 2,
       overflow: 'hidden',
-      borderWidth: roundToNearestPixel(size * 0.005),
+      borderWidth: roundToNearestPixel(size * 0.01),
       borderColor: Colors.black,
     },
     firstLayerOfSun: {
@@ -205,7 +205,7 @@ const styles = ({ size = 100 }: Partial<StyleProps>) =>
       backgroundColor: Colors.white,
       borderRadius: size / 2,
       borderColor: Colors.black,
-      borderWidth: roundToNearestPixel(size * 0.0089),
+      borderWidth: roundToNearestPixel(size * 0.009),
       zIndex: 2,
     },
     upperCloudStyle: {
