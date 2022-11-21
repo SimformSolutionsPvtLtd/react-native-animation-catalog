@@ -8,4 +8,11 @@ export default {
   multipleStar: require('./multipleStar.png'),
   pdf: require('./pdf.png'),
   messageBox: require('./messageBox.png'),
+  river: require('./river.png'),
+  middleCloud: require('./middleCloud.png'),
+  upperCloud: require('./upperCloud.png'),
+  lowerCloud: require('./lowerCloud.png'),
+  sideCloud: require('./sideCloud.png'),
+  coconutTree: require('./coconutTree.png'),
+  reverseCoconutTree: require('./secondCoconutTree.png'),
 };

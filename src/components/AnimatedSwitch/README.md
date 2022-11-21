@@ -2,7 +2,7 @@
 
 `AnimatedSwitch` component can be used to provide a marvellous animation when user changing the state of system functionalities and preferences using Toggle Switch.
 
-- `AnimatedSwitch` component has two different variants: `<AnimatedSwitch />` and `<AnimatedSwitch.DayAndNightTheme/>`.
+- `AnimatedSwitch` component has three different variants: `<AnimatedSwitch />`,`<AnimatedSwitch.DayAndNightTheme/>` and `<AnimatedSwitch.SeaTheme/>`.
 
 #### 🎬 Preview
 
@@ -10,7 +10,7 @@
 
 |            Animated Switch             |
 | :------------------------------------: |
-| ![alt tag](/assets/AnimatedSwitch.gif) |
+| ![alt tag](/assets/SwitchDefault.gif) |
 
 #### 1. Default
 
@@ -83,6 +83,28 @@ import React from 'react';
 import { AnimatedSwitch } from 'react-native-animation-catalog';
 
 const AnimatedSwitch = () => <AnimatedSwitch.DayAndNightTheme />;
+
+export default AnimatedSwitch;
+```
+
+#### Properties
+
+| Props    | Default | Type   | Description                                                |
+| :------- | :------ | :----- | :--------------------------------------------------------- |
+| size     | `100`   | number | `size` of `switch`.                                        |
+| onToggle | light   | string | `onToggle` to get the value of switch either light or dark |
+
+#### 3. SeaTheme
+
+#### Default Usage
+
+---
+
+```jsx
+import React from 'react';
+import { AnimatedSwitch } from 'react-native-animation-catalog';
+
+const AnimatedSwitch = () => <AnimatedSwitch.SeaTheme />;
 
 export default AnimatedSwitch;
 ```

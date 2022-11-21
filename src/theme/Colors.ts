@@ -50,7 +50,19 @@ const Colors = {
   matterhornSnow: '#edfcfe',
   havelockBlue: '#59abdd',
   violet: '#0b0e37',
-  green: '#77aa12'
+  green: '#77aa12',
+  frenchPass: '#A9eafc',
+  koromiko: '#Ffc165',
+  cornflowerBlue: '#5Eb4Ee',
+  jambalaya: '#5A3612',
+  onahau: '#Cefaff',
+  anakiwa: 'rgba(77, 210, 247, 0.68)',
+  casablanca: '#f7a64f',
+  transparentLemon100: 'rgba(255, 239, 136, 0.35)',
+  transparentLemon200: 'rgba(255, 239, 136, 0.45)',
+  lightYellow2: 'rgba(255, 239, 136, 0.8)',
+  texasRose: '#ffb557',
+  brownRust: '#A26F38',
 };
 
 export default Colors;
