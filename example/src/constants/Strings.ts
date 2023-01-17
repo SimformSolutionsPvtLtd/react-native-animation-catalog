@@ -31,4 +31,5 @@ export default {
   ANIMATED_SWITCH: 'Animated Switch',
   DAY_AND_NIGHT_ANIMATED_SWITCH: 'Day and Night Animated Switch',
   SEA_THEME_ANIMATED_SWITCH: 'Sea Theme Animated Switch',
+  STRIKE_IMAGE: 'Strike Image',
 };

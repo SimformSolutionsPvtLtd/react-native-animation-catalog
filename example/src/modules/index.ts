@@ -1,6 +1,7 @@
 import AnimatedCheckMarkScreen from './AnimatedCheckMark/AnimatedCheckMark';
 import AnimatedFlickerLoaderScreen from './AnimatedFlickerLoader/AnimatedFlickerLoaderScreen';
 import AnimatedListScreen from './AnimatedList/AnimatedListScreen';
+import AnimatedNotificationScreen from './AnimatedNotification/AnimatedNotification';
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
 import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
 import AnimatedWalletScreen from './AnimatedWallet/AnimatedWallet';
@@ -10,7 +11,7 @@ import HomeScreen from './Home/HomeScreen';
 import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import ParallaxHeaderScreen from './ParallaxHeader/ParallaxHeaderScreen';
 import ParallaxHeaderTabScreen from './ParallaxHeader/ParallaxHeaderTabScreen';
-import AnimatedNotificationScreen from './AnimatedNotification/AnimatedNotification';
+import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
 
 export {
   HomeScreen,
@@ -26,4 +27,5 @@ export {
   AnimatedSwitchScreen,
   AnimatedNotificationScreen,
   AnimatedFlickerLoaderScreen,
+  StrikeImageScreen,
 };

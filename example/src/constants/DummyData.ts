@@ -1,6 +1,6 @@
 import Images from '../assets';
 import { NavigationStrings } from '../constants';
-import { NavProps } from '../navigation/types';
+import type { NavProps } from '../navigation/types';
 
 export const imageData = [
   {
@@ -110,6 +110,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Flicker Loader',
     screen: () =>
       navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
+  },
+  {
+    id: 14,
+    name: 'Strike Image',
+    screen: () => navigation.navigate(NavigationStrings.STRIKE_IMAGE),
   },
 ];
 

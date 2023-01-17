@@ -10,4 +10,5 @@ export * from './components/AnimatedWallet';
 export * from './components/GradientProgress';
 export * from './components/MediaButton';
 export * from './components/ParallaxHeader';
+export * from './components/StrikeImage';
 export * from './theme';
