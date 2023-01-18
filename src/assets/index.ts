@@ -16,4 +16,8 @@ export default {
   leftCoconutTree: require('./leftCoconutTree.png'),
   rightCoconutTree: require('./rightCoconutTree.png'),
   camera: require('./camera.png'),
+  thunder: require('./thunder.png'),
+  commonWifiSignal: require('./commonWifiSignal.png'),
+  leftSmallWifiSignal: require('./leftSmallWifiSignal.png'),
+  rightBigWifiSignal: require('./rightBigWifiSignal.png'),
 };

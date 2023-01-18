@@ -34,9 +34,10 @@ This custom animated component library provides multiple custom animated compone
 | :--------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------: |
 |    ![alt_tag](./assets/AnimatedSwitch.gif)     |    ![alt_tag](./assets/AnimatedNotification.gif)     |     ![alt_tag](./assets/AnimatedFlickerLoader.gif)     |
 
-| <div style="width:270px"></div>Strike Image |
-| :-----------------------------------------: |
-|    ![alt_tag](./assets/StrikeImage.gif)     |
+| <div style="width:270px"></div>Strike Image | <div style="width:270px"></div>Wireless Charger  |
+| :-----------------------------------------: | :----------------------------------------------: |
+|    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |
+
 
 ## Installation
 
@@ -78,75 +79,81 @@ module.exports = {
 
 ---
 
-### Ⅰ. [Animated Card](./src/components/AnimatedCard)
+### I. [Parallax Header](./src/components/ParallaxHeader)
 
-[More about AnimatedCard component](./src/components/AnimatedCard/README.md)
+[More about Parallax Header component](./src/components/ParallaxHeader/README.md)
 
 ---
 
 ### ⅠI. [Animated List](./src/components/AnimatedList)
 
-[More about AnimatedList component](./src/components/AnimatedList/README.md)
+[More about Animated List component](./src/components/AnimatedList/README.md)
 
 ---
 
-### III. [Animated Notification](./src/components/AnimatedNotification)
-
-[More about Animated Notification component](./src/components/AnimatedNotification/README.md)
-
----
-
-### IV. [Animated Scanner](./src/components/AnimatedScanner)
-
-[More about Animated Scanner component](./src/components/AnimatedScanner/README.md)
-
----
-
-### V. [Animated Switch](./src/components/AnimatedSwitch)
-
-[More about Animated Switch component](./src/components/AnimatedSwitch/README.md)
-
----
-
-### VI. [Animated Wallet](./src/components/AnimatedWallet)
-
-[More about Animated Wallet component](./src/components/AnimatedWallet/README.md)
-
----
-
-### VII. [Animated Check Mark](./src/components/AnimatedCheckMark)
-
-[More about Animated Check Mark component](./src/components/AnimatedCheckMark/README.md)
-
----
-
-### VIII. [Animated Flicker Loader](./src/components/AnimatedFlickerLoader)
-
-[More about Animated Loader component](./src/components/AnimatedFlickerLoader/README.md)
-
----
-
-### IX. [Gradient Progress](./src/components/GradientProgress)
+### III. [Gradient Progress](./src/components/GradientProgress)
 
 [More about Animated Gradient Progress](./src/components/GradientProgress/README.md)
 
 ---
 
-### X. [Media Button](./src/components/MediaButton)
+### IV. [Animated Card](./src/components/AnimatedCard)
+
+[More about Animated Card component](./src/components/AnimatedCard/README.md)
+
+---
+
+### V. [Media Button](./src/components/MediaButton)
 
 [More about Media Button component](./src/components/MediaButton/README.md)
 
 ---
 
-### XI. [Parallax Header](./src/components/ParallaxHeader)
+### VI. [Animated Check Mark](./src/components/AnimatedCheckMark)
 
-[More about Parallax Header component](./src/components/ParallaxHeader/README.md)
+[More about Animated Check Mark component](./src/components/AnimatedCheckMark/README.md)
+
+---
+
+### VII. [Animated Wallet](./src/components/AnimatedWallet)
+
+[More about Animated Wallet component](./src/components/AnimatedWallet/README.md)
+
+---
+
+### VIII. [Animated Scanner](./src/components/AnimatedScanner)
+
+[More about Animated Scanner component](./src/components/AnimatedScanner/README.md)
+
+---
+
+### IX. [Animated Switch](./src/components/AnimatedSwitch)
+
+[More about Animated Switch component](./src/components/AnimatedSwitch/README.md)
+
+---
+
+### X. [Animated Notification](./src/components/AnimatedNotification)
+
+[More about Animated Notification component](./src/components/AnimatedNotification/README.md)
+
+---
+
+### XI. [Animated Flicker Loader](./src/components/AnimatedFlickerLoader)
+
+[More about Animated Loader component](./src/components/AnimatedFlickerLoader/README.md)
 
 ---
 
 ### XII. [Strike Image](./src/components/StrikeImage)
 
 [More about Strike Image component](./src/components/StrikeImage/README.md)
+
+---
+
+### XIII. [Wireless Charger](./src/components/WirelessCharger)
+
+[More about Wireless Charger component](./src/components/WirelessCharger/README.md)
 
 ---
 

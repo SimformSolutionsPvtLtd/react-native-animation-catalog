@@ -116,6 +116,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Strike Image',
     screen: () => navigation.navigate(NavigationStrings.STRIKE_IMAGE),
   },
+  {
+    id: 15,
+    name: 'Wireless Charger',
+    screen: () => navigation.navigate(NavigationStrings.WIRELESS_CHARGER),
+  },
 ];
 
 export const FOLLOWING = [
