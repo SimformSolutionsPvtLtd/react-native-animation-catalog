@@ -109,7 +109,12 @@ export const AnimationComponentData = (navigation: NavProps) => [
     id: 13,
     name: 'Animated Flicker Loader',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
-  }
+  },
+  {
+    id: 15,
+    name: 'Wireless Charger',
+    screen: () => navigation.navigate(NavigationStrings.WIRELESS_CHARGER),
+  },
 ];
 
 export const FOLLOWING = [

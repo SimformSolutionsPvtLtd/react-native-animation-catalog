@@ -30,4 +30,5 @@ export default {
   ANIMATED_SCANNER: 'Animated Scanner',
   ANIMATED_SWITCH: 'Animated Switch',
   DAY_AND_NIGHT_ANIMATED_SWITCH: 'Day and Night Animated Switch',
+  WIRELESS_CHARGER: 'Wireless Charger',
 };

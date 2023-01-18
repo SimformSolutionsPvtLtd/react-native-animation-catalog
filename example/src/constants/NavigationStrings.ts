@@ -11,5 +11,6 @@ export default {
   ANIMATED_WALLET: 'Animated Wallet',
   ANIMATED_SWITCH: 'Animated Switch',
   ANIMATED_NOTIFICATION: 'Animated Notification',
-  ANIMATED_FLICKER_LOADER: 'Animated Flicker Loader'
+  ANIMATED_FLICKER_LOADER: 'Animated Flicker Loader',
+  WIRELESS_CHARGER: 'Wireless Charger',
 };

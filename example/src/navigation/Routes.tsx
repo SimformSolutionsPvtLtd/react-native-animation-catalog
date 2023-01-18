@@ -6,6 +6,7 @@ import {
   AnimatedCheckMarkScreen,
   AnimatedFlickerLoaderScreen,
   AnimatedListScreen,
+  AnimatedNotificationScreen,
   AnimatedScannerScreen,
   AnimatedSwitchScreen,
   AnimatedWalletScreen,
@@ -15,7 +16,7 @@ import {
   MediaButtonScreen,
   ParallaxHeaderScreen,
   ParallaxHeaderTabScreen,
-  AnimatedNotificationScreen,
+  WirelessChargerScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -87,6 +88,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_FLICKER_LOADER}
           component={AnimatedFlickerLoaderScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.WIRELESS_CHARGER}
+          component={WirelessChargerScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

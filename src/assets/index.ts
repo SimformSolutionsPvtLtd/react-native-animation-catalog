@@ -8,4 +8,8 @@ export default {
   multipleStar: require('./multipleStar.png'),
   pdf: require('./pdf.png'),
   messageBox: require('./messageBox.png'),
+  thunder: require('./thunder.png'),
+  commonWifiSignal: require('./commonWifiSignal.png'),
+  leftSmallWifiSignal: require('./leftSmallWifiSignal.png'),
+  rightBigWifiSignal: require('./rightBigWifiSignal.png'),
 };
