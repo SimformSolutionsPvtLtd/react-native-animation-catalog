@@ -7,6 +7,7 @@ import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
 import AnimatedWalletScreen from './AnimatedWallet/AnimatedWallet';
 import CardSwipeableScreen from './CardSwipeable/CardSwipeableScreen';
 import GradientProgressScreen from './GradientProgress/GradientProgressScreen';
+import HeartRateScreen from './HeartRate/HeartRateScreen';
 import HomeScreen from './Home/HomeScreen';
 import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import ParallaxHeaderScreen from './ParallaxHeader/ParallaxHeaderScreen';
@@ -30,4 +31,5 @@ export {
   AnimatedFlickerLoaderScreen,
   StrikeImageScreen,
   WirelessChargerScreen,
+  HeartRateScreen,
 };
