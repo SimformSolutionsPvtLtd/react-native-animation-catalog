@@ -15,4 +15,5 @@ export default {
   STRIKE_IMAGE: 'Strike Image',
   WIRELESS_CHARGER: 'Wireless Charger',
   HEART_RATE: 'Heart Rate',
+  ANIMATED_CHARGING: 'Animated Charging',
 };

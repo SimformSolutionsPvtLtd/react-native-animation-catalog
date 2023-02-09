@@ -68,6 +68,9 @@ const Colors = {
   dodgerBlue: '#a9e7ff',
   transparent: 'transparent',
   lightPurple60: '#E6E6FA99',
+  purple: '#4904C8',
+  lightGreen: '#00E141',
+  darkMintGreen: '#28BE5F',
 };
 
 export default Colors;

@@ -1,4 +1,5 @@
 export * from './components/AnimatedCard';
+export * from './components/AnimatedCharging';
 export * from './components/AnimatedCheckMark';
 export * from './components/AnimatedFlickerLoader';
 export * from './components/AnimatedList';

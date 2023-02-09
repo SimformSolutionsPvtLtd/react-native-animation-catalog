@@ -20,4 +20,7 @@ export default {
   commonWifiSignal: require('./commonWifiSignal.png'),
   leftSmallWifiSignal: require('./leftSmallWifiSignal.png'),
   rightBigWifiSignal: require('./rightBigWifiSignal.png'),
+  storm: require('./storm.png'),
+  cable: require('./cable.png'),
+  wave: require('./wave.png'),
 };

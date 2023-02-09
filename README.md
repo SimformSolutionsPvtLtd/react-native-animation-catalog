@@ -38,6 +38,10 @@ This custom animated component library provides multiple custom animated compone
 | :-----------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
 |    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |    ![alt_tag](./assets/HeartRate.gif)     |
 
+| <div style="width:270px"></div>Animated Charging |
+| :--------------------------------------------:   |
+|    ![alt_tag](./assets/AnimatedCharging.gif)     |
+
 ## Installation
 
 ##### 1. Install animation catalog
@@ -159,6 +163,12 @@ module.exports = {
 ### XIV. [Heart Rate](./src/components/HeartRate)
 
 [More about Parallax Header component](./src/components/HeartRate/README.md)
+
+---
+
+### XV. [Animated Charging](./src/components/AnimatedCharging/)
+
+[More about Animated Charging component](./src/components/AnimatedCharging/README.md)
 
 ---
 
