@@ -14,6 +14,7 @@ const useSeaThemeAnimatedSwitch = ({ size, onToggle }: SeaThemeSwitchProps) => {
   const offSet = useSharedValue(0);
   const sunOffSet = useSharedValue(0);
   const moonOffset = useSharedValue(0);
+
   const toggle = useCallback(() => {
     if (offSet?.value === 0) {
       offSet.value = withTiming(0.5, { duration: 810 });
@@ -52,6 +53,7 @@ const useSeaThemeAnimatedSwitch = ({ size, onToggle }: SeaThemeSwitchProps) => {
       backgroundColor,
     };
   });
+
   const riverAnimatedStyle = useAnimatedStyle(() => {
     const tintColor = interpolateColor(
       offSet.value,

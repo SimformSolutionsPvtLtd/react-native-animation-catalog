@@ -14,7 +14,7 @@ const AnimatedSwitchScreen = () => {
   return (
     <>
       <CustomHeader
-        title={'Animated Switch'}
+        title={Strings.ANIMATED_SWITCH}
         isBackEnabled={true}
         onBackPress={() => navigation?.goBack()}
       />

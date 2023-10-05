@@ -201,7 +201,7 @@ const style = ({ size = 100 }: Partial<StyleProps>) =>
       left: roundToNearestPixel(size * 0.06666666667),
       top: roundToNearestPixel(size * 0.5),
     },
-    coconutTree: {
+    leftCoconutTree: {
       height: roundToNearestPixel(size * 0.946666667),
       width: roundToNearestPixel(size * 0.946666667),
       position: 'absolute',
@@ -218,7 +218,7 @@ const style = ({ size = 100 }: Partial<StyleProps>) =>
       right: roundToNearestPixel(size * 0.533333333),
       top: roundToNearestPixel(size * 0.2733333333),
     },
-    reverseCoconutTree: {
+    rightCoconutTree: {
       height: roundToNearestPixel(size * 1.33333333),
       width: roundToNearestPixel(size * 1.33333333),
       position: 'absolute',

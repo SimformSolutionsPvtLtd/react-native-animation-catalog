@@ -10,7 +10,7 @@
 
 |            Animated Switch             |
 | :------------------------------------: |
-| ![alt tag](/assets/SwitchDefault.gif) |
+| ![alt tag](/assets/AnimatedSwitch.gif) |
 
 #### 1. Default
 

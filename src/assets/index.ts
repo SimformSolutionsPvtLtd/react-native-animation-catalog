@@ -13,6 +13,6 @@ export default {
   upperCloud: require('./upperCloud.png'),
   lowerCloud: require('./lowerCloud.png'),
   sideCloud: require('./sideCloud.png'),
-  coconutTree: require('./coconutTree.png'),
-  reverseCoconutTree: require('./secondCoconutTree.png'),
+  leftCoconutTree: require('./leftCoconutTree.png'),
+  rightCoconutTree: require('./rightCoconutTree.png'),
 };

@@ -30,8 +30,8 @@ const SeaThemeAnimatedSwitch = ({
     cloudStyle,
     upperCloudStyle,
     sideCloudStyle,
-    coconutTree,
-    reverseCoconutTree,
+    leftCoconutTree,
+    rightCoconutTree,
     firstLayerOfSun,
     secondLayerOfSun,
     thirdLayerOfSun,
@@ -60,13 +60,12 @@ const SeaThemeAnimatedSwitch = ({
           source={Images.middleCloud}
           style={[cloudStyle, cloudsAnimatedStyle]}
         />
-        <Image source={Images.coconutTree} style={coconutTree} />
+        <Image source={Images.leftCoconutTree} style={leftCoconutTree} />
         <Animated.Image
           source={Images.sideCloud}
           style={[sideCloudStyle, upperCloudsAnimatedStyle]}
         />
-        <Image source={Images.reverseCoconutTree} style={reverseCoconutTree} />
-
+        <Image source={Images.rightCoconutTree} style={rightCoconutTree} />
         <Animated.View style={[seaAnimatedStyle, seaViewStyle]}>
           <Animated.Image
             source={Images.river}
