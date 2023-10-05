@@ -16,4 +16,3 @@ interface CustomHeaderProps {
 }
 
 export { CustomCardProps, CustomHeaderProps };
-

@@ -1,12 +1,11 @@
 import { StyleSheet } from 'react-native';
 import { Colors, Metrics } from '../../../theme';
 
-
 const { verticalScale, horizontalScale, moderateScale } = Metrics;
 
 const styles = StyleSheet.create({
-  container:{
-    flex: 1
+  container: {
+    flex: 1,
   },
   mediaButtonStyle: {
     backgroundColor: Colors.redVelvet,

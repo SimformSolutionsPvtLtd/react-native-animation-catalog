@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { Colors, Metrics } from '../../../theme';
 
-const {verticalScale, horizontalScale, moderateScale} = Metrics;
+const { verticalScale, horizontalScale, moderateScale } = Metrics;
 
 const styles = StyleSheet.create({
   customGradientsStyle: {
@@ -88,10 +88,10 @@ const styles = StyleSheet.create({
   gradientChildContainerStyle: {
     marginTop: verticalScale(20),
   },
-  gradientChildViewStyle:{
+  gradientChildViewStyle: {
     alignItems: 'center',
-    justifyContent:'center',
-  }
+    justifyContent: 'center',
+  },
 });
 
 export default styles;

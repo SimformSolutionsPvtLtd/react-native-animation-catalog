@@ -1,16 +1,19 @@
-import {useNavigation} from '@react-navigation/native';
-import {reject} from 'lodash';
-import React, {useState} from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
-import {AnimatedCard, SwipeCallBackProps} from 'react-native-animation-catalog';
+import { useNavigation } from '@react-navigation/native';
+import { reject } from 'lodash';
+import React, { useState } from 'react';
+import { Image, Text, TouchableOpacity, View } from 'react-native';
+import {
+  AnimatedCard,
+  SwipeCallBackProps,
+} from 'react-native-animation-catalog';
 import Images from '../../assets';
-import {CustomHeader} from '../../components';
-import {imageData, Strings} from '../../constants';
-import {NavProps} from '../../navigation/types';
+import { CustomHeader } from '../../components';
+import { imageData, Strings } from '../../constants';
+import { NavProps } from '../../navigation/types';
 import styles from './styles/styles';
-import {RenderItems} from './types';
+import { RenderItems } from './types';
 
-const RenderCard = ({onLeftSwipe, onRightSwipe, item}: RenderItems) => {
+const RenderCard = ({ onLeftSwipe, onRightSwipe, item }: RenderItems) => {
   return (
     <>
       <Image source={item.image} style={styles.imageStyle} />
@@ -37,7 +40,7 @@ const CardSwipeableScreen = () => {
   const addItem = (prev = 0, next = 1) => imageData.slice(prev, next);
   const [cardData, setCardData] = useState(addItem(0, 1));
   const removeItem = (id: number) => {
-    setCardData(reject(cardData, {id}));
+    setCardData(reject(cardData, { id }));
     if (imageData.length === id) {
       setCardData(addItem(0, 1));
     } else {
@@ -55,7 +58,7 @@ const CardSwipeableScreen = () => {
 
       <View style={styles.swipeableCardView}>
         <Text style={styles.cardTextStyle}>{Strings.SWIPEABLE_CARD}</Text>
-        {imageData.map((item, index) => {
+        {imageData.map(item => {
           return (
             <AnimatedCard.Swipeable key={item.id} style={styles.cardStyle}>
               <Image source={item.image} style={styles.imageStyle} />
@@ -66,7 +69,7 @@ const CardSwipeableScreen = () => {
 
       <View style={styles.simpleCardView}>
         <Text style={styles.cardTextStyle}>{Strings.CARD_SIMPLE}</Text>
-        {cardData.map((item, index) => {
+        {cardData.map(item => {
           return (
             <AnimatedCard
               style={styles.cardStyle}
@@ -77,7 +80,10 @@ const CardSwipeableScreen = () => {
               onRightSwipeEnd={() => {
                 removeItem(item.id);
               }}
-              renderCard={({onLeftSwipe, onRightSwipe}: SwipeCallBackProps) => (
+              renderCard={({
+                onLeftSwipe,
+                onRightSwipe,
+              }: SwipeCallBackProps) => (
                 <RenderCard
                   item={item}
                   onLeftSwipe={onLeftSwipe}

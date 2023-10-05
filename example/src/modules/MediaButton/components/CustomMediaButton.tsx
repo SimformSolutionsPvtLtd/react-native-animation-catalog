@@ -5,7 +5,7 @@ import { Strings } from '../../../constants';
 import styles from '../styles/styles';
 import { CustomMediaButtonProps } from '../types';
 
-const CustomMediaButton = ({isPulse, setIsPulse}: CustomMediaButtonProps) => (
+const CustomMediaButton = ({ isPulse, setIsPulse }: CustomMediaButtonProps) => (
   <View style={styles.customMediaButtonContainer}>
     <Text style={styles.textStyle}>
       {Strings.CUSTOM_MEDIA_BUTTON_WITH_PULSE}

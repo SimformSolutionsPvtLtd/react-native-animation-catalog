@@ -1,17 +1,18 @@
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 import {
-  AnimatedList,ColorSet,
+  AnimatedList,
+  ColorSet,
   GradientProgress,
 } from 'react-native-animation-catalog';
-import {CustomCard, CustomHeader} from '../../components';
-import {Strings} from '../../constants';
-import {AnimationComponentData} from '../../constants/DummyData';
-import {NavProps} from '../../navigation/types';
+import { CustomCard, CustomHeader } from '../../components';
+import { Strings } from '../../constants';
+import { AnimationComponentData } from '../../constants/DummyData';
+import { NavProps } from '../../navigation/types';
 import styles from './styles/styles';
 
-const RenderItems = ({item}: any) => {
+const RenderItems = ({ item }: any) => {
   return (
     <CustomCard style={styles.cardStyle} onPress={item.screen}>
       <GradientProgress
@@ -41,7 +42,7 @@ const HomeScreen = () => {
         data={AnimationComponentData(navigation)}
         contentContainerStyle={styles.contentContainerStyle}
         cardStyle={styles.cardStyle}
-        renderItem={({item}) => <RenderItems item={item} />}
+        renderItem={({ item }) => <RenderItems item={item} />}
       />
     </View>
   );

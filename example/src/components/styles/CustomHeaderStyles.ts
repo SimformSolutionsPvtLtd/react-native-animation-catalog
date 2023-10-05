@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { Colors, Metrics } from '../../theme';
 
-const {verticalScale, moderateScale, horizontalScale} = Metrics;
+const { verticalScale, moderateScale, horizontalScale } = Metrics;
 
 const styles = StyleSheet.create({
   container: {

@@ -3,10 +3,12 @@ import { TouchableOpacity, View } from 'react-native';
 import { CustomCardProps } from './types';
 import styles from './styles/CustomCardStyles';
 
-const CustomCard = ({children, style, onPress}: CustomCardProps) => {
+const CustomCard = ({ children, style, onPress }: CustomCardProps) => {
   return (
     <View style={[styles.card, style]}>
-      <TouchableOpacity activeOpacity={0.88} onPress={onPress}>{children}</TouchableOpacity>
+      <TouchableOpacity activeOpacity={0.88} onPress={onPress}>
+        {children}
+      </TouchableOpacity>
     </View>
   );
 };
