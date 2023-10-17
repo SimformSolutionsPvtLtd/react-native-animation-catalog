@@ -1,6 +1,6 @@
 import Images from '../assets';
-import {NavigationStrings} from '../constants';
-import {NavProps} from '../navigation/types';
+import { NavigationStrings } from '../constants';
+import { NavProps } from '../navigation/types';
 
 export const imageData = [
   {
@@ -108,8 +108,9 @@ export const AnimationComponentData = (navigation: NavProps) => [
   {
     id: 13,
     name: 'Animated Flicker Loader',
-    screen: () => navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
-  }
+    screen: () =>
+      navigation.navigate(NavigationStrings.ANIMATED_FLICKER_LOADER),
+  },
 ];
 
 export const FOLLOWING = [

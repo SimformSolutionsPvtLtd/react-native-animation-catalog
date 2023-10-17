@@ -14,7 +14,7 @@ const AnimatedSwitchScreen = () => {
   return (
     <>
       <CustomHeader
-        title={'Animated Switch'}
+        title={Strings.ANIMATED_SWITCH}
         isBackEnabled={true}
         onBackPress={() => navigation?.goBack()}
       />
@@ -35,6 +35,14 @@ const AnimatedSwitchScreen = () => {
           </Text>
           <View style={styles.switchContainer}>
             <AnimatedSwitch.DayAndNightTheme size={100} />
+          </View>
+        </View>
+        <View style={styles.variantContainer}>
+          <Text style={styles.switchTitle}>
+            {Strings.SEA_THEME_ANIMATED_SWITCH}
+          </Text>
+          <View style={styles.switchContainer}>
+            <AnimatedSwitch.SeaTheme size={100} />
           </View>
         </View>
       </View>

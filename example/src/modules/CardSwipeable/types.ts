@@ -2,8 +2,8 @@ interface RenderItems {
   onLeftSwipe: () => void;
   onRightSwipe: () => void;
   item: {
-      id: number; 
-      image: number
+    id: number;
+    image: number;
   };
 }
 

@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import { Metrics } from 'react-native-animation-catalog';
 import Colors from './Colors';
 
 const applicationStyle = StyleSheet.create({

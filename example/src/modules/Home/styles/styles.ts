@@ -1,7 +1,7 @@
-import { StyleSheet } from "react-native";
-import { Colors, Metrics } from "../../../theme";
+import { StyleSheet } from 'react-native';
+import { Colors, Metrics } from '../../../theme';
 
-const {verticalScale, moderateScale} = Metrics;
+const { verticalScale, moderateScale } = Metrics;
 
 const styles = StyleSheet.create({
   screen: {

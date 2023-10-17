@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 import { CustomHeader } from '../../components';
 import type { NavProps } from '../../navigation/types';
-import { CustomMediaButton, DefaultMediaButton, SimpleMediaButton } from './components';
+import {
+  CustomMediaButton,
+  DefaultMediaButton,
+  SimpleMediaButton,
+} from './components';
 import styles from './styles/styles';
 
 const MediaButtonScreen = () => {

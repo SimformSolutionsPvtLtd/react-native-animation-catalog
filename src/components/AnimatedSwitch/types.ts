@@ -39,3 +39,8 @@ export interface AnimatedCloudProps {
 export interface AnimatedStarProps {
   starContainerStyle: ViewStyle;
 }
+
+export interface SeaThemeSwitchProps {
+  size: Range<40, 151>;
+  onToggle?: (status: string) => void;
+}

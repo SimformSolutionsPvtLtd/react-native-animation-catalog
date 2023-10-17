@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import {Colors, Metrics} from '../../../theme';
+import { Colors, Metrics } from '../../../theme';
 
-const {verticalScale, moderateScale} = Metrics;
+const { verticalScale, moderateScale } = Metrics;
 
 const styles = StyleSheet.create({
   swipeableCardView: {

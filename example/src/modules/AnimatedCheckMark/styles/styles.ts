@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
-import {Metrics} from '../../../theme';
+import { StyleSheet } from 'react-native';
+import { Metrics } from '../../../theme';
 
-const {moderateScale} = Metrics;
+const { moderateScale } = Metrics;
 
 const styles = StyleSheet.create({
   firstVariantContainer: {
