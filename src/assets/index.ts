@@ -15,4 +15,5 @@ export default {
   sideCloud: require('./sideCloud.png'),
   leftCoconutTree: require('./leftCoconutTree.png'),
   rightCoconutTree: require('./rightCoconutTree.png'),
+  camera: require('./camera.png'),
 };

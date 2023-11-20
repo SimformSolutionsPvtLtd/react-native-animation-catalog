@@ -12,4 +12,5 @@ export default {
   ANIMATED_SWITCH: 'Animated Switch',
   ANIMATED_NOTIFICATION: 'Animated Notification',
   ANIMATED_FLICKER_LOADER: 'Animated Flicker Loader',
+  STRIKE_IMAGE: 'Strike Image',
 };

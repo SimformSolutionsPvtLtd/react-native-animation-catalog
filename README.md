@@ -34,6 +34,10 @@ This custom animated component library provides multiple custom animated compone
 | :--------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------: |
 |    ![alt_tag](./assets/AnimatedSwitch.gif)     |    ![alt_tag](./assets/AnimatedNotification.gif)     |     ![alt_tag](./assets/AnimatedFlickerLoader.gif)     |
 
+| <div style="width:270px"></div>Strike Image |
+| :-----------------------------------------: |
+|    ![alt_tag](./assets/StrikeImage.gif)     |
+
 ## Installation
 
 ##### 1. Install animation catalog
@@ -137,6 +141,12 @@ module.exports = {
 ### XI. [Parallax Header](./src/components/ParallaxHeader)
 
 [More about Parallax Header component](./src/components/ParallaxHeader/README.md)
+
+---
+
+### XII. [Strike Image](./src/components/StrikeImage)
+
+[More about Strike Image component](./src/components/StrikeImage/README.md)
 
 ---
 
