@@ -63,6 +63,9 @@ const Colors = {
   lightYellow2: 'rgba(255, 239, 136, 0.8)',
   texasRose: '#ffb557',
   brownRust: '#A26F38',
+  silver: '#BCBCBC',
+  tangerineYellow: '#FFCE00',
+  dodgerBlue: '#a9e7ff',
 };
 
 export default Colors;

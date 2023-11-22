@@ -13,4 +13,5 @@ export default {
   ANIMATED_NOTIFICATION: 'Animated Notification',
   ANIMATED_FLICKER_LOADER: 'Animated Flicker Loader',
   STRIKE_IMAGE: 'Strike Image',
+  WIRELESS_CHARGER: 'Wireless Charger',
 };

@@ -12,6 +12,7 @@ import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import ParallaxHeaderScreen from './ParallaxHeader/ParallaxHeaderScreen';
 import ParallaxHeaderTabScreen from './ParallaxHeader/ParallaxHeaderTabScreen';
 import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
+import WirelessChargerScreen from './WirelessCharger/WirelessChargerScreen';
 
 export {
   HomeScreen,
@@ -28,4 +29,5 @@ export {
   AnimatedNotificationScreen,
   AnimatedFlickerLoaderScreen,
   StrikeImageScreen,
+  WirelessChargerScreen,
 };
