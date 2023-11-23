@@ -66,6 +66,8 @@ const Colors = {
   silver: '#BCBCBC',
   tangerineYellow: '#FFCE00',
   dodgerBlue: '#a9e7ff',
+  transparent: 'transparent',
+  lightPurple60: '#E6E6FA99',
 };
 
 export default Colors;

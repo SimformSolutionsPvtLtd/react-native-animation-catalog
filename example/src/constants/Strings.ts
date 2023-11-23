@@ -33,4 +33,7 @@ export default {
   SEA_THEME_ANIMATED_SWITCH: 'Sea Theme Animated Switch',
   STRIKE_IMAGE: 'Strike Image',
   WIRELESS_CHARGER: 'Wireless Charger',
+  DEFAULT_HEARTRATE: 'Default HeartRate',
+  FOLLOWUP_HEARTRATE: 'FollowUp HeartRate',
+  HEART_RATE: 'Heart Rate',
 };

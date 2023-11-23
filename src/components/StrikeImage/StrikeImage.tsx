@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, View } from 'react-native';
 import Animated from 'react-native-reanimated';
-import assets from '../../assets';
+import Images from '../../assets';
 import { Colors } from '../../theme';
 import { useStrikeImage } from './hooks';
 import styles from './styles';
@@ -10,7 +10,7 @@ import type { StrikeImagePropsType, UseStrikeImageReturnType } from './types';
 const StrikeImage = ({
   size = 350,
   color = Colors.havelockBlue,
-  imageSource = assets.camera,
+  imageSource = Images.camera,
   strikeWidth,
   onChangeStrike = () => {},
 }: Partial<StrikeImagePropsType>) => {

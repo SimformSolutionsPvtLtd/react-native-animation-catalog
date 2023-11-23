@@ -12,6 +12,7 @@ import {
   AnimatedWalletScreen,
   CardSwipeableScreen,
   GradientProgressScreen,
+  HeartRateScreen,
   HomeScreen,
   MediaButtonScreen,
   ParallaxHeaderScreen,
@@ -99,6 +100,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.WIRELESS_CHARGER}
           component={WirelessChargerScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.HEART_RATE}
+          component={HeartRateScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

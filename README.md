@@ -34,10 +34,9 @@ This custom animated component library provides multiple custom animated compone
 | :--------------------------------------------: | :--------------------------------------------------: | :----------------------------------------------------: |
 |    ![alt_tag](./assets/AnimatedSwitch.gif)     |    ![alt_tag](./assets/AnimatedNotification.gif)     |     ![alt_tag](./assets/AnimatedFlickerLoader.gif)     |
 
-| <div style="width:270px"></div>Strike Image | <div style="width:270px"></div>Wireless Charger  |
-| :-----------------------------------------: | :----------------------------------------------: |
-|    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |
-
+| <div style="width:270px"></div>Strike Image | <div style="width:270px"></div>Wireless Charger  | <div style="width:270px"></div>Heart Rate |
+| :-----------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
+|    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |    ![alt_tag](./assets/HeartRate.gif)     |
 
 ## Installation
 
@@ -52,9 +51,9 @@ $ yarn add react-native-animation-catalog
 ##### 2. Install required dependencies
 
 ```bash
-$ npm install react-native-reanimated react-native-gesture-handler react-native-linear-gradient @react-navigation/native @react-navigation/material-top-tabs react-native-tab-view react-native-pager-view react-native-screens react-native-safe-area-context
+$ npm install react-native-reanimated react-native-gesture-handler react-native-linear-gradient @react-navigation/native @react-navigation/material-top-tabs react-native-tab-view react-native-pager-view react-native-screens react-native-safe-area-context react-native-svg
 # --- or ---
-$ yarn add react-native-reanimated react-native-gesture-handler react-native-linear-gradient @react-navigation/native @react-navigation/material-top-tabs react-native-tab-view react-native-pager-view react-native-screens react-native-safe-area-context
+$ yarn add react-native-reanimated react-native-gesture-handler react-native-linear-gradient @react-navigation/native @react-navigation/material-top-tabs react-native-tab-view react-native-pager-view react-native-screens react-native-safe-area-context react-native-svg
 ```
 
 ##### 3. Install cocoapods in the ios project
@@ -154,6 +153,12 @@ module.exports = {
 ### XIII. [Wireless Charger](./src/components/WirelessCharger)
 
 [More about Wireless Charger component](./src/components/WirelessCharger/README.md)
+
+---
+
+### XIV. [Heart Rate](./src/components/HeartRate)
+
+[More about Parallax Header component](./src/components/HeartRate/README.md)
 
 ---
 
