@@ -1,3 +1,4 @@
+import AnimatedChargingScreen from './AnimatedCharging/AnimatedChargingScreen';
 import AnimatedCheckMarkScreen from './AnimatedCheckMark/AnimatedCheckMark';
 import AnimatedFlickerLoaderScreen from './AnimatedFlickerLoader/AnimatedFlickerLoaderScreen';
 import AnimatedListScreen from './AnimatedList/AnimatedListScreen';
@@ -16,20 +17,21 @@ import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
 import WirelessChargerScreen from './WirelessCharger/WirelessChargerScreen';
 
 export {
-  HomeScreen,
-  GradientProgressScreen,
-  CardSwipeableScreen,
+  AnimatedChargingScreen,
+  AnimatedCheckMarkScreen,
+  AnimatedFlickerLoaderScreen,
   AnimatedListScreen,
+  AnimatedNotificationScreen,
+  AnimatedScannerScreen,
+  AnimatedSwitchScreen,
+  AnimatedWalletScreen,
+  CardSwipeableScreen,
+  GradientProgressScreen,
+  HeartRateScreen,
+  HomeScreen,
+  MediaButtonScreen,
   ParallaxHeaderScreen,
   ParallaxHeaderTabScreen,
-  AnimatedScannerScreen,
-  MediaButtonScreen,
-  AnimatedCheckMarkScreen,
-  AnimatedWalletScreen,
-  AnimatedSwitchScreen,
-  AnimatedNotificationScreen,
-  AnimatedFlickerLoaderScreen,
   StrikeImageScreen,
   WirelessChargerScreen,
-  HeartRateScreen,
 };

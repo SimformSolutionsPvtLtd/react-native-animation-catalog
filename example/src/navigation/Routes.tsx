@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import { NavigationStrings } from '../constants';
 import {
+  AnimatedChargingScreen,
   AnimatedCheckMarkScreen,
   AnimatedFlickerLoaderScreen,
   AnimatedListScreen,
@@ -105,6 +106,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.HEART_RATE}
           component={HeartRateScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_CHARGING}
+          component={AnimatedChargingScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
