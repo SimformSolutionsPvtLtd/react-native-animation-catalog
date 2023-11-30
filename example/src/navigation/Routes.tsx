@@ -9,6 +9,7 @@ import {
   AnimatedListScreen,
   AnimatedNotificationScreen,
   AnimatedScannerScreen,
+  AnimatedSignal,
   AnimatedSwitchScreen,
   AnimatedWalletScreen,
   CardSwipeableScreen,
@@ -111,6 +112,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_CHARGING}
           component={AnimatedChargingScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_SIGNAL}
+          component={AnimatedSignal}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

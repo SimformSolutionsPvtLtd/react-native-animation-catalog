@@ -38,9 +38,11 @@ This custom animated component library provides multiple custom animated compone
 | :-----------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
 |    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |    ![alt_tag](./assets/HeartRate.gif)     |
 
-| <div style="width:270px"></div>Animated Charging |
-| :--------------------------------------------:   |
-|    ![alt_tag](./assets/AnimatedCharging.gif)     |
+| <div style="width:270px"></div>Animated Charging | <div style="width:270px"></div>WiFi Signal |
+| :----------------------------------------------: | :----------------------------------------: |
+|    ![alt_tag](./assets/AnimatedCharging.gif)     |    ![alt_tag](./assets/WiFiSignal.gif)     |
+
+
 
 ## Installation
 
@@ -171,6 +173,12 @@ module.exports = {
 [More about Animated Charging component](./src/components/AnimatedCharging/README.md)
 
 ---
+### XVI. [Animated Signal](./src/components/AnimatedSignal/)
+
+[More about Animated Signal component](./src/components/AnimatedSignal/README.md)
+
+---
+
 
 ### Example
 

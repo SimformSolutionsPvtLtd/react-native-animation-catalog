@@ -71,6 +71,7 @@ const Colors = {
   purple: '#4904C8',
   lightGreen: '#00E141',
   darkMintGreen: '#28BE5F',
+  mediumAquamarine: '#76CCB0',
 };
 
 export default Colors;
