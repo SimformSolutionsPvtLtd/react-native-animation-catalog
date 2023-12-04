@@ -6,7 +6,7 @@
 
 ---
 
-|                WirelessCharger                 |
+|                Wireless Charger                 |
 | :--------------------------------------------: |
 | ![alt tag](/assets/DefaultWirelessCharger.gif) |
 

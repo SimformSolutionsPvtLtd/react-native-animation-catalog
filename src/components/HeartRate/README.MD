@@ -8,7 +8,7 @@ The `HeartRate` component animates pulse over a grid.
 
 ---
 
-|             HeartRate             |
+|             Heart Rate             |
 | :-------------------------------: |
 | ![alt tag](/assets/HeartRate.gif) |
 
