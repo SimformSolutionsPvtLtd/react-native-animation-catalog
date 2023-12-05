@@ -38,9 +38,9 @@ This custom animated component library provides multiple custom animated compone
 | :-----------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
 |    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |    ![alt_tag](./assets/HeartRate.gif)     |
 
-| <div style="width:270px"></div>Animated Charging | <div style="width:270px"></div>WiFi Signal |
-| :----------------------------------------------: | :----------------------------------------: |
-|    ![alt_tag](./assets/AnimatedCharging.gif)     |    ![alt_tag](./assets/WiFiSignal.gif)     |
+| <div style="width:270px"></div>Animated Charging | <div style="width:270px"></div>Animated Signal |
+| :----------------------------------------------: | :--------------------------------------------: |
+|    ![alt_tag](./assets/AnimatedCharging.gif)     |      ![alt_tag](./assets/WiFiSignal.gif)       |
 
 
 
@@ -164,7 +164,7 @@ module.exports = {
 
 ### XIV. [Heart Rate](./src/components/HeartRate)
 
-[More about Parallax Header component](./src/components/HeartRate/README.md)
+[More about Heart Rate component](./src/components/HeartRate/README.md)
 
 ---
 

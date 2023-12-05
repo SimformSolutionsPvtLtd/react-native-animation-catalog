@@ -1,4 +1,4 @@
-# AnimatedCharging
+# Animated Charging
 
 `AnimatedCharging` component can be utilised to provide a charging animation whenever a user `charges` a `device`.
 
@@ -6,7 +6,7 @@
 
 ---
 
-|             AnimatedCharging             |
+|             Animated Charging             |
 | :--------------------------------------: |
 | ![alt tag](/assets/AnimatedCharging.gif) |
 
@@ -78,4 +78,4 @@ export default AnimatedCharging;
 
 ---
 
-[AnimatedCharging](/example/src/modules/AnimatedCharging/AnimatedChargingScreen.tsx)
+[Animated Charging](/example/src/modules/AnimatedCharging/AnimatedChargingScreen.tsx)

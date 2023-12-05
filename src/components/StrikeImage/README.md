@@ -6,7 +6,7 @@ The `StrikeImage` component animates a strike over any image to indicate on/off 
 
 ---
 
-|             StrikeImage             |
+|             Strike Image             |
 | :---------------------------------: |
 | ![alt tag](/assets/StrikeImage.gif) |
 
