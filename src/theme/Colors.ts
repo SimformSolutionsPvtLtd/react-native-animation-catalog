@@ -72,6 +72,7 @@ const Colors = {
   lightGreen: '#00E141',
   darkMintGreen: '#28BE5F',
   mediumAquamarine: '#76CCB0',
+  electricViolet: '#7F00FF',
 };
 
 export default Colors;

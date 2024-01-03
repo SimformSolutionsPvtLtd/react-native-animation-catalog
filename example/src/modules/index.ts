@@ -6,6 +6,7 @@ import AnimatedNotificationScreen from './AnimatedNotification/AnimatedNotificat
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
 import AnimatedSignal from './AnimatedSignal/AnimatedSignalScreen';
 import AnimatedSwitchScreen from './AnimatedSwitch/AnimatedSwitchScreen';
+import AnimatedTextScreen from './AnimatedText/AnimatedTextScreen';
 import AnimatedWalletScreen from './AnimatedWallet/AnimatedWallet';
 import CardSwipeableScreen from './CardSwipeable/CardSwipeableScreen';
 import GradientProgressScreen from './GradientProgress/GradientProgressScreen';
@@ -26,6 +27,7 @@ export {
   AnimatedScannerScreen,
   AnimatedSignal,
   AnimatedSwitchScreen,
+  AnimatedTextScreen,
   AnimatedWalletScreen,
   CardSwipeableScreen,
   GradientProgressScreen,

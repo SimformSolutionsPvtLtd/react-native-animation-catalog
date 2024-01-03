@@ -18,6 +18,7 @@ export default {
   matterhornSnow: '#edfcfe',
   havelockBlue: '#59abdd',
   violet: '#0b0e37',
+  electricViolet: '#7F00FF',
 
   //-------------------- ColorSets for Gradient --------------------
   colorSet2: [
