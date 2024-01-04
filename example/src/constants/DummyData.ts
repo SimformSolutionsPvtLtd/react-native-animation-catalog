@@ -136,6 +136,11 @@ export const AnimationComponentData = (navigation: NavProps) => [
     name: 'Animated Signal',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_SIGNAL),
   },
+  {
+    id: 19,
+    name: 'Animated Bouncy Text',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_BOUNCY_TEXT),
+  },
 ];
 
 export const FOLLOWING = [

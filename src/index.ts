@@ -8,6 +8,7 @@ export * from './components/AnimatedPulse';
 export * from './components/AnimatedScanner';
 export * from './components/AnimatedSignal';
 export * from './components/AnimatedSwitch';
+export * from './components/AnimatedText';
 export * from './components/AnimatedWallet';
 export * from './components/GradientProgress';
 export * from './components/HeartRate';

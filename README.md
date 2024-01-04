@@ -38,11 +38,9 @@ This custom animated component library provides multiple custom animated compone
 | :-----------------------------------------: | :----------------------------------------------: | :---------------------------------------: |
 |    ![alt_tag](./assets/StrikeImage.gif)     | ![alt_tag](./assets//DefaultWirelessCharger.gif) |    ![alt_tag](./assets/HeartRate.gif)     |
 
-| <div style="width:270px"></div>Animated Charging | <div style="width:270px"></div>Animated Signal |
-| :----------------------------------------------: | :--------------------------------------------: |
-|    ![alt_tag](./assets/AnimatedCharging.gif)     |      ![alt_tag](./assets/WiFiSignal.gif)       |
-
-
+| <div style="width:270px"></div>Animated Charging | <div style="width:270px"></div>Animated Signal | <div style="width:270px"></div>Animated Text |
+| :----------------------------------------------: | :--------------------------------------------: | :------------------------------------------: |
+|    ![alt_tag](./assets/AnimatedCharging.gif)     |      ![alt_tag](./assets/WiFiSignal.gif)       |    ![alt_tag](./assets/AnimatedText.gif)     |
 
 ## Installation
 
@@ -173,12 +171,18 @@ module.exports = {
 [More about Animated Charging component](./src/components/AnimatedCharging/README.md)
 
 ---
+
 ### XVI. [Animated Signal](./src/components/AnimatedSignal/)
 
 [More about Animated Signal component](./src/components/AnimatedSignal/README.md)
 
 ---
 
+### XVII. [Animated Text](./src/components/AnimatedText/)
+
+[More about Animated Text component](./src/components/AnimatedText/README.md)
+
+---
 
 ### Example
 

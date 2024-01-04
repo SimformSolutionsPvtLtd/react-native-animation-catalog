@@ -21,6 +21,7 @@ import {
   ParallaxHeaderTabScreen,
   StrikeImageScreen,
   WirelessChargerScreen,
+  AnimatedTextScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -117,6 +118,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_SIGNAL}
           component={AnimatedSignal}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_BOUNCY_TEXT}
+          component={AnimatedTextScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
